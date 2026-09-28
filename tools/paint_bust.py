@@ -169,6 +169,42 @@ def ear_canvas(flat):
 blocks.append(sprite("bust_ears_up", ear_canvas(False)))
 blocks.append(sprite("bust_ears_flat", ear_canvas(True)))
 
+# One ear at a time, for the dating portraits (the viewer's left ear; the right one is the same sprite drawn
+# mirrored), so each ear can flick, swivel or curl on its own. Poses follow the cards' tells: perk = alarmed or
+# interested, back = flustered or annoyed swivel, curl = Shio hiding interest, droop = guarded or sad.
+EAR_POSES = {
+    "up":    ([(9, 3), (14, 24.5), (29, 16.5)], [(12.5, 8.5), (16.5, 22), (25.5, 16.5)]),
+    "perk":  ([(10.5, 0.5), (14.5, 24), (29, 16)], [(13.5, 6), (17, 21.5), (25.5, 16)]),
+    "flick": ([(5, 6), (13.5, 25), (28.5, 17)], [(8.5, 11), (15.5, 22.5), (24.5, 17)]),
+    "back":  ([(4.5, 7.5), (13, 25), (27, 18)], [(8.5, 12.5), (14.5, 22.5), (20.5, 18.5)]),
+    "droop": ([(4, 11), (13, 26), (27, 18)], [(8, 14), (14.5, 23.5), (23, 18.5)]),
+    "flat":  ([(2, 13), (12, 27), (26, 17.5)], [(6.5, 15.5), (13.5, 24.5), (22.5, 18)]),
+    "curl":  ([(15, 5), (14, 24.5), (29, 16.5)], [(16, 10), (16.5, 22), (25.5, 16.5)]),
+}
+
+
+def one_ear(pose):
+    outer, inner = EAR_POSES[pose]
+    c = Canvas()
+    c.poly(outer, "H")
+    c.poly(inner, "p")
+    fx, fy = (inner[1][0] + inner[2][0]) / 2, (inner[1][1] + inner[2][1]) / 2
+    for dx, dy, n in ((-3, -1, 4), (-1, -3, 5), (1, -2, 4), (-4, 1, 3)):
+        for t in range(n):
+            if c.get(int(fx + dx - t * 0.6), int(fy + dy - t)) in "Hp":
+                c.set(int(fx + dx - t * 0.6), int(fy + dy - t), "w")
+                c.set(int(fx + dx - t * 0.6) + 1, int(fy + dy - t), "w")
+    c.poly([outer[0], outer[1], (outer[1][0] + 1.5, outer[1][1] - 1.5), (outer[0][0] + 1.2, outer[0][1] + 2.5)], "h",
+           only_over="H")
+    ax, ay = outer[0]
+    c.poly([(ax - 1, ay - 1), (ax + 4, ay + 5.5), (ax + 0.5, ay + 6.5)], "a", only_over="Hh")
+    c.outline("k")
+    return c
+
+
+for pose in EAR_POSES:
+    blocks.append(sprite(f"bust_ear_{pose}", one_ear(pose)))
+
 # ---------------------------------------------------------------- eyes (patches 32x13 drawn at 16,32)
 EYE_W, EYE_H = 32, 13
 
@@ -211,6 +247,24 @@ def eye_patch(kind):
             if kind == "sparkle":         # star-shaped catchlight (Prefect "sparkling eyes")
                 for (x, y) in ((5, top + 5), (4, top + 6), (5, top + 6), (6, top + 6), (5, top + 7)):
                     P(x, y, "w")
+        elif kind == "aside":             # looking away to the viewer's left: white shows on the other side
+            for x in range(-1, 9):
+                P(x, 1, "k")
+            for x in range(-2, 9):
+                P(x, 2, "k")
+            P(-2, 3, "k"); P(-3, 4, "k")
+            shape = [(1, 7), (0, 8), (0, 8), (0, 8), (0, 8), (0, 8), (0, 8), (1, 7), (2, 6)]
+            white = range(6, 8) if not mirror else range(0, 2)      # canvas-left gaze for both eyes
+            for k, (a, b) in enumerate(shape):
+                y = 3 + k
+                for x in range(a, b):
+                    P(x, y, "w" if x in white else ("e" if k < 3 or x in (a, b - 1) else "i"))
+            for x in range(-1, 3):
+                P(x, 12, "k")
+            px = 2 if not mirror else 5
+            for y in range(6, 9):
+                P(px, y, "e"); P(px + 1, y, "e")
+            P(px - 1, 4, "w"); P(px, 4, "w"); P(px - 1, 5, "w")
         elif kind == "happy":             # closed ^ ^
             for x, y in ((0, 7), (1, 6), (2, 5), (3, 4), (4, 4), (5, 5), (6, 6), (7, 7)):
                 P(x, y, "k"); P(x, y + 1, "k")
@@ -238,7 +292,7 @@ def eye_patch(kind):
     return c
 
 
-for kind in ("neutral", "happy", "half", "wide", "closed", "sparkle"):
+for kind in ("neutral", "happy", "half", "wide", "closed", "sparkle", "aside"):
     blocks.append(sprite(f"bust_eyes_{kind}", eye_patch(kind)))
 
 # ---------------------------------------------------------------- mouths (patches 11x5 drawn at 27,46)
@@ -444,12 +498,127 @@ def outfit(kind):
             c.set(x, 57, "a")
         c.poly([(29, 51), (32, 53.5), (29, 56)], "a")
         c.poly([(35, 51), (32, 53.5), (35, 56)], "a")
+    # --- dating-sim outfits: PG, bare shoulders and collarbones at most, never lower
+    elif kind == "sweater_off":           # Nia: slouchy knit slipping off one shoulder
+        c.poly([(4, 64), (8, 57), (20, 53), (44, 53), (56, 57), (60, 64)], "o")
+        c.poly([(8, 57), (20, 53), (28, 53), (27, 57), (19, 59), (11, 61), (6, 62)], "s")
+        for x in range(9, 27):            # collarbone and the soft edge of the knit
+            y = int(58 - (x - 9) * 0.25)
+            if c.get(x, y) == "s":
+                c.set(x, y, "d")
+        for x in range(6, 28):
+            y = int(round(62 - (x - 6) * 0.3))
+            c.set(x, y, "O"); c.set(x, y + 1, "O")
+        for x in range(30, 58, 3):        # ribbed knit
+            for y in range(56, 64):
+                if c.get(x, y) == "o":
+                    c.set(x, y, "O")
+    elif kind == "tank_hoodie":           # Nia: hoodie unzipped over a tank top
+        c.ellipse(32, 55, 17, 5, "O", rows=(50, 58))
+        c.poly([(24, 53), (40, 53), (39, 64), (25, 64)], "w")
+        c.poly([(25, 53), (39, 53), (37, 58.5), (27, 58.5)], "s")
+        for x in range(27, 38):
+            c.set(x, 58 + (1 if 29 <= x <= 35 else 0), "q")
+        c.poly([(22, 54), (27, 64), (19, 64), (18, 56)], "q")
+        c.poly([(42, 54), (37, 64), (45, 64), (46, 56)], "q")
+        for y in range(56, 64):
+            c.set(24, y, "O"); c.set(40, y, "O")
+    elif kind == "crop_sport":            # Mako: sporty top, bare shoulders, her chain necklace
+        c.poly([(4, 64), (8, 57), (20, 53), (44, 53), (56, 57), (60, 64)], "s")
+        c.poly([(18, 59), (46, 59), (47, 64), (17, 64)], "o")
+        c.poly([(21, 53), (24, 53), (22, 59), (19, 59)], "O")
+        c.poly([(40, 53), (43, 53), (45, 59), (42, 59)], "O")
+        for x in range(18, 47):
+            c.set(x, 59, "O")
+        for x in range(8, 20):
+            c.set(x, int(58 - (x - 8) * 0.2), "d")
+        for x in range(45, 57):
+            c.set(x, int(56 + (x - 45) * 0.2), "d")
+        for x in range(28, 37):
+            c.set(x, 55 + (1 if 30 <= x <= 34 else 0), "a")
+    elif kind == "dress":                 # Mako: sleeveless going-out dress on thin straps
+        c.poly([(4, 64), (8, 57), (20, 53), (44, 53), (56, 57), (60, 64)], "s")
+        c.poly([(19, 60), (45, 60), (47, 64), (17, 64)], "O")
+        for x in range(19, 46):
+            c.set(x, 60, "q")
+        for t in range(8):
+            c.set(22 - t // 4, 53 + t, "q"); c.set(42 + t // 4, 53 + t, "q")
+        for x in range(10, 20):
+            c.set(x, int(58 - (x - 10) * 0.2), "d")
+        for x in range(28, 37):
+            c.set(x, 55 + (1 if 30 <= x <= 34 else 0), "a")
+    elif kind == "blouse":                # Shio: fitted blouse, top button open
+        c.poly([(4, 64), (8, 57), (20, 53), (44, 53), (56, 57), (60, 64)], "o")
+        c.poly([(28, 52), (36, 52), (32, 58)], "s")
+        c.poly([(24, 52), (30, 52), (31.5, 57), (26, 56)], "w")
+        c.poly([(40, 52), (34, 52), (32.5, 57), (38, 56)], "w")
+        for y in (59, 62):
+            c.set(32, y, "q")
+        for y in range(57, 64):
+            c.set(32 if y > 58 else 33, y, "O")
+    elif kind == "sundress":              # Shio: light sundress, straps, a small frill
+        c.poly([(4, 64), (8, 57), (20, 53), (44, 53), (56, 57), (60, 64)], "s")
+        c.poly([(18, 59), (46, 59), (47, 64), (17, 64)], "o")
+        for x in range(18, 47):
+            c.set(x, 59 - (x % 3 == 0), "w")
+        for t in range(7):
+            c.set(23, 53 + t, "O"); c.set(41, 53 + t, "O")
+        for x in range(9, 20):
+            c.set(x, int(58 - (x - 9) * 0.2), "d")
     c.outline("k")
     return c
 
 
-for kind in ("hoodie", "jacket", "cardigan", "apron"):
+for kind in ("hoodie", "jacket", "cardigan", "apron", "sweater_off", "tank_hoodie", "crop_sport", "dress", "blouse",
+             "sundress"):
     blocks.append(sprite(f"bust_outfit_{kind}", outfit(kind)))
+
+# ---------------------------------------------------------------- hands (dating-sim gestures from the cards)
+# Shio pushes her glasses when they haven't slipped and touches her wrist when processing; Mako touches her
+# chain when recalibrating; Nia pushes her fringe when processing. Sleeves use the outfit ramp.
+
+
+def hand(kind):
+    """Sleeve (outfit ramp) with a cuff, then the hand: palm, knuckles, and the finger that does the gesture."""
+    c = Canvas()
+
+    def arm(pts, cuff):
+        c.poly(pts, "O")
+        c.poly(cuff, "o")
+
+    if kind == "glasses":                 # right hand, index finger pushing the bridge up
+        arm([(43, 64), (57, 64), (46, 47), (37, 50)], [(37, 50), (46, 47), (45.5, 45), (36.5, 48)])
+        c.ellipse(41, 44, 5, 4.5, "s")                            # palm, back of the hand toward us
+        c.poly([(37, 43), (39.5, 42), (34.5, 36.5), (32.5, 37.5)], "s")   # index finger to the bridge
+        c.poly([(39.5, 41), (43, 40), (41, 36.5), (38.5, 37.5)], "s")     # middle finger, curled lower
+        for (x, y) in ((39, 46), (40, 47), (42, 47), (43, 46)):
+            c.set(x, y, "d")
+    elif kind == "wrist":                 # at the chest: her left hand around her right wrist
+        arm([(10, 64), (22, 64), (29, 58), (23, 55)], [(23, 55), (29, 58), (30.5, 56.5), (24.5, 53.5)])
+        arm([(54, 64), (42, 64), (37, 59), (43, 56.5)], [(43, 56.5), (37, 59), (35.5, 57.5), (41.5, 55)])
+        c.ellipse(33, 56.5, 4.5, 3.5, "s")                        # the right hand, relaxed
+        c.ellipse(29.5, 57.5, 4, 3.2, "s")                        # the left hand closing around its wrist
+        for x in range(30, 36, 2):
+            c.set(x, 55, "d")
+        c.set(27, 58, "d"); c.set(28, 59, "d")
+    elif kind == "chain":                 # left hand, two fingers on the necklace
+        arm([(8, 64), (21, 64), (27, 59), (20, 55)], [(20, 55), (27, 59), (28.5, 57), (21.5, 53.5)])
+        c.ellipse(27.5, 56, 4.2, 3.6, "s")
+        c.poly([(29, 54), (32.5, 54.5), (33, 56.5), (29.5, 56.5)], "s")   # fingertips at the chain
+        c.set(26, 57, "d"); c.set(27, 58, "d")
+    elif kind == "fringe":                # left hand pushing the fringe aside, forearm leaving the frame low-left
+        arm([(2, 64), (14, 64), (22, 38), (13, 37)], [(13, 37), (22, 38), (22.5, 35.5), (13.5, 34.5)])
+        c.ellipse(18.5, 31, 5.5, 4.5, "s")
+        for k in range(3):                # fingers slipping into the hair
+            x0 = 17 + k * 3.2
+            c.poly([(x0, 28.5), (x0 + 2.4, 28), (x0 + 4, 23.5), (x0 + 1.8, 23)], "s")
+        c.set(16, 33, "d"); c.set(17, 34, "d"); c.set(19, 34, "d")
+    c.outline("k")
+    return c
+
+
+for kind in ("glasses", "wrist", "chain", "fringe"):
+    blocks.append(sprite(f"bust_hand_{kind}", hand(kind)))
 
 # ---------------------------------------------------------------- accessories
 

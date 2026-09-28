@@ -1,0 +1,306 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Laptop closed. The build shipped an hour ago. She is still on the couch, not three feet from you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "They accepted the patch. No notes.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Rent's due. I have it. The flood settlement cleared.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I could move back. In a week. Two, if I drag it out.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't want to.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I mean. I have a desk. It's efficient here.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her fringe back. Doesn't say anything else."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was going to fix it. The apartment. I mean.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "But then I kept not fixing it. And you kept letting me not fix it.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm not good at this part.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She's close enough that you can feel the heat off her. She doesn't move away."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're still here.",
+    "face": "sparkle",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I noticed. The tea. The staying. All of it.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I want to stay. Not because the flood. Because of you.",
+    "face": "sparkle",
+    "ears": "up",
+    "tail": "wrap",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She leans in. Her tail wraps around your wrist, deliberate, and stays there."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's close. Her tail is wrapped around your wrist. What do you do?",
+    "options": [
+     {
+      "text": "Kiss her. Slow, like you mean it.",
+      "trigger": "too_much_warmth",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Oh.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "puff",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She goes still for a second. Then she kisses you back, careful, like she's checking it's real."
+       },
+       {
+        "who": "her",
+        "text": "That's... statistically poor. For my heart rate.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Say you want her to stay too.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You don't have to say that.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "you",
+        "text": "I know. I mean it."
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail loosens, then curls tighter around your wrist."
+       }
+      ]
+     },
+     {
+      "text": "Ask what she needs right now.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I need... I don't know. Don't make me say it.",
+        "face": "sad",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls her tail back, tucks it around herself."
+       },
+       {
+        "who": "her",
+        "text": "I was going to fix it. I was.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Stay quiet. Let her set the pace.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She watches you for a long moment. Then she leans in the rest of the way."
+       },
+       {
+        "who": "her",
+        "text": "...okay.",
+        "face": "sparkle",
+        "ears": "up",
+        "tail": "wrap",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The kiss is slow. Her tail stays wrapped around you the whole time."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "end_best",
+ "kind": "ending",
+ "threshold": 76,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. She tells you, in her own precise way, that she wants to stay after the flood is fixed, not as a roommate who earns her keep. Romantic and tender, and a little suggestive in her dry, precise way: a kiss, and if the moment goes further, fade to black."
+}

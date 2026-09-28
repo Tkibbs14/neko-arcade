@@ -1,0 +1,179 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Two baskets by the couch. She's been at this a while. Every fold lands at the same angle."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Basket's yours. Left side. I wasn't going to fold around it.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You did my laundry?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Machine was running. Half-empty drum is a waste.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She matches two of your socks and sets them on your pile without looking up."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your towels were taking up the rack. Also your towels were damp. Both problems, one solution.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't make it a thing. It's laundry. It's the most solved problem in the apartment.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail has gone completely still. She folds the same shirt twice."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting for the verdict, whatever it is.",
+    "options": [
+     {
+      "text": "Fold the rest of the basket beside her. Say nothing.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She watches your hands for one fold, then goes back to hers."
+       },
+       {
+        "who": "her",
+        "text": "Left side is shirts. Right is everything that doesn't matter.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Thanks. You didn't have to do mine.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her ears flatten fast. She smooths them with a hand like she's fixing her fringe."
+       },
+       {
+        "who": "her",
+        "text": "It wasn't for you. It was for the drum.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You look wrecked. Did you sleep at all last night?",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "The fold in her hands stops mid-shirt."
+       },
+       {
+        "who": "her",
+        "text": "I'm fine. The build isn't.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "So what do I owe you for this?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her tail tucks before her face moves at all."
+       },
+       {
+        "who": "her",
+        "text": "Nothing. It's a washing machine, not a favor.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "Laundry night: she folds with machine precision, your things included, and does not mention it."
+}

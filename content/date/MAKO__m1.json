@@ -1,0 +1,338 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, one softer. A pause. Then the soft one again, as if she hoped you would not hear the second."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I made extra. It would have gone bad.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then goes still behind her. Her ears stay up, tracking you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twelve. I'm being nice. You're welcome.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Day twelve of what, exactly?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You know what. Don't make me say it.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is holding the container like it personally offended her.",
+    "options": [
+     {
+      "text": "You remembered I hate cilantro. That's not extra, that's a meal.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I remembered because you complained about it for twenty minutes. It was self-defense.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls around her ankle once before she catches it and lets it drop."
+       },
+       {
+        "who": "her",
+        "text": "Anyway. Eat it before it gets cold. I have standards.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Extra? You made enough for three people. Who else is coming?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "No one. I cook in batches. It's efficient.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten, then swivel forward again as if correcting themselves."
+       },
+       {
+        "who": "her",
+        "text": "I'm fulfilling the terms. That's all this is.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You didn't have to bring anything. I had crackers.",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Crackers. That's not dinner. That's a sad noise in a box.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes the container into your hands. Her fingers are warm through the plastic."
+       },
+       {
+        "who": "her",
+        "text": "Don't read into it. I just refuse to watch you waste away next door.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps inside without being asked. Her headband is crooked by two degrees. She fixes it, then glances at you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your kitchen light is still out. I noticed from the hallway. It's been three days.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You've been counting the days my light is out?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I notice things. It's a skill. Don't make it a personality trait.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "wrap",
+    "pose": "away",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She sets the container on your counter, then turns back. Her ears swivel toward you before her eyes do."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I could fix it. The light. I have a spare bulb. It's not a big deal.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The offer hangs there. Her tail flicks once, then stills. She is waiting."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is already halfway to your kitchen drawer.",
+    "options": [
+     {
+      "text": "You don't have to. But if you want to, I'll hold the flashlight.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Fine. But you hold it steady. Last time you wobbled.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wags twice before she notices and pins it still."
+       },
+       {
+        "who": "her",
+        "text": "This doesn't count as nice. It's maintenance. Totally different category.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You just happened to have a spare bulb? For my exact fixture?",
+      "trigger": "use_sincerity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks low. She grabs the drawer handle and does not look at you."
+       },
+       {
+        "who": "her",
+        "text": "I'm done being nice for today. The terms don't specify hours.",
+        "face": "sad",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You're really committed to this bet, huh? Day twelve and counting.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not counting. You're counting. I just happen to know the number.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears stay flat. She sets the bulb down on the counter, harder than necessary."
+       },
+       {
+        "who": "her",
+        "text": "Do it yourself. I have things to do.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m1",
+ "kind": "milestone",
+ "threshold": 10,
+ "outfit_unlock": 0,
+ "desc": "The Extra: she made too much again. The reason is thin. She knocks anyway."
+}

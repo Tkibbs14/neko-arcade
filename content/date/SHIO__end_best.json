@@ -1,0 +1,230 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A knock. Two raps, precise. When you open, Shio is already mid-sentence."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water is back on. Administratively resolved. My shower is functional again.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I am aware that I no longer require your facilities.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I knocked anyway. That was a conscious decision. I wanted you to know that.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears stay turned toward you, even when she looks at the floor."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I have been thinking. About variables. About the ones I cannot control.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You are one. I have stopped trying to categorize you. That is not a small thing for me.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I trust you. I am saying it out loud because you deserve the words, not just the data.",
+    "face": "flustered",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail wraps once around her own ankle, a small self-contained knot."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You make it harder to leave. Anyway.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "wrap",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She does not step back. The hallway is quiet. Her glasses are slightly fogged."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I would like to stay. Not because of an errand. Because I want to.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Is that acceptable?",
+    "face": "flustered",
+    "ears": "perk",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is close enough that you can see the smudge on her lens. What do you do?",
+    "options": [
+     {
+      "text": "I want you to stay. No reason needed.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. Because I had already decided. I just wanted you to say it first.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She takes one step closer. Her tail sways, slow and deliberate."
+       }
+      ]
+     },
+     {
+      "text": "Your ears are doing that thing again.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - they do that. It's involuntary. Could you not look at me for thirty seconds.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes her glasses up even though they have not slipped. A pause. Then she steps back."
+       }
+      ]
+     },
+     {
+      "text": "You look tired. Maybe you should get some rest.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not tired. I'm processing. There is a difference.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I don't need to be handled. I came here because I wanted to. That was the point.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "end_best",
+ "kind": "ending",
+ "threshold": 74,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. The water is back on and she still knocks. She says she trusts you, out loud, and her ears stay turned toward you. Romantic and gently suggestive in her precise way: a kiss; if the moment goes further, fade to black."
+}

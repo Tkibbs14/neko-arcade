@@ -15,5 +15,8 @@
 /build/quality/p1/*
 !/build/quality/r*/report.md
 !/build/quality/p1/report.md
+!/build/quality/date*/
+/build/quality/date*/*
+!/build/quality/date*/report.md
 __pycache__/
 *.pyc

@@ -1,0 +1,271 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The door clicks shut. From the kitchen table, Nia's ears swivel toward the sound before she looks up."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Made too much ramen again.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "If you want some. Or ignore me. That works too.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You cooked? I thought you were coding."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build was compiling. Needed a break. Broth keeps.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Single pot. Not a whole thing.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her fringe back with one knuckle, eyes flicking to the laptop screen, then back to you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond?",
+    "options": [
+     {
+      "text": "Thanks. I'll grab a bowl. Mind if I join you?",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Bowl's in the cabinet. Left of the sink.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail gives a single flick, then settles. She moves her laptop a few inches to make room."
+       }
+      ]
+     },
+     {
+      "text": "You look tired. Did you sleep at all last night?",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. Build's almost done.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten for a second before she turns back to the screen."
+       }
+      ]
+     },
+     {
+      "text": "Why'd you make extra? You barely eat when you're coding.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Broth needed using. It's not a question.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She closes the laptop with a soft click. Her tail tucks tight against the chair."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A minute passes. Steam curls off the pot. The only sound is the laptop fan winding down."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There's a bug in the water level. Collision detection. Not urgent.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She tilts the screen toward you, then stops, as if she didn't mean to."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I can fix it. Just noting it. While you eat.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you do?",
+    "options": [
+     {
+      "text": "I'll take a look while you eat. Two sets of eyes.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's my build. I'll handle it.",
+        "face": "surprised",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls the laptop back, ears flat, and stares at the screen without typing."
+       },
+       {
+        "who": "her",
+        "text": "Just eat. It's fine.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I don't know anything about collision. I'll just eat.",
+      "trigger": "let_her_handle",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Bold. Statistically poor. But sure.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She turns back to the screen, but her tail sways once, loose."
+       }
+      ]
+     },
+     {
+      "text": "Tell me what you need and I'll do it.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't need anything. It's my build.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her shoulders pull in. The ramen sits untouched between you."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "intro",
+ "kind": "intro",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "You come home. Nia glances up from her laptop: she made too much ramen again, if you want some, or you can ignore her, that's fine too. First real evening as roommates."
+}

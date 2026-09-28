@@ -1,0 +1,265 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The kitchen light is off. Only the laptop glow from the couch reaches this far."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're back. There's tea. It's not for any reason.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls once before going still."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You made tea?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was making tea. You were in the vicinity.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't look up from the two mugs on the counter."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The tea is still steaming. What do you do?",
+    "options": [
+     {
+      "text": "Take the mug, say nothing, sit at the table.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't mention it.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her shoulders drop half an inch."
+       }
+      ]
+     },
+     {
+      "text": "Thank her for making tea.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's tea. Not a favor.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She picks up her mug and holds it without drinking."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to sit with you.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I was going to anyway. Couch is closer to the outlet.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She moves to the couch and sets her mug down beside yours."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She settles on the far end of the couch, one leg tucked under her, laptop untouched on the table."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build's stable. For now.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She watches the steam rise from her tea, not the screen."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You can stay. If you want. No reason.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls and stays curled."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "No reason is my favorite reason."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's not a reason. That's a loophole.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The tea is half gone. She hasn't opened the laptop.",
+    "options": [
+     {
+      "text": "Stay put. Let the silence be enough.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Okay.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She shifts an inch closer, shoulder almost touching yours."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she's okay. She looks tired.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. I was already going to sleep.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands and takes her mug to the sink, back to you."
+       }
+      ]
+     },
+     {
+      "text": "Push her to say what she actually wants.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't do that. You know I don't do that.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m4",
+ "kind": "milestone",
+ "threshold": 52,
+ "outfit_unlock": 0,
+ "desc": "She makes something for you (tea, ramen, a tiny level) without framing it as logistics."
+}

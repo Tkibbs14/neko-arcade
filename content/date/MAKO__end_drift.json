@@ -1,0 +1,236 @@
+{
+ "location": "hallway",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The hallway at 11:47 PM. Mako is at her door, key in hand, headband perfectly straight."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Oh. Hey.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Just getting in. Long day.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move to unlock her door. Her tail doesn't move either. It's too still."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Hey. You're up late."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm always up late. You know that.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. Goodnight.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She turns toward her door but doesn't open it. Her hand hovers over the knob."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Actually. I need to ask you something.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day thirty was yesterday. So we're done. Officially.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I just want to know if you're going to be weird about it.",
+    "face": "smug",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you answer?",
+    "options": [
+     {
+      "text": "Weird how? You're the one standing in the hallway.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I am not standing. I am loitering. There's a difference.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail puffs once, then smooths. She's trying not to smile."
+       }
+      ]
+     },
+     {
+      "text": "The bet was real. I took it seriously.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. That's good. Because I did too.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I mean. Obviously. It was my bet.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "So day thirty-one is just a normal day now?",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Yes. Normal. Totally normal.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She says it too fast. Her ears rotate backward for half a second."
+       }
+      ]
+     },
+     {
+      "text": "I'm not going to laugh at you, if that's what you're asking.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I wasn't asking that.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I don't need you to be careful with me. I'm fine.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her voice got quieter at the end. She's staring at the wall past your shoulder."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "end_drift",
+ "kind": "ending",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "Day 31. The bet is over and she goes back to being professionally pleasant in the hallway. The headband is straight again."
+}

@@ -1,0 +1,307 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Your couch. 1:12 AM. Her case notes are a neat stack on the floor now, squared off at the edges."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I should go. I have a deposition at nine and my suit is at my place, which is currently without water, which is administratively temporary.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move. Her tail has curled around the edge of the cushion, holding on."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively temporary. I keep saying that. It doesn't become less true.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been sleeping less. That's not a complaint, it's a data point. My apartment is quiet in a way that registers as absence.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You don't have to go yet."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's the thing. I want to. Stay. I'm saying it without the wrapper. Don't go.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears flatten, then slowly rise again. She is watching your face the way she watches a scene: for what's actually there."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I know what loss looks like. That doesn't make it easier to - anyway. I'm not asking you to fix anything. I'm asking you to not leave the room.",
+    "face": "sad",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is looking at you, waiting.",
+    "options": [
+     {
+      "text": "I'm not going anywhere.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her tail uncurls and sways once, slow, like a metronome finding its tempo."
+       },
+       {
+        "who": "her",
+        "text": "Okay. Okay. I don't know what to do when someone just. Stays.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You memorized my schedule. I noticed.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "puff",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears curl inward, hiding interest, and she doesn't correct them."
+       }
+      ]
+     },
+     {
+      "text": "You're exhausted. Let me take care of you.",
+      "trigger": "treat_fragile",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not fragile. I'm tired. There's a difference, and I need you to know it.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands, smooths her cardigan. Perfect grammar. Complete sentences."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The room settles. The radiator ticks. She is still here, which is its own kind of answer."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I called a Jane Doe once. Jane. After someone I tried not to think about. It didn't work. I thought about her anyway.",
+    "face": "sad",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't tell people that. I'm telling you. I think I trust you. I'm saying it.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail wraps once around her own ankle, a small self-hold. She is not performing composure. She is just here."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You make it harder to leave. Anyway.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "wrap",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The lamp is still on. She hasn't moved.",
+    "options": [
+     {
+      "text": "Then don't leave.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She sets her glasses on the arm of the couch, lens-side down. A deliberate, unguarded motion."
+       },
+       {
+        "who": "her",
+        "text": "Okay. I'll stay. But I'm taking the left side. I sleep on the left side. It's a fixed variable.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "fade",
+        "text": "The lamp clicks off."
+       }
+      ]
+     },
+     {
+      "text": "Tell me about the case that got to you.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It was a kid. My age at the time. I became more precise after, not less. That's the whole story.",
+        "face": "neutral",
+        "ears": "still",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She breathes out. Slowly. Like she has been holding it since the deposition was scheduled."
+       },
+       {
+        "who": "her",
+        "text": "You didn't flinch. Most people do. Thank you for not doing that.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I could come closer, if you want.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't. Not yet. I need to - I need to be the one who closes the distance. I'm not uncomfortable. I'm processing.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands, puts two steps between you. The radiator ticks. She is still here, which is something."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m6",
+ "kind": "milestone",
+ "threshold": 74,
+ "outfit_unlock": 2,
+ "desc": "She asks you not to go. Quiet and charged: she is direct about wanting you close, in her clinical way."
+}

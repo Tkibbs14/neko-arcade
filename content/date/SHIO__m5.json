@@ -1,0 +1,270 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The case file is closed. Her pen is capped. She is still here."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been thinking about what you said. About the door frame.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's not just the frame. The whole building is structurally questionable.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I could fix it. If you wanted. Not a conversation. Just a thing.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still. She is not talking about the door frame."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's left an opening. How do you answer?",
+    "options": [
+     {
+      "text": "I'd like that. You fixing things here.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You'd like that.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes her glasses up even though they haven't slipped."
+       }
+      ]
+     },
+     {
+      "text": "You don't have to fix things to stay.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Is that your way of saying you want to be here?",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not uncomfortable. I'm processing.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten, then slowly rise again."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She is quiet for a long moment. The radiator ticks."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't know what to do when someone just. Stays.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's not data. That's just true.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been sleeping less. That's not a symptom. That's just - you.",
+    "face": "flustered",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls around her own ankle. She doesn't seem to notice."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The room is very quiet. What do you do?",
+    "options": [
+     {
+      "text": "Then stay. Just for tonight.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Just for tonight.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Okay. But I'm setting an alarm for 5. Court prep.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I'm not going anywhere. You can sleep.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You say that like it's simple.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "wrap",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She leans her head against the couch back, eyes half-closed."
+       }
+      ]
+     },
+     {
+      "text": "Your ears are doing that thing again.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't -",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls her cardigan hood up, covering her ears entirely."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 64,
+ "outfit_unlock": 0,
+ "desc": "She says what she means without the wrapper of data and variables."
+}

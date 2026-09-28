@@ -1,0 +1,335 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "her",
+    "text": "I appreciate access to your bathroom. The water situation is administratively temporary.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She stands in the kitchen doorway, cardigan sleeves pulled over her hands, not quite looking at you."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You can stay. I was just making tea."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I wasn't waiting. Assessing variables. But tea would be acceptable.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps inside, ears swiveling toward the kettle, tail curling once around her own ankle."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your kitchen is structurally sound. Unlike your door frame. I could fix that, if you have a screwdriver.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You noticed that?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I notice most things. It is not a personal failing.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, betraying a satisfaction she does not put into words."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. The court filing was due. I prioritized correctly.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You forgot to pay your water bill because of a court filing."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively temporary. My prioritization was not.",
+    "face": "annoyed",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears flatten, but her tail keeps a slow, steady sway - she is not truly annoyed."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond?",
+    "options": [
+     {
+      "text": "That sounds like a lot of pressure.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It is a case. The dead require nothing emotionally. That is the appeal.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears stay up, but her tail curls slightly around her leg."
+       }
+      ]
+     },
+     {
+      "text": "Your ears are doing something.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't -",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She turns her head, one hand pushing her glasses up though they have not slipped."
+       }
+      ]
+     },
+     {
+      "text": "That's really morbid, you know.",
+      "trigger": "call_it_morbid",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't think that's a good use of either of our time.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail drops, and she takes a half-step back toward the door."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The kettle clicks off. She does not move to leave."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I made too much. Inefficient to waste it.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pours two cups without asking, then sets one in front of you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I noticed you haven't been sleeping. The light in your window stays on past two.",
+    "face": "neutral",
+    "ears": "curl",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You've been watching my window?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I collect data. It is not the same as watching. Anyway.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "flick",
+    "pose": "away",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks twice, then stills. She stares at her tea as if it holds case notes."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "I'm glad you're here.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't know what to do when someone just. Stays.",
+        "face": "surprised",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls around her wrist, and she does not look away."
+       }
+      ]
+     },
+     {
+      "text": "You should get some sleep too.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not uncomfortable. I'm processing.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail drops, and she stands, chair scraping softly."
+       }
+      ]
+     },
+     {
+      "text": "You memorized my schedule, didn't you?",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "wag",
+        "pose": "mid",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wags once, a quick, involuntary sweep, then stills."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m1",
+ "kind": "milestone",
+ "threshold": 24,
+ "outfit_unlock": 0,
+ "desc": "She stays past the errand without a reason, and the conversation runs long."
+}

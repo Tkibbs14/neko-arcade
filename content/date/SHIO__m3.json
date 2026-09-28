@@ -1,0 +1,311 @@
+{
+ "location": "kitchen",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The kitchen light hums. Two mugs sit on the counter, one untouched. Shio stands by the sink, cardigan sleeves pushed to her elbows."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your faucet pressure is inconsistent. You should have that looked at. Anyway.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You noticed that in one visit?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I notice things. It's not a compliment. It's an occupational hazard.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls once, slow, then goes still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The case I mentioned. I can't discuss details. But the victim was twenty-two. Same as me. That's all.",
+    "face": "tired",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't know why I said that. It's late. I should go.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "away",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's halfway to the door.",
+    "options": [
+     {
+      "text": "Stay. I've got nowhere to be.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's... not an argument. But I'll allow it.",
+        "face": "surprised",
+        "ears": "swivel",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "One ear angles toward you. She doesn't seem to notice."
+       }
+      ]
+     },
+     {
+      "text": "You can talk about it. I won't flinch.",
+      "trigger": "not_flinch",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "People say that. Then they do. It's fine.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her glasses are smudged on the left lens. She doesn't fix it."
+       }
+      ]
+     },
+     {
+      "text": "Twenty-two. That's heavy. I get it.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not asking for that. I'm fine. It's just data.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her perfect grammar lands like a door closing."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She drifts back toward the counter, not quite sitting, one hand resting on the edge."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your mug is from the ceramics place on Fifth. The one with the bad hours. I've seen the bag in your recycling.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You've been going through my recycling?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been walking past it. It's a hallway. People leave things out. Anyway.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "wrap",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She adjusts her glasses even though they haven't slipped. Her ears swivel toward you and stay there."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Empirically, you're worse at small talk than I am. That's a high bar. I should know.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "Her ears are angled at you. She hasn't said a word about it.",
+    "options": [
+     {
+      "text": "Say nothing. Just hold her gaze.",
+      "trigger": "notice_ears_quietly",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She holds the look for three full seconds. Her tail goes completely still."
+       },
+       {
+        "who": "her",
+        "text": "You're not going to ask. Most people ask.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Anyway. The water situation is administratively temporary. I'll have it back by Thursday.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Your ears just moved. Toward me.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - they don't do that. You're mistaken.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Both ears flatten against her hair. Her hand shakes slightly on the counter."
+       }
+      ]
+     },
+     {
+      "text": "You remembered my mug. I remembered your order.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Black coffee, no sugar. You didn't have to.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls inward, a slow corkscrew. She doesn't explain it."
+       }
+      ]
+     },
+     {
+      "text": "I could make you laugh. Give me one try.",
+      "trigger": "make_her_laugh",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Statistically unlikely. But proceed.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The corner of her mouth twitches before she can stop it. A real one."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m3",
+ "kind": "milestone",
+ "threshold": 44,
+ "outfit_unlock": 1,
+ "desc": "Her ears move toward you and she does not explain it."
+}

@@ -1,0 +1,219 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "her",
+    "text": "So I have compiled a list of all the nice things I have done for you since day one.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "A list? You actually wrote it down?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's color-coded. Green is food, blue is favors, red is when I didn't say something mean.",
+    "face": "sparkle",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls into a question mark as she watches your reaction."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day twelve. I'm being nice. You're welcome.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's a very clear system. You can see exactly how compliant I've been.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "The list is longer than I expected."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Obviously. I don't half-do things.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway, you should probably say something nice about it. That's the polite response.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears swivel toward you, waiting."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond to her list?",
+    "options": [
+     {
+      "text": "This is impressive. You really committed to the bit.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not a bit. It's a legally binding contract.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "But... thanks for noticing the effort. Most people wouldn't.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "I bet you had to think hard to come up with all these.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I didn't have to think hard. It's just facts.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. The list suddenly seems less important."
+       }
+      ]
+     },
+     {
+      "text": "You're really milking this bet, huh?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fulfilling the terms. That's all this is.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "And if you think it's a joke, then maybe I should stop.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "That's a lot of work for someone who doesn't care.",
+      "trigger": "use_sincerity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She touches her necklace, recalibrating."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h4",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She is being extremely nice to you on purpose, with a visible score."
+}

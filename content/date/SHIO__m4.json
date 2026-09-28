@@ -1,0 +1,357 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Shio is curled in the corner of your couch, case notes fanned out on the cushion. Her pen has stopped moving."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The marginalia on page six is inconsistent with the lab's timeline. Someone transcribed the timestamps wrong.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I should cross-reference with the original intake forms. Tomorrow. I'll do it tomorrow.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her glasses slide down her nose. She doesn't push them up. Her breathing goes slow and even."
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A page of notes is still balanced on her knee. Her tail wraps loosely around her own ankle."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Hey. You're falling asleep."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm not. I'm reviewing. The angle of the incised wound is - is not relevant to the couch.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. I should go. Your couch is not my apartment and I have a perfectly functional bed next door.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move. Her ears swivel toward you, then back toward the case file, then toward you again."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's making no move to get up. What do you do?",
+    "options": [
+     {
+      "text": "You don't have to go. Stay.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's - an inefficient suggestion. Your couch is not designed for sleeping.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I'll stay for fourteen more minutes. That's the optimal window before I lose the thread of the case.",
+        "face": "neutral",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Your water's still off. You could shower here in the morning.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "The water situation is administratively temporary. But. Logically, showering here would conserve time.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You look comfortable. I'll get a blanket.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not comfortable. I'm processing. There's a difference.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I should go. I've - overstayed. Thank you for the bathroom access. It was appreciated.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She settles back into the cushion. Her pen rolls off the edge of the couch and she doesn't reach for it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been sleeping less. Not because of the case. Well. Partly because of the case.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The ME's office runs cold. I keep a cardigan in my locker. It's not - it's just practical.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "wrap",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her head tips onto the armrest. Her glasses are crooked and she hasn't noticed."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I'll be right here if you need anything."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You don't have to - I'm not - that's -",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't know what to do when someone just. Stays.",
+    "face": "sad",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still. Then, slowly, it curls around your wrist - once, deliberate - before she pulls it back."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That was involuntary. Cats do that. It doesn't mean anything.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "If you say so."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's watching you from the corner of her eye. What do you say?",
+    "options": [
+     {
+      "text": "It means something to me.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's - you can't just - I'm going to sleep now. Don't interpret that as anything either.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She closes her eyes. Her breathing evens out almost immediately. One ear stays turned toward you."
+       }
+      ]
+     },
+     {
+      "text": "Want me to move those case notes so you don't crumple them?",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Yes. Please. They're - the originals are with evidence control. These are copies. But still.",
+        "face": "tired",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "You slide the pages into a neat stack on the floor. She watches your hands do it, then closes her eyes."
+       }
+      ]
+     },
+     {
+      "text": "You're safe here. Get some rest.",
+      "trigger": "treat_fragile",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not - I don't need to be told I'm safe. I identify what's left of people for a living. I know exactly how safe anyone is.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I'm going home. Thank you for the bathroom. Goodnight.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m4",
+ "kind": "milestone",
+ "threshold": 54,
+ "outfit_unlock": 0,
+ "desc": "She dozes off on your couch over her case notes, somewhere that isn't her apartment."
+}

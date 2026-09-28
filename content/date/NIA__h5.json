@@ -1,0 +1,179 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Laundry night. She folds on the couch, each shirt a perfect rectangle, your things in the pile too."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is cursed. Folding helps.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Almost done.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She folds one of your shirts with the same precision. Doesn't mention it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're behind on laundry. Not a comment.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You don't have to do mine."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I know.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She keeps folding. Tail tip curls once, then goes still."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you do?",
+    "options": [
+     {
+      "text": "Fold a few of hers without a word.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Those are mine.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She watches your hands for a second. Tail tip curls. She says nothing."
+       }
+      ]
+     },
+     {
+      "text": "You look exhausted. You should sleep.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She folds faster. The next shirt comes out crooked."
+       }
+      ]
+     },
+     {
+      "text": "Thanks for doing mine.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's nothing.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands, takes the basket to the hall, and stays there longer than the trip requires."
+       }
+      ]
+     },
+     {
+      "text": "Just sit with her. Fold your own.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "You sit. She keeps folding. The silence settles, warm and unhurried."
+       },
+       {
+        "who": "her",
+        "text": "This is... fine.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "Laundry night: she folds with machine precision, your things included, and does not mention it."
+}

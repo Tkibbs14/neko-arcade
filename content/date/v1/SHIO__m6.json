@@ -1,0 +1,352 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The case file has been closed for an hour. She hasn't moved from the corner of your couch."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The administrative error is resolved. Water returns at eight tomorrow.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I should go.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She does not get up."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You don't have to."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's not a variable I can control.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I mean. I don't know what to do when someone just. Stays.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The room is quiet. She is looking at you like the answer matters.",
+    "options": [
+     {
+      "text": "Stay where I am. Let her set the pace.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You're not moving.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Most people fill silence. You're just... here.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail settles into a slow, steady sway."
+       }
+      ]
+     },
+     {
+      "text": "Move closer. Put a hand near hers.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't -",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I need a moment to adjust to the new proximity.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls her cardigan tighter, a small retreat."
+       }
+      ]
+     },
+     {
+      "text": "Tell her you know she wouldn't stay if she didn't want to.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Empirically, you're worse at this than I am. But you're not wrong.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears tilt toward you and stay there."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She turns toward you on the couch, one knee drawn up, glasses catching the lamp."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been thinking about what you said. About the quiet.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I know what loss looks like. That doesn't make it easier to -",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You can finish it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't know what to do when someone just. Stays.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is waiting, ears flat, not hiding.",
+    "options": [
+     {
+      "text": "Tell her you're not going anywhere.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You say that like it's simple.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "It isn't. But I'm noting it.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She rests her head against your shoulder, light as a dropped file, and doesn't explain it."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to talk about the case that got to her.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not a topic for a couch at one in the morning.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I'm not uncomfortable. I'm processing.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still."
+       }
+      ]
+     },
+     {
+      "text": "Reach over and adjust her smudged glasses.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't - those are calibrated to my face.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Could you not look at me for thirty seconds.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes the glasses up herself, twice, though they haven't slipped."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m6",
+ "kind": "milestone",
+ "threshold": 74,
+ "outfit_unlock": 2,
+ "desc": "She asks you not to go."
+}

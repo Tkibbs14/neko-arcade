@@ -1,0 +1,180 @@
+{
+ "location": "doorway",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A single knock. Shio is in the hallway at two in the morning, cardigan sleeves past her wrists, ears standing straight up."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Two in the morning is statistically the best time to send you a fact. Fewer inputs. Anyway.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "far",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The fact: a person's handwriting changes under stress before their voice does. Courts find that interesting. I find that interesting.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You sent that and then walked over here."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively temporary. My bathroom remains under shutdown. Yours does not.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still, then gives one slow sway, like a decision."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I brought the fact as a pretext. I am aware it was a thin one. You may note the inefficiency.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is hovering in the doorway, waiting for you to decide what this is.",
+    "options": [
+     {
+      "text": "Come in. The kettle still works.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Tea. At this hour. I will accept that, but only on the condition it is not about me.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She steps in without another word, toes her shoes off by the mat, and stands in your kitchen like a variable she has finally stopped solving."
+       }
+      ]
+     },
+     {
+      "text": "That handwriting fact is going to keep me up.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I sat with it for forty minutes. A court filing is coming and I keep running it against the witness statements.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You did not change your expression when I said the words witness statements. I noticed that.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You remembered I hate being alone at 2am.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You said that once. I have been carrying it since, which is inefficient and I have not stopped.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "tuck",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears tilt toward you and stay there, and she does not explain it."
+       }
+      ]
+     },
+     {
+      "text": "Your ears look really nice tonight.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya- that's- I wasn't- they are simply reacting to temperature.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail puffs out to twice its width. Her ears flatten hard against her skull and stay that way."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h1",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She sends you a forensic fact at two in the morning and then appears at your door."
+}

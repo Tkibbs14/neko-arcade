@@ -1,0 +1,265 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A crack of thunder. Three precise knocks, then a fourth, as if the third had been audited."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "My water remains administratively temporary. You are now the closest functioning plumbing.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears flatten further, betraying what her steady voice does not."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I brought a flashlight. Storm readiness is just logistics. I can wait out the grid instability here. If convenient.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You do not have to say yes. But the hallway is drafty, and my cardigan is insufficient. Anyway.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Come in. I've got towels and a flashlight of my own."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Noted. Your bathroom access remains appreciated. I will be efficient.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps in, slipping off her shoes and lining them up with the doorframe as if measuring the gap."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your door frame repair is still structurally inadequate. I could loan you a level. It would take eleven minutes.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Eleven minutes? You've timed it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I time many things. It is not personal. It is methodology.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Lightning whitens the kitchen. She flinches exactly one centimeter, then pretends she did not."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I dislike the thunder. It is statistically harmless. My nervous system has not read the statistics.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was on a case that involved a power outage. Nothing gruesome. Just sequence reconstruction. The storm is a reminder.",
+    "face": "tired",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The storm rattles the windows. What do you do?",
+    "options": [
+     {
+      "text": "I bet I can beat you at cards before the power flickers.",
+      "trigger": "make_her_laugh",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Empirically, you're worse at this than I am. But I accept. For the data.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She loses the first hand, and a short, startled laugh escapes her. Her ears snap up as if to catch it."
+       },
+       {
+        "who": "her",
+        "text": "That was not a laugh. That was a respiratory anomaly. Anyway.",
+        "face": "flustered",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You're safe here. I'll sit with you until it passes.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You don't have to do that. I am capable of managing weather.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She sits on the edge of the couch, hands folded, and does not leave."
+       },
+       {
+        "who": "her",
+        "text": "I will stay. Provisionally. Because the lightning is still in range.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Why do you always hide behind data and variables?",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not hiding. I'm processing. There is a difference, and I would appreciate you not collapsing it.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail gives one sharp flick, then goes completely still."
+       }
+      ]
+     },
+     {
+      "text": "That case must have been awful for you.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't need managing. I need a dry couch and a functional flashlight. I have both now.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands and moves toward the window, putting the room between you."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h6",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A thunderstorm: she knocks with a flashlight and a very rational reason to wait it out at your place."
+}

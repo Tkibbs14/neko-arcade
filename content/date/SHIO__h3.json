@@ -1,0 +1,177 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "her",
+    "text": "I made too much. Inefficient to waste it.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The pot on your stove is larger than any she owns."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You brought your own cookware?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively temporary. The pot is not.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her glasses up though they have not slipped."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You remembered I don't like cilantro. You didn't have to.",
+    "face": "surprised",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls around her own ankle."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. It's a simple miso. Nothing to assess.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The case today. The one with the apartment fire. I don't want to talk about it.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She watches you over the rim of her glasses, waiting for your face to change."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The steam rises between you. What do you do?",
+    "options": [
+     {
+      "text": "Then we don't talk about it.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's. Acceptable.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears rotate forward a fraction, then hold."
+       }
+      ]
+     },
+     {
+      "text": "That must be hard for you.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not uncomfortable. I'm processing.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She sets her spoon down with exact care, as if the bowl were evidence."
+       }
+      ]
+     },
+     {
+      "text": "I could never do what you do.",
+      "trigger": "call_it_morbid",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Then don't. It's not morbid. It's necessary.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail puffs once, then smooths flat."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h3",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She made too much food. Inefficient to waste it."
+}

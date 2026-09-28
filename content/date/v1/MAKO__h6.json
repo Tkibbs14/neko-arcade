@@ -1,0 +1,159 @@
+{
+ "location": "her_room",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Rain taps the window. Three sharp knocks, one softer."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twenty-nine. I'm fulfilling the terms. That's all this is.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I brought a board game. You're going to lose. I've been practicing.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Here's how it works: I go first, I get two turns, and you can't block my moves. Any questions?",
+    "face": "happy",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "That's not how board games work."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It is now. I wrote the rules. They're right here. See? Tiny print. You can't read it without leaning in, and if you lean in, I get a free turn.",
+    "face": "smug",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, twice, then goes still. She's watching your face, not the board."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting. How do you respond?",
+    "options": [
+     {
+      "text": "Fine. But I get to invent a rule too.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Oh, you think you can out-rule me? Adorable. Go ahead, try.",
+        "face": "sparkle",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears swivel forward, fully focused. She's actually listening."
+       }
+      ]
+     },
+     {
+      "text": "I'm not playing if you stack the deck.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Stack the - I would never. I have integrity. This is just... strategic rule design.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Fine. One fair rule each. But I still go first.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You wrote rules? That's kind of cute.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not cute. It's thorough. There's a difference. And don't call me cute.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "The tip of her tail twitches. She sets the board down harder than necessary."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h6",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A rainy evening: she brings a board game she is sure she will win, and explains the rules in a way that favours her."
+}

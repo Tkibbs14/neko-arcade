@@ -1,0 +1,292 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The apartment is quiet. Nia's door is open. No build running. She's on the couch, laptop closed."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Hey.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You're not working?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "No.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't offer a reason. Her tail makes one slow flick, then settles."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Cool. I'm just gonna read."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you do?",
+    "options": [
+     {
+      "text": "Sit at the far end of the couch and open your book.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She stays exactly where she is. Doesn't reach for her laptop."
+       },
+       {
+        "who": "her",
+        "text": "That's fine.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "low",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to talk about what's going on.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nothing's going on.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She pushes her fringe back, twice."
+       }
+      ]
+     },
+     {
+      "text": "Say she looks tired and should rest.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks against the cushion. She doesn't move."
+       }
+      ]
+     },
+     {
+      "text": "Thank her for the ramen from the other night.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It was extra. Not a big deal.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes her fringe, then goes very still."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Minutes pass. She shifts on the couch, closer than before, but says nothing."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're still here.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls once before she stills it."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Yep."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Okay.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond?",
+    "options": [
+     {
+      "text": "Keep reading, but lean slightly so your shoulder almost touches hers.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She doesn't move away. Her tail gives one slow wag."
+       },
+       {
+        "who": "her",
+        "text": "The couch is a good temperature.",
+        "face": "neutral",
+        "ears": "curl",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She says it like a fact she just discovered."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to playtest something together.",
+      "trigger": "let_her_handle",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Not now.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The offer lands like a task. Her ears flatten, just slightly."
+       }
+      ]
+     },
+     {
+      "text": "Tell her you're glad she's here.",
+      "trigger": "too_much_warmth",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's just two weeks.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She gets up, takes her empty glass to the kitchen. Comes back with water. Sits down again."
+       }
+      ]
+     },
+     {
+      "text": "Notice she's been quiet and ask if something's wrong.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nothing's wrong.",
+        "face": "neutral",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't explain. But she doesn't leave, either."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m1",
+ "kind": "milestone",
+ "threshold": 15,
+ "outfit_unlock": 0,
+ "desc": "Her door is open with no task attached. She is just there, near where you are, and does not give a reason."
+}

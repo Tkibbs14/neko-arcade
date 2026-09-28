@@ -1,0 +1,205 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Shio stands at your sink, elbow-deep in the cabinet under it, tools laid out on a towel."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your cabinet door has been misaligned for at least six days. The hinge screws are stripped.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You noticed that?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I notice everything. It's a professional deformation. Anyway. I had the correct screws in my tool kit.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She tightens the final screw with two quick turns of the wrist, then wipes the cabinet door clean."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There. Structurally adequate now. The door should hold until the building is condemned.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You didn't have to do that."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was already here. It was inefficient to leave it. And you fixed my bathroom lock last month. Reciprocity.",
+    "face": "neutral",
+    "ears": "curl",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The apartment settles into quiet. She doesn't move toward the door."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been sleeping less. Not the case. Just- the quiet here is different from my place.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still standing by the sink. What do you do?",
+    "options": [
+     {
+      "text": "You can sleep here if you want. The couch is yours.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya- that's- I wasn't asking for-",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wraps around her own ankle. She doesn't say no."
+       }
+      ]
+     },
+     {
+      "text": "I noticed you've been tired lately.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I have a hearing next week. Court prep. It's administratively draining, not- anything else.",
+        "face": "neutral",
+        "ears": "curl",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I could stay up with you. If you want company.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't think that's a good use of either of our time.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She steps back toward the counter, putting the sink between you."
+       }
+      ]
+     },
+     {
+      "text": "Your ears are doing that thing again.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "They are not doing a thing. They are ears. They have a physiological response to ambient noise.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes her glasses up even though they haven't slipped."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h2",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She quietly fixes something in your apartment and pretends she didn't."
+}

@@ -81,6 +81,8 @@ u16 blend(u16 a, u16 b, int t);   /* t 0..256: 0 = a, 256 = b */
 void spr(int id, int x, int y, int flags);
 void spr_ramp(int id, int x, int y, int flags, const u16 *ramp);
 void spr_scaled(int id, int x, int y, int scale, int flags, const u16 *ramp);
+/* Smooth sizes (256 = 1x); ox, oy: the sprite's offset in source pixels inside a larger layered drawing. */
+void spr_scaled_q8(int id, int x, int y, int ox, int oy, int s_q8, int flags, const u16 *ramp);
 void spr_tinted(int id, int x, int y, int flags, const u16 *ramp, u16 tint, int alpha);
 int spr_w(int id);
 int spr_h(int id);
@@ -124,10 +126,10 @@ void mem_copy(void *d, const void *s, u32 n);
 /* ---- audio ---- */
 enum {
     SFX_BLIP, SFX_OK, SFX_BACK, SFX_MOVE, SFX_MEOW, SFX_MEOW_SAD, SFX_PURR, SFX_HIT, SFX_WALL,
-    SFX_GOAL, SFX_LOSE, SFX_COIN, SFX_SPLASH, SFX_BUZZ, SFX_DING, SFX_POP, SFX_WHOOSH, SFX_STEP,
+    SFX_GOAL, SFX_LOSE, SFX_COIN, SFX_SPLASH, SFX_BUZZ, SFX_DING, SFX_POP, SFX_WHOOSH, SFX_STEP, SFX_KNOCK, SFX_KNOCK_SOFT, SFX_THUNDER, SFX_CHIME,
     SFX_COUNT
 };
-enum { MUS_NONE = -1, MUS_MENU, MUS_HOCKEY, MUS_CAFE, MUS_MYSTERY, MUS_VILLAGE, MUS_KITTENS, MUS_COUNT };
+enum { MUS_NONE = -1, MUS_MENU, MUS_HOCKEY, MUS_CAFE, MUS_MYSTERY, MUS_VILLAGE, MUS_KITTENS, MUS_DATE, MUS_COUNT };
 void sfx(int id);
 void sfx_voice(int pitch);        /* one dialogue blip; pitch in semitones around A4 */
 void music(int track);
@@ -143,7 +145,7 @@ typedef struct {
 } Scene;
 void scene_set(const Scene *s);
 void scene_fade_to(const Scene *s);
-extern const Scene scene_menu, scene_rival, scene_detective, scene_cafe, scene_kittens, scene_village;
+extern const Scene scene_menu, scene_rival, scene_detective, scene_cafe, scene_kittens, scene_village, scene_date;
 
 /* ---- entry points used by the platform layers ---- */
 void game_init(void);

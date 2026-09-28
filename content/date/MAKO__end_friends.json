@@ -1,0 +1,241 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, one softer. You already know the pattern."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day thirty-one. I'm not here about the bet.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Okay."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Rematch. Best of three. You pick the terms, I'll pick the stakes.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears swivel toward the hallway, listening. She came alone."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't worry, I brought a whole new bet. This one's actually fair.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Because yesterday doesn't count. The terms were confusing. I checked.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Look, are you going to let me in or not? I have a rematch to win.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She shifts her weight, and her chain necklace taps against her collarbone."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "While I'm here, I made extra coffee. It would have gone cold. Don't make it weird.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She's holding two cups. The second one is yours. She doesn't hand it over yet."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "So. Rematch. Are you in, or are you scared?",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Rematch. Terms. Let's go.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. I was hoping you'd take it seriously.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wags once before she catches it."
+       }
+      ]
+     },
+     {
+      "text": "You're only here because you lost.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fulfilling the new terms. That's all this is.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She sets the second cup down on the hallway floor, farther from you than necessary."
+       },
+       {
+        "who": "her",
+        "text": "And for the record, yesterday wasn't a loss. It was a draw.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You made coffee. Before the rematch. Why?",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It was extra. That's the whole reason. Don't make it weird.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears rotate backward, a tell she can't hide."
+       }
+      ]
+     },
+     {
+      "text": "Only if you admit this isn't about the rematch.",
+      "trigger": "use_sincerity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She tightens her grip on the cup. The chain at her neck stills."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "end_friends",
+ "kind": "ending",
+ "threshold": 34,
+ "outfit_unlock": 0,
+ "desc": "Day 31. She knocks to demand a rematch, and you both know it is not about the rematch. Rivals, friends, something warm and unsaid."
+}

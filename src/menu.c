@@ -9,25 +9,43 @@
 #include "live.h"
 
 static int sel, idle_t, visits;
-static int talk_live, talk_sit;
+static int talk_live, talk_sit, talk_fixed;
 static char talk_text[128];
 static int pending_report = -1;
 static int nia_expr;
 
 void hub_report(int sit) { pending_report = sit; }
 
-static const struct { const char *title, *tag; int sit; u16 color; } builds[5] = {
+static const struct { const char *title, *tag; int sit; u16 color; } builds[6] = {
     { "Rival!", "Mako learns how you shoot", SIT_SEL_RIVAL, C_PINK },
     { "Whisker Detective", "AI-written cases with Shio", SIT_SEL_DETECTIVE, C_MINT },
     { "Nyan Cafe", "rush hour at Mocha's, co-op", SIT_SEL_CAFE, C_ORANGE },
     { "Foster Kittens", "kittens with learning brains", SIT_SEL_KITTENS, C_GOLD },
     { "Nekomura", "the village remembers you", SIT_SEL_VILLAGE, C_SKY },
+    { "Thin Walls", "a dating sim: Nia, Mako, Shio", -1, C_ROSE },
+};
+
+/* NekoLM has no situation for build 06 yet (it needs new lines and a retrain), so here Nia says one of these,
+ * written in her card's voice, and the tag under her line says so. */
+static const char *const date_lines[3] = {
+    "Build six. A dating sim. I'm one of the routes. Don't ask.",
+    "The tail animation took eleven hours. It was a hard problem.",
+    "It's for testing. The save data is 48 bytes. Efficient.",
 };
 
 static LiveJob talk;
 
 static void nia_say(int sit, int expr)
 {
+    if (sit < 0) {                                   /* build 06: a fixed line */
+        static int k;
+        str_cpy(talk_text, date_lines[k++ % 3]);
+        talk_live = 0;
+        talk_fixed = 1;
+        nia_expr = EX_FLUSTERED;
+        return;
+    }
+    talk_fixed = 0;
     talk_sit = sit;
     talk_live = 1;
     talk_text[0] = 0;
@@ -57,8 +75,8 @@ static void menu_update(void)
         str_cpy(talk_text, talk.out);
     }
     int moved = 0;
-    if (any_repeat(BTN_DOWN)) { sel = (sel + 1) % 5; moved = 1; }
-    if (any_repeat(BTN_UP)) { sel = (sel + 4) % 5; moved = 1; }
+    if (any_repeat(BTN_DOWN)) { sel = (sel + 1) % 6; moved = 1; }
+    if (any_repeat(BTN_UP)) { sel = (sel + 5) % 6; moved = 1; }
     if (moved) {
         sfx(SFX_MOVE);
         idle_t = 0;
@@ -67,7 +85,8 @@ static void menu_update(void)
     if (idle_t == 60 * 25)
         nia_say(SIT_IDLE, EX_TIRED);
     if (any_pressed(BTN_A)) {
-        static const Scene *const scenes[5] = { &scene_rival, &scene_detective, &scene_cafe, &scene_kittens, &scene_village };
+        static const Scene *const scenes[6] = { &scene_rival, &scene_detective, &scene_cafe, &scene_kittens, &scene_village,
+                                                &scene_date };
         sfx(SFX_OK);
         scene_fade_to(scenes[sel]);
     }
@@ -127,16 +146,16 @@ static void menu_draw(void)
     rect_blend(8, 16, 174, 124, RGB(60, 90, 200), 40);
     text_sh(12, 18, "NIA'S BUILDS  v0.1", C_SKY, C_INK);
     text(140, 18, "\x04 play", C_DIM);
-    for (int i = 0; i < 5; i++) {
-        int y = 32 + i * 21;
+    for (int i = 0; i < 6; i++) {
+        int y = 30 + i * 18;
         if (i == sel) {
-            round_box(9, y - 2, 172, 20, builds[i].color, RGB(44, 44, 86));
+            round_box(9, y - 2, 172, 18, builds[i].color, RGB(44, 44, 86));
             spr(SPR_PAW, 12, y + 3, 0);
         }
         char num[4] = { '0', (char)('1' + i), 0, 0 };
         text(26, y, num, builds[i].color);
         text_sh(40, y, builds[i].title, i == sel ? C_WHITE : C_GREY, C_INK);
-        text(40, y + 9, builds[i].tag, i == sel ? builds[i].color : C_DIM);
+        text(40, y + 8, builds[i].tag, i == sel ? builds[i].color : C_DIM);
     }
     /* what Nia says, written live on the device */
     if (talk_text[0] || talk_live) {
@@ -149,7 +168,7 @@ static void menu_draw(void)
             text_n(12, 153 + i * 10, talk_text + starts[i], lens[i], C_WHITE);
         for (int i = 0; talk_live && i < 1 + (int)(frame_count / 10) % 3; i++)
             circle_fill(16 + i * 7, 158, 2, C_GREY);
-        text(128, 142, talk_live ? "\x02 thinking" : "\x02 NekoLM", talk_live ? C_GOLD : C_DIM);
+        text(128, 142, talk_live ? "\x02 thinking" : talk_fixed ? "\x02 set line" : "\x02 NekoLM", talk_live ? C_GOLD : C_DIM);
     }
 }
 

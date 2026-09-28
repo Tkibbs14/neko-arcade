@@ -1,0 +1,268 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, one softer. A pause exactly the length of a held breath."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "So. Day one. I lost a bet. You're the bet. Hi.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I made extra. It would have gone bad. Don't make it weird.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She transfers the container to your hands with more force than the exchange requires."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm fulfilling the terms. That's all this is. You're welcome.",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears track your face before she decides to look at you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Thanks. So what are the terms, exactly?",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Terms. Right. You get one nice thing per day. I don't have to explain the nice thing.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "And you don't get to ask why I'm being nice. Because I'm not. I'm compliant.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Extra? What was the original amount?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "The original amount was a normal amount. I doubled it. For reasons.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Nice of you to bring food on day one.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not being nice. I'm being efficient. It's different.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wraps once around her ankle, then releases."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. Day one is handled. I'm going back to my apartment. To not think about this.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move. Her ears stay angled toward you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The headband is crooked. She hasn't touched it once since she knocked."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still standing there. What do you do?",
+    "options": [
+     {
+      "text": "Want to come in and actually eat some of this?",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not part of the terms. But fine. Ten minutes. I'm timing it.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She steps past you into the kitchen before you answer, tail high."
+       }
+      ]
+     },
+     {
+      "text": "Four days? I'm insulted. I could go at least a week.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "A week. Bold. I'll adjust the spreadsheet.",
+        "face": "sparkle",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "But if you last a week, I get to pick the next bet. House rules.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "lean",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "So the bet is just you being nice for thirty days?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not being nice. It's compliance. There's a difference and I will die on it.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears go completely still. She looks at the container instead of you."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "intro",
+ "kind": "intro",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "Three sharp knocks, one softer. Mako is at your door holding food: she made extra, and she is only here because she lost a bet, as she explains with far too much conviction."
+}

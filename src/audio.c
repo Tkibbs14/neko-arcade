@@ -55,12 +55,17 @@ static const Step fx_ding[] = { S(W_TRIANGLE, 0, 1760, 1760, 400, 160, 0) };
 static const Step fx_pop[] = { S(W_SQUARE, 64, 400, 1200, 40, 120, 0) };
 static const Step fx_whoosh[] = { S(W_NOISE, 0, 1200, 4000, 160, 20, 90), S(W_NOISE, 0, 4000, 1500, 160, 90, 0) };
 static const Step fx_step[] = { S(W_NOISE, 0, 900, 700, 30, 50, 0) };
+/* the dating sim: knuckles on a wooden door, a quieter one, thunder, a small chime for a moment she will keep */
+static const Step fx_knock[] = { S(W_NOISE, 0, 2200, 500, 14, 170, 0), S(W_TRIANGLE, 0, 150, 90, 55, 170, 0) };
+static const Step fx_knock_soft[] = { S(W_NOISE, 0, 1400, 400, 12, 70, 0), S(W_TRIANGLE, 0, 130, 85, 45, 90, 0) };
+static const Step fx_thunder[] = { S(W_NOISE, 0, 240, 90, 220, 20, 160), S(W_NOISE, 0, 120, 40, 1100, 160, 0) };
+static const Step fx_chime[] = { S(W_TRIANGLE, 0, 1319, 1319, 90, 100, 70), S(W_TRIANGLE, 0, 1760, 1760, 300, 100, 0) };
 
 static const struct { const Step *s; int n; } fx_table[SFX_COUNT] = {
 #define E(a) { a, (int)(sizeof(a) / sizeof(a[0])) }
     E(fx_blip), E(fx_ok), E(fx_back), E(fx_move), E(fx_meow), E(fx_meow_sad), E(fx_purr), E(fx_hit),
     E(fx_wall), E(fx_goal), E(fx_lose), E(fx_coin), E(fx_splash), E(fx_buzz), E(fx_ding), E(fx_pop),
-    E(fx_whoosh), E(fx_step),
+    E(fx_whoosh), E(fx_step), E(fx_knock), E(fx_knock_soft), E(fx_thunder), E(fx_chime),
 #undef E
 };
 
@@ -222,7 +227,24 @@ static const Tune tune_kittens = { 48000 * 12 / 60, {
     "- . - . - . - . - . - . - . - . " },
     { W_TRIANGLE, W_TRIANGLE, W_TRIANGLE }, { 0, 0, 0 }, { 90, 100, 0 } };
 
-static const Tune *const tunes[MUS_COUNT] = { &tune_menu, &tune_hockey, &tune_cafe, &tune_mystery, &tune_village, &tune_kittens };
+/* Thin Walls: a slow sweet loop, D major, I - vi - IV - V (Dmaj7 - Bm7 - Gmaj7 - A). */
+static const Tune tune_date = { 48000 * 11 / 60, {
+    "F#5 . . . E5 . D5 . A4 . . . C#5 . D5 . "
+    "D5 . . . C#5 . B4 . F#4 . . . A4 . B4 . "
+    "B4 . . . A4 . G4 . D5 . . . F#5 . E5 . "
+    "E5 . . . D5 . C#5 . A4 . . . - . . . ",
+    "D2 . . . . . . . A2 . . . . . . . "
+    "B1 . . . . . . . F#2 . . . . . . . "
+    "G1 . . . . . . . D2 . . . . . . . "
+    "A1 . . . . . . . E2 . . . C#2 . . . ",
+    "- . A3 . - . C#4 . - . F#3 . - . A3 . "
+    "- . F#3 . - . A3 . - . D3 . - . F#3 . "
+    "- . D3 . - . F#3 . - . B3 . - . D4 . "
+    "- . C#3 . - . E3 . - . G3 . - . A3 . " },
+    { W_SQUARE, W_TRIANGLE, W_TRIANGLE }, { 48, 0, 0 }, { 44, 110, 56 } };
+
+static const Tune *const tunes[MUS_COUNT] = { &tune_menu, &tune_hockey, &tune_cafe, &tune_mystery, &tune_village, &tune_kittens,
+                                              &tune_date };
 
 #define MAX_STEPS 128
 static i8 pat[NMUS][MAX_STEPS];     /* >0 midi note, 0 hold, -1 release */

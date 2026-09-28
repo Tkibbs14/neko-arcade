@@ -1,4 +1,4 @@
-/* Persistent save: 4 KB, exposed as libretro SRAM on the stick and kept in localStorage in the browser.
+/* Persistent save: about 4 KB, exposed as libretro SRAM on the stick and kept in localStorage in the browser.
  * The frontend fills it after the game starts, so call save_check() before reading it. */
 #pragma once
 #include "engine.h"
@@ -41,8 +41,25 @@ typedef struct {
     u8 fish_caught;
     /* which builds Nia has introduced (bit per demo) */
     u8 intro_seen;
-    u8 reserved[4096 - 120];
+    /* Thin Walls (build 06): the card stats and progress per route (0 Nia, 1 Mako, 2 Shio). An old save has zeros
+     * here, which reads as "no story yet". */
+    struct {
+        u8 active, evening, last_pick, pad;
+        u8 stat[3][4];
+        u8 milestones[3];       /* bit 0 intro, bits 1..6 the card's milestones */
+        u8 hangout_next[3];
+        u8 visits[3];
+        u8 outfit_unlocked[3];  /* bit per outfit; the everyday one is always available */
+        u8 outfit_worn[3];
+        u8 endings[3];          /* bit 0 best, 1 friends, 2 drift: ever seen */
+        u8 album[3];            /* milestones ever reached, across stories */
+        u8 spare[11];
+    } date;                     /* 48 bytes */
+    u8 reserved[3931];
 } Save;
+/* Saves already on the stick and in browsers are 4144 bytes (the header outgrew the 120 bytes reserved[] once
+ * assumed); they keep loading only while the size stays exactly that. */
+typedef char save_size_unchanged[sizeof(Save) == 4144 ? 1 : -1];
 
 extern Save save;
 void save_check(void);          /* initialise if the save is empty or from another version */

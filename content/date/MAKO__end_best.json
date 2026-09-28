@@ -1,0 +1,293 @@
+{
+ "location": "doorway",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three knocks. Two confident, one that isn't. Then silence, as if she's waiting to see if you'll answer."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Hi.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "No reason. Don't make it a thing.",
+    "face": "smug",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move from the doorway. Her tail curls loosely around one ankle, then unwinds."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You knocked with no reason. That's new."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The bet's over. I can do whatever I want now. This is me doing whatever I want.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "wrap",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "So. Are you going to let me in, or do I have to stand here looking like an idiot?",
+    "face": "annoyed",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears angle toward you before she seems to decide anything. She steps past you into the apartment."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You redecorated. Or moved one thing. I can't tell.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I noticed because I have eyes. Not because I pay attention to your stuff.",
+    "face": "smug",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Day thirty-one. You're here anyway."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I told you. No reason. That's the whole point.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+    "face": "sparkle",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She's close now, close enough that her tail brushes the back of your hand. She doesn't pull it away."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're not going to say anything? Fine. I'll go first.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She closes the last inch. The kiss is brief, almost defiant, and she pulls back just enough to look at you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There. Say something about it. I dare you.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting, ears up, tail flicking. What do you do?",
+    "options": [
+     {
+      "text": "Kiss her again, slower this time.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her ears go completely still. Then her hands find your shoulders and she doesn't push you away."
+       },
+       {
+        "who": "her",
+        "text": "Okay. Okay. That's - that's an answer.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "wrap",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "fade",
+        "text": "Later."
+       }
+      ]
+     },
+     {
+      "text": "\"You kissed me. That's not nothing.\"",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "But yes. It's not nothing. Don't make me say more.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Laugh. \"You dared me. Cute.\"",
+      "trigger": "laugh_at_her",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't. Don't do that.",
+        "face": "sad",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She steps back. The performance is gone for a second, and what's underneath is tired."
+       }
+      ]
+     },
+     {
+      "text": "\"What do you want, Mako?\"",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't know. That's the problem. I don't know what I'm going to do on day thirty-one.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "And you're being patient at me. Stop it. I hate that.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "end_best",
+ "kind": "ending",
+ "threshold": 70,
+ "outfit_unlock": 0,
+ "desc": "Day 31. She knocks with no reason. 'Hi.' She waits. Romantic and flirtatious: she stays, kisses you, then dares you to say something about it; teasing and suggestive; if it goes further, fade to black."
+}

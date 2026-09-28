@@ -1,0 +1,216 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A knock. Shio is in the hallway, cardigan sleeves pulled over her hands, glasses clear for once."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water is back on. Administratively resolved. I'm not here for the bathroom.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Then why are you here?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I wanted to say something. Without variables. I trust you. I'm saying it.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears stay turned toward you, even as her gaze drops to the floor."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I trust you too."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's - good. Noted. Anyway.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She takes a half step closer, then stops, as if recalculating."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your kitchen light flickers. I could fix it. If you wanted. Not now. Sometime.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I'd like that."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Good. That's - yes. Anyway.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She is close enough that her sleeve almost brushes your wrist. What do you do?",
+    "options": [
+     {
+      "text": "Hold her hand, gently.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her fingers are cold, then not. She doesn't pull away."
+       },
+       {
+        "who": "her",
+        "text": "Oh. Okay. That's - okay.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "wrap",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I don't know what to do when someone just. Stays. But I'm trying.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Step back and give her space.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her ears flatten for a second before she schools them."
+       },
+       {
+        "who": "her",
+        "text": "Right. That's - fine. Completely fine.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I should go. Court filing due. Anyway.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "low",
+        "pose": "far",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Mention how much her trust means to you.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that I said trust is inefficient. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls around her own ankle, a small self-soothing tell."
+       },
+       {
+        "who": "her",
+        "text": "I made too much tea. Inefficient to waste it. You could come over. If you want.",
+        "face": "happy",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "end_best",
+ "kind": "ending",
+ "threshold": 74,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. The water is back on and she still knocks. She says she trusts you, out loud, and her ears stay turned toward you. Romantic, PG: she lets you hold her hand."
+}

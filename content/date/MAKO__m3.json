@@ -1,0 +1,324 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, one softer. You open the door to find Mako holding two takeout containers."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I made extra. It would have gone bad.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't make it weird. It's just food.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Before you can answer, footsteps echo from the stairwell. Mako's ears swivel toward the sound."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Oh no.",
+    "face": "surprised",
+    "ears": "swivel",
+    "tail": "puff",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Yui appears at the end of the hall, a knowing smile already in place. She leans against the wall."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Yui. Hey."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Yui. Hi. You're here. Why are you here?",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Yui says nothing. She just watches, eyes moving between Mako, the food, and you. Four minutes pass."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twelve. I'm fulfilling the terms. That's all this is.",
+    "face": "annoyed",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Yui's smile widens. She checks her phone, then looks back up. Still says nothing."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Stop looking at me like that. I can hear you thinking.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "Yui is watching. What do you do?",
+    "options": [
+     {
+      "text": "The bet is real. You made food. That's the deal.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Yes. Exactly. Thank you. Someone gets it.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail gives one satisfied flick. Yui's eyes narrow, but she stays quiet."
+       }
+      ]
+     },
+     {
+      "text": "Extra again? What is that, three times this week?",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's efficient. Cooking for two is barely more work than one.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Yui raises one eyebrow. Mako's ears flatten for just a second."
+       }
+      ]
+     },
+     {
+      "text": "You know, for someone who lost a bet, you're really committed.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fulfilling the terms. That's all this is.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "The air cools. Yui glances at you, then at Mako, and finally breaks her silence."
+       },
+       {
+        "who": "her",
+        "text": "I'm done being nice for today. The terms don't specify hours.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Yui finally pushes off the wall. She pats Mako's shoulder once, then walks back toward the stairs without a word."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "She's going to be insufferable about this.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Whatever. The food's getting cold. Are you going to let me in or not?",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting at your door. What do you say?",
+    "options": [
+     {
+      "text": "Yeah. Come in. I'll grab plates.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her ears perk up. She steps inside before you finish the sentence."
+       },
+       {
+        "who": "her",
+        "text": "Fine. But I'm not staying long. I have things to do.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She stays for two hours. The containers are empty by the end."
+       }
+      ]
+     },
+     {
+      "text": "You okay? Yui didn't say anything, but...",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. Why wouldn't I be fine? It's Yui. She's always like that.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her voice is too fast. She's already backing toward the hallway."
+       }
+      ]
+     },
+     {
+      "text": "You know, you could just admit you like having dinner with me.",
+      "trigger": "use_sincerity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She shoves the container into your hands and turns to leave."
+       },
+       {
+        "who": "her",
+        "text": "Goodnight.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m3",
+ "kind": "milestone",
+ "threshold": 34,
+ "outfit_unlock": 1,
+ "desc": "Her friend Yui drops by and watches the two of you for four minutes without saying anything. Mako knows exactly what Yui is thinking."
+}

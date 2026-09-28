@@ -1,0 +1,196 @@
+{
+ "location": "hallway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A soft knock, then silence. Through the peephole: Shio, holding a small paper bag, ears up."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water is back. Administratively resolved.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I left something at your door. Not a conversation. Just a thing.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You didn't have to."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You remembered that. You didn't have to.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She holds out the bag. Inside: a container labeled 'surplus' in her precise hand."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I made too much. Inefficient to waste it.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A folded note is tucked under the container. You unfold it."
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "'Forensic fact: you favor your left hand when tired. Noted.' The handwriting is steady."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I should go. Court prep. Early docket.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move. Her ears angle toward you, then flatten, as if caught."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Stay. The couch is still warm.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's - not inefficient. Maybe.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She steps back inside, leaving the door open behind her."
+       }
+      ]
+     },
+     {
+      "text": "I remember your case notes are color-coded by victim age.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wraps once around her ankle, then releases."
+       }
+      ]
+     },
+     {
+      "text": "You look exhausted. Do you need to sit down?",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not fragile. I'm fine.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The bag crinkles as her grip tightens. She does not sit."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "end_friends",
+ "kind": "ending",
+ "threshold": 44,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. The water works again. She leaves something at your door: not a conversation, just a thing, and a note with a forensic fact about you."
+}

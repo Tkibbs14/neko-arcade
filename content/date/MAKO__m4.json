@@ -1,0 +1,270 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Mako is on your couch, one leg tucked under her, tail curled over the armrest. She is not looking at you."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twenty-six. I'm being nice. You're welcome.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I also happen to be timing things.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Timing things?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your schedule. When you're home. When you shower. When you're hungry.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's not creepy. It's data. I'm a scientist.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then goes still. She touches her necklace."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You noticed. Of course you noticed. You always notice.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond?",
+    "options": [
+     {
+      "text": "So what's my Tuesday look like?",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Tuesday you're always late. I've factored that in.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I made extra on Tuesdays. In case.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "That's a lot of effort for a bet.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not effort. It's efficiency.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears rotate back. She picks at a loose thread on the cushion."
+       }
+      ]
+     },
+     {
+      "text": "You could just ask to hang out.",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Why would I do that? The bet says I have to be nice. It doesn't say I have to ask.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She glances at you, then at the clock on your wall. Her tail taps the cushion once."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. I should go. Day twenty-six is almost over.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Unless you want me to stay. For the bet. Obviously.",
+    "face": "flustered",
+    "ears": "swivel",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Stay. The bet doesn't specify location.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Fine. But I'm not being nice about it.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She settles back against the couch, closer than before. Her tail drapes over your knee."
+       }
+      ]
+     },
+     {
+      "text": "You don't have to stay just because of the bet.",
+      "trigger": "ignore_the_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I know I don't have to. I'm choosing to. For reasons.",
+        "face": "neutral",
+        "ears": "curl",
+        "tail": "wrap",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She says it quietly, then blinks and looks away. Her ears flatten for a second."
+       }
+      ]
+     },
+     {
+      "text": "I'd like you to stay. Not for the bet.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't do that. Don't be nice to me because you feel sorry for me.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She stands up, tail lashing. The door clicks shut behind her."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m4",
+ "kind": "milestone",
+ "threshold": 46,
+ "outfit_unlock": 0,
+ "desc": "The Schedule: she has been timing things around yours. You notice. She notices that you noticed."
+}

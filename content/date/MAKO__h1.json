@@ -1,0 +1,188 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Mako is already on your couch, controller in hand, scoreboard on screen: MAKO 3, YOU 2."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Took you long enough. I already warmed up. Your controller's the one with the sticky button.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You warmed up. For paw hockey."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's called practice. You'd know if you ever won.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She says it without looking away from the screen, ears angled toward you anyway."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "First to five. No pausing. No excuses about lag. And you're going down.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You keep saying that like it's going to happen."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's 4-3. I'm winning. Obviously.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The scoreboard updates before she finishes talking. Her tail flick stops mid-motion."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Okay. That's 4-4. Which means nothing. It means the game is working.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "It means I'm about to win."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It means you got lucky twice. There's a difference. I'm tracking it.",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The match is one goal from over. She's gripping the controller like it owes her ",
+    "options": [
+     {
+      "text": "You're really not going to let me win, are you?",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Let you? I'm not letting you do anything. I'm beating you. Different verb.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears swivel forward, fully focused on the screen and, somehow, on you."
+       }
+      ]
+     },
+     {
+      "text": "I could still throw this if you want.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't. Seriously. That's not - just play the game.",
+        "face": "sad",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Nice of you to keep score. Very generous.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not being nice. I'm being accurate. There's a scoreboard. It's right there.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h1",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A rematch at paw hockey on the old console; she keeps score out loud."
+}

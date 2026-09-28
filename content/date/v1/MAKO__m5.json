@@ -1,0 +1,310 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three knocks, the third softer. Mako is there when you open, holding a covered dish."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twenty-nine. I made extra. It would have gone bad.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then stops."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Extra again? That's a lot of extra."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm fulfilling the terms. That's all this is.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's holding the dish like a shield. What do you say?",
+    "options": [
+     {
+      "text": "You made extra. That's a real thing, not a bet thing.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not a bet thing. I said it's not a bet thing.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Don't analyze it. Just take the food.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You don't have to bring food. The bet's just a bet.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not doing this because of the bet.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail wraps once around her ankle."
+       },
+       {
+        "who": "her",
+        "text": "I'm done being nice for today. The terms don't specify hours.",
+        "face": "neutral",
+        "ears": "still",
+        "tail": "wrap",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "I'm glad you're here. Bet or not.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Glad? That's not a word you get to use on me.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "puff",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You're just saying that because I brought food.",
+        "face": "flustered",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps inside when you take the dish, the way she always does."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day twenty-nine. After tomorrow, the bet's done.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears swivel toward you, then away. She's calculating something."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't actually know what I'm going to do on day thirty-one.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Not that it matters. It's just a day.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's staring at the wall like it owes her money. How do you answer?",
+    "options": [
+     {
+      "text": "Day thirty-one can be whatever you want. No score.",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "No score. Right. Because you don't keep score.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "That's the most you thing you've ever said.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Then don't make it a thing. Knock anyway.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I knock because I have a reason. That's the rule.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You can't just change the rules on day twenty-nine.",
+        "face": "annoyed",
+        "ears": "swivel",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "But her tail wraps around her ankle, and she doesn't leave."
+       }
+      ]
+     },
+     {
+      "text": "You could always extend the bet. I wouldn't mind.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Extend it? You think I need more days to be nice to you?",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 58,
+ "outfit_unlock": 0,
+ "desc": "Day 29: she is quieter, still compliant, and calculating something."
+}

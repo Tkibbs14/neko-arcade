@@ -1,0 +1,211 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "her",
+    "text": "The Times crossword. Sunday edition. I've been stuck on 17 across for two days.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Clue: 'A deadly classic.' Five letters. The checker is a retired toxicologist.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She angles the paper toward you. Her tail gives one slow flick."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't usually ask for help with these. But you were here. And the water is still administratively temporary.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Let me see. 'A deadly classic'... arsenic?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Arsenic is six letters and also not classic. It's a metalloid. Try again.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She taps the pen against her wrist twice, then goes still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Wait. 'Classic' could mean literary. Not forensic. I've been assuming the wrong domain.",
+    "face": "surprised",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The answer is 'neon.' As in the gas. Lethal in an enclosed space. The toxicologist set the trap and I walked into it.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting. What do you say?",
+    "options": [
+     {
+      "text": "You're smiling. That's the first real one I've seen.",
+      "trigger": "make_her_laugh",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't -",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still."
+       },
+       {
+        "who": "her",
+        "text": "Don't look at me for thirty seconds. I need to recalibrate.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "I remembered you like crossword puzzles. From the stack by your door.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears swivel toward you and stay there."
+       },
+       {
+        "who": "her",
+        "text": "I catalog things too. It's not - it's just what I do. Anyway.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You looked so focused. It was kind of adorable.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Adorable.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks tight against her side."
+       },
+       {
+        "who": "her",
+        "text": "I don't think that's a good use of either of our time.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She needs a second pair of eyes on a crossword that turns out to be about poisons, and is quietly pleased when you get one."
+}

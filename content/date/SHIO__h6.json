@@ -1,0 +1,219 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The knock is precise, three even taps. Through the peephole: mint hair, fogged glasses, a flashlight held like a pen."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation remains administratively temporary. The storm is not. I brought a flashlight.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You knocked on my door with a flashlight to tell me about the weather."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I assessed the variables. Elevator's out. My floor is dark. You have a couch and a working outlet.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Lightning whites out the hallway. Her tail goes completely still. She does not blink."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That was close. I'm not startled. I'm recalibrating.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Come in. I'll get you a towel."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I appreciate access to your bathroom. And your towel. And your -",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She stops in the doorway, one hand on the frame, as if the sentence is a case file she can close later."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. The rain will pass. Probably.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still standing in the doorway. What do you do?",
+    "options": [
+     {
+      "text": "Let the silence sit. No questions.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You're not going to ask why I really came.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Good. I don't have a good answer. I just - the hallway was very dark.",
+        "face": "neutral",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "close",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Notice her ears twitch at the thunder. Say nothing.",
+      "trigger": "notice_ears_quietly",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her left ear swivels toward you, then back to the window. She notices you noticing. She doesn't mention it."
+       },
+       {
+        "who": "her",
+        "text": "The storm is louder on this side of the building. Structurally, that makes sense.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You still take your coffee black, right?",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Yes. Black. I don't know why that's the thing you kept.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You must be freezing. Let me hold you.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not - that's not - I'm here for the outlet.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I'm not uncomfortable. I'm processing. There's a difference.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h6",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A thunderstorm: she knocks with a flashlight and a very rational reason to wait it out at your place."
+}

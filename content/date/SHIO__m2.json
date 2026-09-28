@@ -1,0 +1,258 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She stands in your kitchen, holding the mug you gave her with both hands, not drinking."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water pressure here is acceptable. Better than my building's.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You can use the shower too, if you want."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That would be... efficient. Thank you.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She sets the mug down precisely on a coaster that wasn't there before."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I had a case today. The details aren't relevant, but the weight is.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It was a young person. My age. I don't usually... anyway.",
+    "face": "sad",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still, the way it does when she's holding something in."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "How do you respond?",
+    "options": [
+     {
+      "text": "That sounds heavy. I'm here if you want to talk.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Noted. I'll... keep that in mind.",
+        "face": "neutral",
+        "ears": "swivel",
+        "tail": "low",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I couldn't do what you do. That's a lot to carry.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not fragile. I just... stated a fact.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You're good at your job. That's not nothing.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Thank you. I think.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She is quiet for a moment, then moves to the couch edge, leaving space beside her."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Most people flinch when I talk about work. You didn't.",
+    "face": "neutral",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She touches her wrist, a small self-soothing gesture."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I don't scare easy. And you're not a horror story."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "No. I'm not. Anyway.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The corner of her mouth twitches upward, almost imperceptibly."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you do next?",
+    "options": [
+     {
+      "text": "Move a little closer, but leave room.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's... acceptable proximity.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Reach out and touch her hand.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya - that's - I wasn't -",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten, and she pulls her hand back gently."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to stay for dinner.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I... yes. If it's not an inconvenience.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m2",
+ "kind": "milestone",
+ "threshold": 34,
+ "outfit_unlock": 0,
+ "desc": "She mentions the weight of a case, carefully and without detail (all-ages), then watches how you take it."
+}

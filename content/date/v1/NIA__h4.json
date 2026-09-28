@@ -1,0 +1,169 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Nia sits at the kitchen table, laptop open, one ear swiveled toward the stove."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is cursed again.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Almost done.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls once, then goes still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You always cook this late. It's statistically bad for you.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Your eyes catch on her shoulders: they're set a little too high."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Publisher sent another email. I'm not opening it tonight.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The timer on the stove beeps. Steam rises from the pot."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "You have one hand on the ladle. What do you do?",
+    "options": [
+     {
+      "text": "Pour a bowl and set it beside her laptop without a word.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't look up. Her tail tip curls, slow, once."
+       }
+      ]
+     },
+     {
+      "text": "Say nothing. Let her be the one to break the silence.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She works. Then, without a task attached, her chair scrapes an inch closer."
+       },
+       {
+        "who": "her",
+        "text": "You're hovering. It's distracting.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to talk about the build.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm working.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She doesn't address it."
+       },
+       {
+        "who": "her",
+        "text": "It's handled.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h4",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She has migrated to the kitchen table with her laptop while you cook."
+}

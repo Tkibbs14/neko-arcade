@@ -1,0 +1,186 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Mako stands in the doorway, scanning your apartment like a building inspector with a grudge."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're letting a plant die in the corner. That's not a style choice, that's a countdown.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "And your posture. You sit like you're apologizing to the furniture.",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your snack shelf is a crime scene. Plain chips? No dip? This is why you lose things.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "wag",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You came over just to insult my apartment?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I came over because the bet says I have to be nice. This is me being nice.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twelve. I'm being nice. You're welcome.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then goes still. She touches the chain at her throat."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting for you to react.",
+    "options": [
+     {
+      "text": "You're right about the plant. I'll fix it.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. I wasn't going to say it twice.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears rotate forward, tracking your face like she's checking for sarcasm."
+       }
+      ]
+     },
+     {
+      "text": "So the bet is why you're here?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fulfilling the terms. That's all this is.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She steps back half a pace and crosses her arms, tail curling tight around her ankle."
+       }
+      ]
+     },
+     {
+      "text": "Your posture critique is rich coming from someone who's four-eleven.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Height isn't a posture problem. That's not even in the same category.",
+        "face": "sparkle",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The corner of her mouth twitches up before she flattens it."
+       }
+      ]
+     },
+     {
+      "text": "I appreciate you checking on me. Really.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not checking on you. I'm critiquing. There's a difference.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She talks faster now, eyes on the plant instead of you."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h2",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She critiques your apartment, your posture and your taste in snacks, all correct."
+}

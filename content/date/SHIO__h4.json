@@ -1,0 +1,249 @@
+{
+ "location": "stairwell",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The stairwell light is the one that never quite turns off. She is two steps below the landing, coat over cardigan, folder hugged to her chest."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The elevator is making a sound I don't have a category for. So. Stairs.",
+    "face": "tired",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Court tomorrow?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Eight-forty. Testimony on a chain-of-custody challenge. I've read the same paragraph eleven times. It keeps rearranging itself.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm fine. I say that as a factual statement, not a reassurance. The distinction matters.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still. That is not the same as calm."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. You should sleep. People with normal jobs do that.",
+    "face": "neutral",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I'll walk down with you. It's late."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's inefficient. You live one floor up.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "...Fine. One flight. I'm not going to argue with someone who's already decided.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "Halfway down the flight, she slows.",
+    "options": [
+     {
+      "text": "Ask what the case is about, if she can say.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's a reconstruction. Twelve minutes, give or take, that nobody witnessed. I built the timeline from a coat and a bus schedule.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You didn't make a face. Most people make a face.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears angle toward you, and she doesn't correct them."
+       }
+      ]
+     },
+     {
+      "text": "Tell her you noticed she only drinks the mint tea, never the black.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I mean. It's a preference, not a personality. But. Noted.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She adjusts her glasses, which had not slipped."
+       }
+      ]
+     },
+     {
+      "text": "Reach out and touch the tip of her ear, just once.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya-- that's-- I wasn't--",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Could you not look at me for thirty seconds.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "One hand goes to her cardigan cuff and stays there, knuckles pale."
+       }
+      ]
+     },
+     {
+      "text": "Say it's terrible work for someone your age to carry.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm twenty-two and I've been doing this for three years. I can carry it.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Anyway. Goodnight.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She takes the last three steps alone, fast, folder tight against her chest."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h4",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A late-night stairwell conversation after court prep."
+}

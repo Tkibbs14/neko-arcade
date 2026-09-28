@@ -1,0 +1,280 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "her",
+    "text": "Your kettle whistles at 7:12. Every night. You probably didn't know that.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I only know because the walls are thin. Don't make it a thing.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears rotate slightly, tracking you even as she talks about the kettle."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "And your mail gets here at 3:40. The mailman is always late on Thursdays.",
+    "face": "happy",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You've been paying attention."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say to her schedule-keeping?",
+    "options": [
+     {
+      "text": "You're keeping score of my kettle.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not score-keeping. It's pattern recognition. There's a difference.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "And for the record, I'm winning at it.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "That's... actually kind of nice.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not nice. It's data. There's a difference.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail flicks once, then goes still."
+       },
+       {
+        "who": "her",
+        "text": "Stop looking at me like that.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "I never noticed. That's a lot of effort.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not effort. It's just... observation. Basic observation.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I don't need you feeling sorry for me. I'm fulfilling the terms.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The bet says I have to be nice. It doesn't say I have to be blind.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She touches her necklace, a small recalibration."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day twenty-nine tomorrow. Then it's over. You can go back to ignoring my schedule.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Do you want it to be over?"
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting for your answer.",
+    "options": [
+     {
+      "text": "The bet was real. But this feels real too.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "I don't know what comes after day thirty. I didn't plan that far.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Thirty days of you being nice. What a tragedy.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Wow. Okay. I'm done being nice for today. The terms don't specify hours.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands up, but doesn't move toward the door."
+       }
+      ]
+     },
+     {
+      "text": "I'm going to miss the schedule.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You're not supposed to say that.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "But... noted. For the record.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m4",
+ "kind": "milestone",
+ "threshold": 46,
+ "outfit_unlock": 0,
+ "desc": "The Schedule: she has been timing things around yours. You notice. She notices that you noticed."
+}

@@ -1,0 +1,167 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Midnight. The build crashes to a black screen. Nia's fingers stop moving."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is cursed again.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The save system rewrote itself. That's not a thing that happens.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Refactor at 2am. Bold. Statistically poor.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail has gone completely still. She keeps typing."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's handled. Go to bed.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She hasn't looked up in an hour.",
+    "options": [
+     {
+      "text": "Refill her water glass and sit back down.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She doesn't say thanks. Her ears swivel toward the glass, then back to the screen."
+       },
+       {
+        "who": "her",
+        "text": "The loop is in the second scene. It's always the second scene.",
+        "face": "neutral",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You've been at this for hours. You look exhausted.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. The compiler is the problem, not me.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She starts typing faster. Her tail has tucked against the chair."
+       }
+      ]
+     },
+     {
+      "text": "Tell me what's wrong. What do you actually need right now?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't need anything. It's a bug. Bugs get fixed.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her hands have stopped. She is looking at the screen, not at you."
+       }
+      ]
+     },
+     {
+      "text": "Can I sit here while you work? I won't say anything.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her tail gives one slow flick, then settles."
+       },
+       {
+        "who": "her",
+        "text": "...Door was open. Not for any reason.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "mid",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h2",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "The build breaks at midnight and she is quietly panicking behind flat sentences."
+}

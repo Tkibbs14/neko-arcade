@@ -12,9 +12,10 @@
   OpenRouter read a key from a local `.env` that is not in the repo. `build/` is not tracked except the evaluation
   labels and the panel reports.
 
-Five small catgirl game demos, framed as builds Nia is making, with you as her playtester. It runs on the M15 stick
-(libretro core), in a browser on the PC, and headless for tests. All five use NekoLM, a 927k-parameter
-language model distilled from a large one, which writes the characters' lines live on the device.
+Six small catgirl game demos, framed as builds Nia is making, with you as her playtester. It runs on the M15 stick
+(libretro core), in a browser on the PC, and headless for tests. The first five use NekoLM, a 927k-parameter
+language model distilled from a large one, which writes the characters' lines live on the device. The sixth, a
+dating sim, plays scenes a large model wrote ahead of time from the character cards.
 
 **Play online (shareable playtest link):** https://nakamaai.app/arcade/ (deploy with `tools/deploy-web.ps1`).
 **Play on the PC:** `build/web/neko-arcade.html` (open it in a browser; no install).
@@ -30,6 +31,7 @@ Player 2: WASD · F/G/R/T · 1. Any gamepad works (A confirms, B backs, as on th
 | 3 Nyan Cafe | a 2-minute rush at Mocha's cafe: 5 stations, lattes = espresso/matcha + milk, don't burn the taiyaki; 1-2 baristas | every customer line (orders, thanks, grumbles, reviews) and Mocha's commentary |
 | 4 Foster Kittens | Mochi, Sesame and Pudding: praise (A), say no (B), feed (X), laser dot (hold Y) | each kitten's brain is a 24-weight neural policy trained by your praise and scolding; the panel shows it change |
 | 5 Nekomura | a village: talk, gather, fish, give gifts | villagers gossip about what you did in the other builds (from the save) and remember gifts |
+| 6 Thin Walls | a dating sim: 14 evenings with Nia, Mako and Shio; choices, milestones, outfits, three endings each | no live model yet: 48 scenes written from the cards by DeepSeek; her tells (ears, tail, hands, where she stands) animate on every line |
 
 **Build:** `tools/build.sh [native|stick|web|all]` in WSL. Tests: `tools/shot.sh` (headless screenshots),
 `tools/nlmtest.sh [N] [sweep]` (C model = Python reference, speed, pass rate), `tools/stick-test.sh` (stick build on
@@ -48,6 +50,14 @@ composer output (`build/quality/r4`, `r5`); NekoLM writing freely managed 13%. S
 use whole teacher lines, filtered the same way (`rank_labels.py whole`, `tools/mklines.py`).
 `tools/composer_lab.py` compares ranking rules on judged pools; `tools/filltest.sh` keeps the C and Python
 placeholder fills identical.
+
+**Thin Walls (build 06):** each route is the character's source card: its hidden stats, milestones and progress and
+regression triggers, with the card's numbers (`tools/date_spec.py`). DeepSeek V4.1 Flash writes every scene from the
+card (`tools/date_gen.py`, validated and retried), and `tools/mkdate.py` bakes them into `src/gen/date_data.c`,
+reading each narrated line for the tells it names ("her tail goes completely still") so the portrait acts them out.
+`src/portrait.c` animates the portraits: each ear on its own, a Bezier tail, hands for the cards' gestures, where she
+stands. Suggestive at most; a moment that would go further fades to black. Checks: `tools/datelab.sh` (every screen,
+rendered by the game's own code) and `tools/date_judge.py` (three judges: sense, voice against the card, content).
 
 **Model speed:** the dot product has three exact kernels (plain, MIPS `madd`, split sums); the game times them at
 start-up and logs the pick (`kernel ...` in the log). `tools/nlmtest-mips.sh` checks every kernel as MIPS code.

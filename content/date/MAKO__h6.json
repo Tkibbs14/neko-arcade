@@ -1,0 +1,211 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Rain drums the windows. Three sharp knocks, one softer. You know the pattern by now."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I brought a game. You're going to lose. I'm going to explain the rules, and then you're going to lose.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You brought a board game to my door in the rain."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's laminated. The board is laminated. Rain is not a factor. Move.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She drops it on the coffee table and sits, knees to one side, already sorting pieces like she owns the place."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Rules. You collect cards. I collect more cards. The cards are mine. Any questions.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "wag",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "That's not how rules work."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's exactly how rules work. I read the box. The box agrees with me.",
+    "face": "happy",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "One ear swivels toward you while she shuffles. It keeps doing that, regardless of what she's saying."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's a strategy game. You're bad at strategy. I've seen your grocery list. It said 'food.'",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway it's day twenty-six. I'm still being nice. This is being nice. You're welcome.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting, pieces in hand, daring you to say something about the rules.",
+    "options": [
+     {
+      "text": "Deal. Best of three, and no editing the box mid-game.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Best of three. Sure. I'll take all three.",
+        "face": "sparkle",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail is going fast enough to tap the table leg. She doesn't notice. You do."
+       }
+      ]
+     },
+     {
+      "text": "Day twenty-six. That's real. So is this game. Deal.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Yeah. Real. It's - yeah. Deal.",
+        "face": "flustered",
+        "ears": "swivel",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She straightens her headband. It was already straight."
+       }
+      ]
+     },
+     {
+      "text": "Only twenty-six? Feels like you've been nice for months.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's been twenty-six days and you're already counting wrong. Impressive.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She deals your hand harder than the others."
+       }
+      ]
+     },
+     {
+      "text": "You seem tense. We don't have to play if it's a lot.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not tense, I'm winning. Which is different. Which you'll learn.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The ear closest to you pins back flat. The other stays up. She's arguing with herself."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h6",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A rainy evening: she brings a board game she is sure she will win, and explains the rules in a way that favours her."
+}

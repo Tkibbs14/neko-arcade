@@ -1,0 +1,300 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three knocks: two sharp, one softer. Through the peephole, magenta ears twitch."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day thirty. Done.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Terms fulfilled. I was nice. You were... there.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't step back. Her tail curls once around her ankle, then releases."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "So. That's it. The bet's over. You're free.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She's still in the doorway. Her ears swivel toward the hallway, then back to you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still standing there. What do you say?",
+    "options": [
+     {
+      "text": "So what happens on day thirty-one?",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - I don't have a day thirty-one planned.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. She touches her chain."
+       },
+       {
+        "who": "her",
+        "text": "I don't actually know what I'm going to do on day thirty-one.",
+        "face": "surprised",
+        "ears": "droop",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Good. Now I can stop pretending to like you.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Right. Yeah. That's what this was.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She doesn't move from the doorway."
+       }
+      ]
+     },
+     {
+      "text": "You made it. I didn't think you would.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "A small smile slips before she catches it."
+       }
+      ]
+     },
+     {
+      "text": "Thanks for the food. And the company.",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "The food was a bet thing. The company was... also a bet thing.",
+        "face": "neutral",
+        "ears": "still",
+        "tail": "low",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't leave. Her tail wraps once around her ankle."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway. I should go. Things to do.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't move. Her ears are angled toward you, not the hallway."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm being nice. You're welcome. Even though it's day thirty and I don't have to be.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps half a pace closer. Her tail curls around her ankle again."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still here. What do you do?",
+    "options": [
+     {
+      "text": "Want to come in? Just for a bit.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "For a bit. Fine. But I'm not staying long.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She steps inside before she finishes the sentence."
+       }
+      ]
+     },
+     {
+      "text": "You don't have to go yet, do you?",
+      "trigger": "show_up_after_rude",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I have... nowhere to be. That's not an invitation for you to analyze.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stays exactly where she is, one hand on the doorframe."
+       }
+      ]
+     },
+     {
+      "text": "I'll see you tomorrow, then.",
+      "trigger": "ignore_the_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Tomorrow. Sure. If I feel like it.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't turn around. Her tail droops before she catches it and lifts it."
+       }
+      ]
+     },
+     {
+      "text": "You're just saying that because the bet's over.",
+      "trigger": "use_sincerity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She takes a step back into the hallway."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m6",
+ "kind": "milestone",
+ "threshold": 70,
+ "outfit_unlock": 2,
+ "desc": "Day 30: 'Done.' The bet is over. She doesn't leave immediately."
+}

@@ -1,0 +1,292 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Nia is on the couch, laptop closed. Not working. Just there."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're back.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You're not working."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is compiling. Nothing to do until it finishes.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail is completely still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "My last roommate asked me to leave. I was too much noise at three in the morning.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The build matters because it's the only thing I've made that's mine.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She drops it. Doesn't look at you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's given you something real. What do you do?",
+    "options": [
+     {
+      "text": "Say nothing. Just sit down on the other end of the couch.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Okay.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail gives a single flick."
+       }
+      ]
+     },
+     {
+      "text": "That sounds hard. Do you want to talk about it?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "No.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She doesn't address it."
+       }
+      ]
+     },
+     {
+      "text": "You're not too much noise.",
+      "trigger": "too_much_warmth",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - I didn't ask for that.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She finds a task. Exits to the kitchen."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A few minutes pass. She's back on the couch, closer than before."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The publisher emailed again. I'm not answering tonight.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You don't have to."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I know. That's not the point.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls at the tip. She doesn't seem to notice."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build's done compiling. You can playtest if you want. Or not.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's offering the build. And something underneath it.",
+    "options": [
+     {
+      "text": "Open the build. Play. Don't mention the rest.",
+      "trigger": "let_her_handle",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She settles in next to you, shoulder almost touching."
+       }
+      ]
+     },
+     {
+      "text": "You look tired. Maybe playtest tomorrow?",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. It's a small build.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls the laptop closer, screen tilted away from you."
+       }
+      ]
+     },
+     {
+      "text": "I'll play. But only if you sit here while I do.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not how playtesting works.",
+        "face": "flustered",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "...fine. Ten minutes.",
+        "face": "neutral",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m2",
+ "kind": "milestone",
+ "threshold": 28,
+ "outfit_unlock": 0,
+ "desc": "She answers something she didn't have to: a real answer about her last roommate or why the build matters, given plainly and then dropped."
+}

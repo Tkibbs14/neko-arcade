@@ -1,0 +1,158 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The power cut kills the lights mid-sentence. The building goes dark and quiet. Her laptop screen dims to a faint glow: nine percent."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Well. That's cursed.",
+    "face": "annoyed",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Battery's at nine. No point in pretending I can work.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She closes the laptop. The room goes properly dark. She doesn't move to her room."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Guess we're stuck here."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Tragic. No other rooms exist.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She sits down on the couch, not quite touching you. Close enough that you can feel the warmth."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was going to fix that segment anyway. It's been broken for three days.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The dark is patient. What do you say?",
+    "options": [
+     {
+      "text": "You don't have to fix anything right now.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...Okay.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail settles against the cushion. She doesn't fill the silence."
+       }
+      ]
+     },
+     {
+      "text": "I could grab a flashlight from my room.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't bother. It's fine like this.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She shifts a little closer, like the dark made a decision for her."
+       }
+      ]
+     },
+     {
+      "text": "Why has it been broken for three days?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Because I kept rebuilding the wrong part. Happy?",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her word count drops. She looks at the dead laptop like it might come back to save her."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h6",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A power cut: the building goes dark and quiet, her laptop is at nine percent, and there is nothing to do but sit on the couch and talk."
+}

@@ -1,0 +1,384 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The build has been running for three hours. Her empty energy drink has been empty for one."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It compiles now. Wasn't sure it would.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You. Stayed in the room the whole time.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I noticed. That's all I'm saying.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail has gone completely still."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting for something. What do you do?",
+    "options": [
+     {
+      "text": "I was just here anyway. No reason.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Right. No reason.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tip curls once, small, before she stills it."
+       },
+       {
+        "who": "her",
+        "text": "Okay. Fine. It's a good build. You can stay for the next one.",
+        "face": "happy",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You look tired. When did you last eat?",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. I ate. It's handled.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She does not look at you. Her word count drops."
+       },
+       {
+        "who": "her",
+        "text": "I'll eat after this build. I always do.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You noticed too. That's all. Nothing owed.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You don't have to say it back. I wasn't fishing.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ear flicks toward you without permission. She does not address it."
+       }
+      ]
+     },
+     {
+      "text": "I figured you'd handle it. You always do.",
+      "trigger": "let_her_handle",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I do. It's fine.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "That's... a normal thing to say. Why does it sound weird.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pushes her fringe back. Her tail has not stopped moving since you said it."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Okay. Build's stable. Publisher email is still sitting there.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She opens the tab, reads one line, and closes it. Her syntax loosens, just a little."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Five days. They want it in five days. I'm cooked.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Not your problem. You don't have to hear about it.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The fridge hums. She does not look at you, but her ear is angled toward your side of the couch."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "Five days. She's bracing. What do you say?",
+    "options": [
+     {
+      "text": "I'll take the dishes tonight. You just build.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You don't have to do that.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She listens to you in the kitchen. Her ear tracks the sound of the tap. She does not thank you, and does not say it didn't happen."
+       },
+       {
+        "who": "her",
+        "text": "...Okay. Thanks. That's the last time I say thanks today.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "So what do you actually need right now?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nothing. I'm working.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. Guarded."
+       },
+       {
+        "who": "her",
+        "text": "I don't need anything. I need the build to ship. That's it.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "That email's rough. I'll leave you the room.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Yeah. Okay.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "low",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "You start to stand. Her tail goes still, then tucks, fast, before she can stop it."
+       },
+       {
+        "who": "her",
+        "text": "You can stay. If you want. There's still tea in the pot.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "lean",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "I'll read it with you. Two sets of eyes on it.",
+      "trigger": "public_help",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "No. I mean -- I've got it.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She closes the laptop lid on the tab, like she can put the offer back inside it."
+       },
+       {
+        "who": "her",
+        "text": "It's handled. It's always handled.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 64,
+ "outfit_unlock": 0,
+ "desc": "She admits she noticed: the small things you did, the times you stayed."
+}

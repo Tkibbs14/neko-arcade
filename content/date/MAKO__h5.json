@@ -1,0 +1,159 @@
+{
+ "location": "stairwell",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The stairwell light flickers. Mako is on the landing with a box stacked to her chin."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Before you say anything - yes, it's heavy, and no, I don't need help.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I moved in here with three boxes and a plant. I can do one box.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The box tilts. Her tail snaps out for balance, and she pretends that was intentional."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "This is a two-person job. Obviously. I'm just saying I could do it alone if I wanted to.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "And it's not like I planned to run into you. I take the stairs. You take the stairs. Statistically, this was going to happen.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The box slips an inch. She braces it with her chin.",
+    "options": [
+     {
+      "text": "Let me take that side. You lost a bet, not a hand.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Ha. You remembered. Most people would've said something dumb by now.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She lets you take the corner. Her grip shifts, and she doesn't thank you, but her tail slows."
+       }
+      ]
+     },
+     {
+      "text": "You've got this. Obviously. I'll just watch.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Watching is a sport now? Fine. Enjoy the show.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She hauls the box up three steps. Her ears are pinned back the whole way."
+       }
+      ]
+     },
+     {
+      "text": "Careful. If you drop it, you'll have to be nice to me twice.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not going to drop it. And that's not how the bet works.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "The box wobbles. She catches it with her knee, and the look she gives you could strip paint."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "The stairwell: she is carrying a box that is clearly too heavy and will not admit it."
+}

@@ -1,0 +1,188 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, one softer. You open the door to find Mako holding a step ladder that clearly belongs to her."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I need to borrow your ladder.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Mine is... occupied. By a cat. Not me. Obviously.",
+    "face": "smug",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day thirty-one. The bet is over. This is just neighbor stuff.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail wraps once around her ankle, then releases."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Are you going to invite me in or just stand there?",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you do?",
+    "options": [
+     {
+      "text": "Step aside. \"Ladder's in the closet. Come in.\"",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. I mean - fine. Efficient.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You're not going to ask why I actually need it?",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "\"Day thirty-one. No bet. Just say you wanted to come over.\"",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the ladder and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still."
+       }
+      ]
+     },
+     {
+      "text": "\"I don't have a ladder. I've never had a ladder.\"",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You have a ladder. I've seen it. It's blue.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Whatever. I'll stand in the doorway then. This is fine.",
+        "face": "neutral",
+        "ears": "still",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "\"You timed your arrival to when I get home. Again.\"",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't time things. I arrive optimally. There's a difference.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h3",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She shows up with a barely valid reason: she needs to borrow a ladder she does not need."
+}

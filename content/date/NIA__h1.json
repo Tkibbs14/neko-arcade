@@ -1,0 +1,179 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Laptop glow. Two flat energy drinks. She's been on this level for three hours."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Level three. New build.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Play it. Tell me if the jump reads.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Okay. Give me a second."
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "You play. She watches the screen, not you. Her tail goes completely still."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The gap before the second platform. Is it readable or does it feel cheap?",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I moved it four pixels. It might not matter.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "lean",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her fringe back. The energy drink next to her is empty and has been for a while."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting on your read.",
+    "options": [
+     {
+      "text": "It's readable. The four pixels matter.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tip curls once, small, and she doesn't cover it."
+       }
+      ]
+     },
+     {
+      "text": "It's fine. You should sleep.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm working.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She turns back to the screen and doesn't say anything else."
+       }
+      ]
+     },
+     {
+      "text": "Walk me through what you changed.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's handled.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She closes the build. Short answer, then the task. Her tail is completely still."
+       }
+      ]
+     },
+     {
+      "text": "I'll grab you a water while you fix it.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...Okay.",
+        "face": "neutral",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't watch you go. She watches the doorway after you've gone."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h1",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "A late playtest session: she wants your honest read on a level."
+}

@@ -1,0 +1,260 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "One knock. Then nothing."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively temporary.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I need to use your bathroom. I won't be long.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears are flat. Her tail is tucked tight."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I stood outside for four minutes. Assessing variables.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Of course. Come in.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Thank you.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She steps inside, careful not to brush past you."
+       }
+      ]
+     },
+     {
+      "text": "Rough week?",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "A filing ate the week I should have paid the bill. Anyway.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail uncurls half an inch."
+       }
+      ]
+     },
+     {
+      "text": "You were waiting?",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I wasn't waiting. Assessing variables.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten harder."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I appreciate access to your bathroom.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps toward the bathroom, then pauses."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'll be quick. I have a case file to review tonight.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail remains tucked. Her ears stay flat."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The court prep is done. The water restoration is not.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She glances at the bathroom door, then back at you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "Do you say something else?",
+    "options": [
+     {
+      "text": "Take your time. I'll make tea.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You don't have to do that.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail gives a single slow sway."
+       }
+      ]
+     },
+     {
+      "text": "What's the case?",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "A forensic detail. Nothing that would interest you.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She adjusts her glasses though they haven't slipped."
+       }
+      ]
+     },
+     {
+      "text": "You look exhausted.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. I've just been sleeping less.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears swivel back."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "intro",
+ "kind": "intro",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "One knock. Shio is in the hallway in her cardigan, glasses fogged, ears flat: her water was shut off, administratively, and she just needs your bathroom. She won't be long."
+}

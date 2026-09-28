@@ -1,0 +1,260 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The laptop is closed. For once, she is not almost done with anything."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is stable. Shipped the hotfix an hour ago.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Congrats. That was fast."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It was one line. Not fast. Obvious.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her fringe back. Then again. The gesture is not about hair."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The flood damage is fixed. Landlord emailed. I can move back in next week.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Next week. Okay."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I did the math on rent. I can cover my share here. If that was the issue. It wasn't, but.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "fringe",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She stops. Starts over. Slower."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I want to stay. Not as a roommate who earns her keep. Just. Stay.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears flatten. She does not fix them."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You can say no. I'll be out by the weekend. No hard feelings. Statistically unlikely, but.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "still",
+    "pose": "far",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The room is very quiet. What do you say?",
+    "options": [
+     {
+      "text": "Move closer. Hold her hand.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her hand is cold. She doesn't pull it back."
+       },
+       {
+        "who": "her",
+        "text": "...you're still here.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls up at the tip. She leans her forehead on your shoulder and stays there."
+       }
+      ]
+     },
+     {
+      "text": "Good. You should stay.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's it? No conditions? No terms?",
+        "face": "surprised",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She studies your face like a build log. Looking for the catch."
+       },
+       {
+        "who": "her",
+        "text": "Okay. Then I'll stay.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "You look tired. We can talk tomorrow.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not tired. I'm. This is the tired part, actually. Ignore that.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She gets up. Finds a task. The moment closes like a door."
+       },
+       {
+        "who": "her",
+        "text": "I'll be in my room. Working.",
+        "face": "neutral",
+        "ears": "back",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "What do you actually need from me?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't. Need. I just said. Forget it.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks tight. She stands, already halfway to the hallway."
+       },
+       {
+        "who": "her",
+        "text": "I was going to fix the sink anyway. It's handled.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "far",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "end_best",
+ "kind": "ending",
+ "threshold": 76,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. She tells you, in her own precise way, that she wants to stay after the flood is fixed, not as a roommate who earns her keep. Romantic, tender, PG: at most she leans on your shoulder or takes your hand."
+}

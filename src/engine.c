@@ -214,6 +214,31 @@ static void spr_draw(int id, int x, int y, int flags, const u16 *ramp, int scale
     }
 }
 
+/* Fractional scale (256 = 1x): source pixel i covers x + (i*s >> 8) up to x + ((i+1)*s >> 8), so neighbouring
+ * pixels never leave gaps and a portrait can grow smoothly between 2x and 2.5x. ox, oy place the sprite inside a
+ * larger source grid (a 32x13 eye patch at 16,32 of a 64x64 bust) so every layer snaps to the same pixels. */
+void spr_scaled_q8(int id, int x, int y, int ox, int oy, int s_q8, int flags, const u16 *ramp)
+{
+    const Sprite *s = &sprites[id];
+    const u16 *pal = s->ramp ? ramp : global_palette;
+    if (!pal)
+        return;
+    for (int j = 0; j < s->h; j++) {
+        int y0 = y + (((oy + j) * s_q8) >> 8), y1 = y + (((oy + j + 1) * s_q8) >> 8);
+        if (y0 >= SCREEN_H || y1 <= 0 || y1 <= y0)
+            continue;
+        const u8 *row = s->px + j * s->w;
+        for (int i = 0; i < s->w; i++) {
+            u8 v = row[(flags & FLIP_X) ? s->w - 1 - i : i];
+            if (!v)
+                continue;
+            int x0 = x + (((ox + i) * s_q8) >> 8), x1 = x + (((ox + i + 1) * s_q8) >> 8);
+            if (x1 > x0)
+                rect(x0, y0, x1 - x0, y1 - y0, pal[v]);
+        }
+    }
+}
+
 void spr(int id, int x, int y, int flags) { spr_draw(id, x, y, flags, 0, 1, 0, 0); }
 void spr_ramp(int id, int x, int y, int flags, const u16 *ramp) { spr_draw(id, x, y, flags, ramp, 1, 0, 0); }
 void spr_scaled(int id, int x, int y, int scale, int flags, const u16 *ramp) { spr_draw(id, x, y, flags, ramp, scale, 0, 0); }

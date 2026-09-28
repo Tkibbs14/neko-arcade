@@ -1,0 +1,180 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A folder and a half-finished crossword sit on your coffee table. Shio tucks her feet under her cardigan."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "This isn't work. It's a puzzle. There's a distinction.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm stuck on seven across. Four letters. 'Bitter almond, but not the nut.'",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Cyanide."
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears stand straight up, then curl inward, like she's caught them doing something."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's correct. Immediately correct. Do you read poison crosswords often?",
+    "face": "surprised",
+    "ears": "curl",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I started it because a case file had the same word in it. Now it's... a thing I do. Anyway.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She holds the pen out to you.",
+    "options": [
+     {
+      "text": "Take the pen. Ask about the case word.",
+      "trigger": "calm_case_talk",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "The word was 'bitter.' It was in the toxicology report. That's all I can say.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You didn't do the face. Most people do the face.",
+        "face": "surprised",
+        "ears": "swivel",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Say the crossword is clearly a cry for better hobbies.",
+      "trigger": "make_her_laugh",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's a cry for entertainment that doesn't require a warrant.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "A short laugh escapes her, real and startled. She covers her mouth like it slipped out."
+       }
+      ]
+     },
+     {
+      "text": "Lean over her shoulder to look at the grid.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. She doesn't move away, but her ears flatten."
+       },
+       {
+        "who": "her",
+        "text": "That's. Close. I can read it from here, actually.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Notice her ears curl when she's pleased and say nothing.",
+      "trigger": "notice_ears_quietly",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "You let the ear thing pass. Her shoulders drop a notch, unguarded."
+       },
+       {
+        "who": "her",
+        "text": "Nine down. 'Exsanguination, informally.' You'll get it.",
+        "face": "happy",
+        "ears": "curl",
+        "tail": "sway",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She needs a second pair of eyes on a crossword that turns out to be about poisons, and is quietly pleased when you get one."
+}

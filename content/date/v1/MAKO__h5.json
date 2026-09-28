@@ -1,0 +1,186 @@
+{
+ "location": "stairwell",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The stairwell light flickers. Mako is halfway up the second flight, a cardboard box in her arms, jaw set."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I can see you doing the math on this box. I already did it. It's fine.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then goes still. She adjusts her grip, which does not help."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day twenty-nine. I'm being nice. You're welcome.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The box slips an inch. She catches it against her hip, ears flattening for half a second before she locks her face back down."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've carried heavier. I carried a couch once. Uphill. Both ways. Don't ask.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She shifts her weight. The light catches the gem on her headband, which is crooked again."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's two steps below you, box tipping, pretending everything is under control.",
+    "options": [
+     {
+      "text": "Take the heavy side without asking.",
+      "trigger": "show_up_after_rude",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Hey - I didn't - okay. Okay, fine. Just that corner.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "wrap",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls around her ankle. She doesn't mention it."
+       }
+      ]
+     },
+     {
+      "text": "You're carrying that like it's a personality test.",
+      "trigger": "compete_back",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "And I'm passing. Obviously. But if you want to make it a race, I'm already winning.",
+        "face": "sparkle",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "You lasted longer than I thought. I had you at four days. Impressive.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Is this the part where I say 'nice try'?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Wow. Okay. Noted. The terms don't specify I have to stand here for this.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She hikes the box higher and takes the next step without looking back."
+       }
+      ]
+     },
+     {
+      "text": "Need a hand? No shame in it.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't need a hand. I need you to stop looking at me like that.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her voice drops four words in, then comes back louder."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "h5",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "The stairwell: she is carrying a box that is clearly too heavy and will not admit it."
+}

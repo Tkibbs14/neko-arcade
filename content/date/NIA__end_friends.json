@@ -1,0 +1,299 @@
+{
+ "location": "couch",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The last box sits by the door, taped and labeled in her precise handwriting. She hasn't moved it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Repairs are done. Landlord called this morning.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "So you're moving back."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That was the arrangement.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail goes completely still. She pushes her fringe back, twice."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Two weeks. You said I could stay until the repairs were finished. They're finished.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "I remember."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Good. I don't want to be the kind of person who overstays.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She stands and walks to her laptop, but doesn't open it. Just stands there."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I left you the door code. In case. For packages. Or whatever.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "And there's a save file. Named after you. For playtesting. It's not - it's just a build.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "curl",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls, just slightly, before she notices and stills it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You don't have to use it. I just thought you might want to see the ending.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "The ending?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The one I've been building. It's about a cat who moves in with someone. It's not autobiographical. Mostly.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "tuck",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She looks at you, not the room. Waiting."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "I'll play it. But you should stay for the ending.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...You're still here.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls fully, unguarded, and she doesn't cover it."
+       },
+       {
+        "who": "her",
+        "text": "I'm not good at this part.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You don't have to explain. I get it.",
+      "trigger": "notice_quietly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You figured out what I told you an hour ago.",
+        "face": "smug",
+        "ears": "swivel",
+        "tail": "flick",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears swivel toward you, then relax. The tail flicks once, pleased."
+       },
+       {
+        "who": "her",
+        "text": "I was going to fix it. The save file. It's a mess. But you can have it.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "So what do you need?",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm working.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. She picks up her laptop and holds it without opening it."
+       },
+       {
+        "who": "her",
+        "text": "It's handled. I'll be out by tomorrow.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Thank you. For the code, the save file, all of it.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not - it's just logistics.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She calculates something behind her eyes and looks for a task."
+       },
+       {
+        "who": "her",
+        "text": "I should finish packing. The box by the door.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "end_friends",
+ "kind": "ending",
+ "threshold": 40,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. The flood repairs are done. She is moving back, but she leaves her door code with you and a save file named after you. Warm friendship, a door left open."
+}

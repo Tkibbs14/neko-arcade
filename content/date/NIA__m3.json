@@ -1,0 +1,335 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Laptop glow. Two flat energy drinks. Nia is on the couch, knees up, hoodie sleeves past her hands."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is cursed again.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Collision box on level three. It only breaks when the frame rate drops. Which is always.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You want me to playtest it?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "No. I want to fix it before you see it.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She does not open the build. She opens a second energy drink instead."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "That's your third."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Fourth. But who's counting.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail tip curls. She doesn't seem to notice."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You figured out what I told you an hour ago. About the collision. It was right there.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "curl",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You told me it was cursed."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I did. You still looked.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail is curled like a question mark. She doesn't hide it."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's not covering it. What do you do?",
+    "options": [
+     {
+      "text": "Sit next to her and open your own laptop.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "The couch dips. Her tail curls tighter."
+       },
+       {
+        "who": "her",
+        "text": "You don't have to. I'm almost done.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She doesn't move away. Her tail stays curled."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she needs anything from the kitchen.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "No. I'm good.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "A pause. Her tail tip curls again, slower."
+       },
+       {
+        "who": "her",
+        "text": "...water. If you're already up.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Tell her she looks exhausted.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm working.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. She pulls the laptop closer."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Minutes pass. The build compiles. She doesn't narrate it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's fixed.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She closes the laptop. Her tail tip curls once, unguarded."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You don't have to stay. I'm done for tonight.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't get up. Her tail stays where you can see it."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's not moving. What do you say?",
+    "options": [
+     {
+      "text": "Stay. No reason, just stay.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "She doesn't answer. Her tail curls tighter and she lets it."
+       },
+       {
+        "who": "her",
+        "text": "...okay.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She stays. Tail curled, unguarded, where you can see it."
+       }
+      ]
+     },
+     {
+      "text": "Thank her for the playtest even though she didn't offer one.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I didn't do anything.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks. She reaches for the laptop she just closed."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to talk about what's really going on.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nothing's going on. It's a build.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes still. She doesn't look at you."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m3",
+ "kind": "milestone",
+ "threshold": 40,
+ "outfit_unlock": 1,
+ "desc": "Her tail gives her away (tip curled, pleased) and she does not cover it. She lets you see it."
+}

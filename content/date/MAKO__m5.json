@@ -1,0 +1,384 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three knocks. The third one is late, like she had to remember to do it."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Hey, Mako."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Day twenty-nine. I'm here. Obviously.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You gonna let me in or are we doing the whole thing in the hallway?",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Come in. I was just about to make tea."
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She steps past you. Her tail doesn't brush the doorframe the way it usually does."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You always make tea at this hour. It's a thing you do.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "low",
+    "pose": "close",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Not that I noticed. It's just - the kettle's loud. Neighbor thing.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "away",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears rotate backward, then snap forward like she caught them at it."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You want the usual mug?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The one with the chip on the handle? Sure. It's the only one you have that's not a crime.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She's quieter than usual. The words are there. The engine behind them is idling."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "So. Twenty-nine.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You don't have to say anything. I'm just - noting it. The number.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail wraps once around her ankle, then lets go."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Don't make it weird. That's my job.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "away",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's staring at the kettle like it owes her money.",
+    "options": [
+     {
+      "text": "You've shown up every day. That's real.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's not - I'm fulfilling the terms. That's all this is.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She says it fast. Her ears don't move at all."
+       }
+      ]
+     },
+     {
+      "text": "So what happens on day thirty-one?",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I don't actually know what I'm going to do on day thirty-one.",
+        "face": "surprised",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She blinks. The mask slips four seconds, then snaps back louder."
+       },
+       {
+        "who": "her",
+        "text": "Not that it matters. It's a hypothetical.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Day twenty-nine of your little bet, huh?",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm done being nice for today. The terms don't specify hours.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her voice is even. That's the warning."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The kettle clicks off. Neither of you moves for it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You know, I had a whole thing planned for today.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Something nice. Very by-the-book. You would've hated it.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She touches her necklace. Once. A recalibration."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Instead I'm just standing here. So. There's your day twenty-nine.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's waiting for something she won't name.",
+    "options": [
+     {
+      "text": "I'm glad you're here. Planned thing or not.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's not - can you just accept the thing and not analyze it?",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "curl",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls tight around her own ankle. She doesn't seem to notice."
+       }
+      ]
+     },
+     {
+      "text": "You could just stay. No reason needed.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I made extra. It would have gone bad.",
+        "face": "neutral",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Don't make it weird.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "flick",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": true,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "You don't have to perform for me, you know.",
+      "trigger": "charity_patience",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not performing.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Four seconds of quiet. Then she's louder."
+       },
+       {
+        "who": "her",
+        "text": "And I don't need you being patient at me like I'm a project.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "tuck",
+        "pose": "far",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 58,
+ "outfit_unlock": 0,
+ "desc": "Day 29: she is quieter, still compliant, and calculating something."
+}

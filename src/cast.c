@@ -131,5 +131,14 @@ static void bust(int who, int ex, int x, int y, int s, int flags)
     #undef PX
 }
 
+void cast_ramp(int who, int layer, u16 *r) { build_ramp(&looks[who], layer, r); }
+int cast_hair_sprite(int who) { return looks[who].hair_spr; }
+int cast_acc_sprite(int who) { return looks[who].acc_spr; }
+void cast_fur(int who, u16 *light, u16 *base, u16 *shadow, u16 *tip, u16 *outline)
+{
+    const Look *L = &looks[who];
+    *light = L->ear[0]; *base = L->ear[1]; *shadow = L->ear[2]; *tip = L->ear_tip; *outline = L->outline;
+}
+
 void draw_bust(int who, int expr, int x, int y, int scale) { bust(who, expr, x, y, scale, 0); }
 void draw_bust_flipped(int who, int expr, int x, int y, int scale) { bust(who, expr, x, y, scale, FLIP_X); }

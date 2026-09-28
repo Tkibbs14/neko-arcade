@@ -1,0 +1,189 @@
+{
+ "location": "hallway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "A knock, once. Shio stands in the hallway in her cardigan, damp hair, glasses clear for once."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The water situation is administratively resolved. I am here to express formal thanks for the access.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You already said that. Twice. Through the door."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was assessing variables. The hallway is quiet now. Anyway.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears swivel toward your door, then back. She does not comment on it."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Water's back and you're still standing in the hallway."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "The hallway is part of the building. I live here. Statistically, I am often in it.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "low",
+    "pose": "far",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls once, slow, and goes still."
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You do. Usually with a reason."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The hallway is quiet. What do you say?",
+    "options": [
+     {
+      "text": "I kept the mug you used. It's still on the counter.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears tip forward before she can stop them. She does not explain it."
+       }
+      ]
+     },
+     {
+      "text": "Come in. I'll make tea, and you can not explain anything.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That is inefficient. I have tea at home. ...What kind.",
+        "face": "flustered",
+        "ears": "curl",
+        "tail": "curl",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She steps half a pace closer and stops, as if the distance were a measurement she forgot to finish."
+       }
+      ]
+     },
+     {
+      "text": "You stood out here four minutes last time. I counted.",
+      "trigger": "push_early",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nya- that's- I wasn't-",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten. She takes a step back toward her own door."
+       },
+       {
+        "who": "her",
+        "text": "I don't think that's a good use of either of our time. Goodnight.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Your ears just moved. They do that a lot around me.",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "They are involuntary. They are not data. Do not catalogue them.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears pin back, then slowly return. The silence after is longer than the words."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "end_drift",
+ "kind": "ending",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "Evening 14. The water is back. She thanks you formally for the access and the hallway goes quiet."
+}

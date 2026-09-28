@@ -1,0 +1,334 @@
+{
+ "location": "kitchen",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Nia is at the kitchen table, laptop closed, a half-full mug gone cold beside it. The overhead light is off; only the stove hood hums."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're up.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was compiling. Didn't work. Cursed build.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "It's almost 2. You okay?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Fine. I just -",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "away",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There's tea. I made too much. Again.",
+    "face": "neutral",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail curls once, slow, then stills. She pushes the mug toward you across the table."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You noticed the sink last week. I saw you do it. Didn't say anything.",
+    "face": "neutral",
+    "ears": "still",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I notice things. That's all. Don't make it weird.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "flick",
+    "pose": "away",
+    "gesture": "none",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She doesn't leave. She stays at the table, fingers wrapped around the cold mug, ears angled toward you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's still here. What do you do?",
+    "options": [
+     {
+      "text": "Refill her mug without a word and sit down.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You don't have to -",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She watches the steam rise. Her tail tip curls, just once, before she tucks it behind her leg."
+       }
+      ]
+     },
+     {
+      "text": "Ask her what's really wrong with the build.",
+      "trigger": "pressure_explain",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's a null reference in the dialogue tree. I'll fix it. It's handled.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her word count drops. She stands, collects the mug, and turns toward her room."
+       }
+      ]
+     },
+     {
+      "text": "Say nothing. Just stay at the table with her.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Minutes pass. The stove hood hums. She doesn't reach for her laptop."
+       },
+       {
+        "who": "her",
+        "text": "...you're still here.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Tell her you noticed she's been up all night again.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm aware. I don't need a report.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She gets up, crosses to the counter, and starts wiping a spot that is already clean."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The silence settles. She returns to the table after a moment, or she doesn't. Either way, she's still in the room."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You stayed past the tea. That's the part I noticed.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "wrap",
+    "pose": "close",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Most people don't. They get tired of the hours. It's fine.",
+    "face": "sad",
+    "ears": "droop",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail wraps once around her own ankle, then releases. She doesn't look at you, but she doesn't leave either."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's given you something real. How do you answer?",
+    "options": [
+     {
+      "text": "Thank her for saying it out loud.",
+      "trigger": "too_much_warmth",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't - it's not a big thing.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She stands abruptly, mumbles something about the build, and disappears into her room. The door clicks shut."
+       }
+      ]
+     },
+     {
+      "text": "Thank her for the tea. That's it.",
+      "trigger": "thank_the_invisible",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "It's just tea. I always make too much.",
+        "face": "neutral",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She picks at the mug handle. A long pause. Then she goes back to the counter, busying herself with nothing."
+       }
+      ]
+     },
+     {
+      "text": "Say you're not going anywhere. Then let it sit.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...Okay.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tip curls and stays curled. She doesn't cover it. She doesn't explain it."
+       }
+      ]
+     },
+     {
+      "text": "Ask if she wants to playtest something together.",
+      "trigger": "stay_past_reason",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "At two in the morning? ...Fine. But you're not allowed to be nice about the level design.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She opens the laptop. Her tail sways behind her, unhidden, and she doesn't say a word about it."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 64,
+ "outfit_unlock": 0,
+ "desc": "She admits she noticed: the small things you did, the times you stayed."
+}

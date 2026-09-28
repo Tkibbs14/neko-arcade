@@ -1,0 +1,185 @@
+{
+ "location": "kitchen",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Nia is at the kitchen table, laptop open, but her eyes track you at the stove."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Build is cursed again.",
+    "face": "tired",
+    "ears": "flat",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "fringe",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You've been at it all day. Want me to look?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's handled. Just noisy.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail flicks once, then stills. She doesn't look up from the screen."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "You're making too much again. I'll eat some. If it's going.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "There's plenty. Sit."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I was already going to.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "curl",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She closes the laptop halfway, leaving it open, and angles her chair toward you."
+   }
+  },
+  {
+   "choice": {
+    "prompt": "The rice is almost done. What do you do?",
+    "options": [
+     {
+      "text": "Slide her bowl over without a word.",
+      "trigger": "help_invisibly",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "...Oh. Thanks.",
+        "face": "surprised",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls at the tip before she catches it and forces it still."
+       }
+      ]
+     },
+     {
+      "text": "You look wiped. Go lie down, I've got this.",
+      "trigger": "call_her_tired",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm fine. I don't need to be managed.",
+        "face": "annoyed",
+        "ears": "back",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "fringe",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "She pulls the laptop back open and types without looking at the screen."
+       }
+      ]
+     },
+     {
+      "text": "Let me fix that bug. You've done enough.",
+      "trigger": "public_help",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I said it's handled. Don't touch it.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "tuck",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail tucks tight against the chair. She minimizes the window."
+       }
+      ]
+     },
+     {
+      "text": "Say nothing. Just keep cooking.",
+      "trigger": "give_space",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "The silence stretches. She watches you stir, then looks back at her screen."
+       },
+       {
+        "who": "her",
+        "text": "Smells good.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "NIA",
+ "beat": "h4",
+ "kind": "hangout",
+ "threshold": 0,
+ "outfit_unlock": 0,
+ "desc": "She has migrated to the kitchen table with her laptop while you cook."
+}

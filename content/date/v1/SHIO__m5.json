@@ -1,0 +1,325 @@
+{
+ "location": "couch",
+ "time": "late",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "The case notes have migrated from her lap to the cushion between you. Her pen stopped moving two minutes ago."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I should go. My water is administratively temporary, and you have a functioning door frame to sleep behind.",
+    "face": "neutral",
+    "ears": "swivel",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "glasses",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You don't have to. The couch is structurally adequate."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's a misuse of my own vocabulary.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her tail gives one slow sway, then goes still as if she caught it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I've been sleeping less. That's not a complaint. It's a data point.",
+    "face": "tired",
+    "ears": "droop",
+    "tail": "tuck",
+    "pose": "lean",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Is the data point about the case, or about something else?"
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Both. Neither. I haven't isolated the variable.",
+    "face": "flustered",
+    "ears": "flat",
+    "tail": "curl",
+    "pose": "away",
+    "gesture": "glasses",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She pushes her glasses up even though they haven't slipped."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I know what loss looks like. That doesn't make it easier to -",
+    "face": "sad",
+    "ears": "back",
+    "tail": "still",
+    "pose": "far",
+    "gesture": "wrist",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Anyway.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "tuck",
+    "pose": "far",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's left the sentence unfinished. What do you do?",
+    "options": [
+     {
+      "text": "You can finish it. I'm not going anywhere.",
+      "trigger": "stay_no_push",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's - a statistically risky offer.",
+        "face": "flustered",
+        "ears": "perk",
+        "tail": "flick",
+        "pose": "mid",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail betrays her: it wraps once around her own ankle, then releases."
+       }
+      ]
+     },
+     {
+      "text": "I remember you take your coffee black. No sugar.",
+      "trigger": "remember_detail",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You remembered that. You didn't have to.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I catalogued it as irrelevant. It appears I was wrong.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "That sounds really hard. You're so brave for handling it.",
+      "trigger": "pity",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "I'm not brave. I'm employed.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten completely, and she begins stacking her notes with exact, deliberate edges."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She is quiet for a moment. The case file is closed now, squared against the armrest. Her glasses come off, get cleaned on her cardigan, go back on."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There was a case. Someone my age. I was the one who had to log the evidence.",
+    "face": "neutral",
+    "ears": "flat",
+    "tail": "low",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I named a sample after my father's dog. I don't know why I'm telling you that.",
+    "face": "flustered",
+    "ears": "curl",
+    "tail": "tuck",
+    "pose": "away",
+    "gesture": "wrist",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears curl inward, mint tips nearly touching her hair. She does not explain it."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't know what to do when someone just. Stays.",
+    "face": "neutral",
+    "ears": "back",
+    "tail": "still",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's looking at you now, waiting. What do you say?",
+    "options": [
+     {
+      "text": "Then don't do anything. I'm right here.",
+      "trigger": "stay_after_errand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "That's inefficient. It's also - acceptable.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "She leans her shoulder against yours, just barely, and leaves it there."
+       }
+      ]
+     },
+     {
+      "text": "You're not fragile, Shio. I've seen you work.",
+      "trigger": "not_flinch",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Note taken.",
+        "face": "surprised",
+        "ears": "up",
+        "tail": "still",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "Most people look at the files and then look at me differently. You didn't.",
+        "face": "happy",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "lean",
+        "gesture": "wrist",
+        "blush": true,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Your ears just did something. What does that mean?",
+      "trigger": "react_to_ears",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "They didn't do anything. You're projecting.",
+        "face": "flustered",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "glasses",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flatten hard and she pulls her cardigan tighter, retreating two inches on the cushion."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "SHIO",
+ "beat": "m5",
+ "kind": "milestone",
+ "threshold": 64,
+ "outfit_unlock": 0,
+ "desc": "She says what she means without the wrapper of data and variables."
+}

@@ -1,0 +1,343 @@
+{
+ "location": "doorway",
+ "time": "evening",
+ "steps": [
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Three sharp knocks, then one softer. You already know the rhythm."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "It's day nine. I brought food. Not because I care, because I lost a bet.",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "That's the whole thing. That's the deal. You're welcome.",
+    "face": "smug",
+    "ears": "up",
+    "tail": "sway",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "You always knock the same way."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I don't do that. You're making stuff up again.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "still",
+    "pose": "mid",
+    "gesture": "chain",
+    "blush": true,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "Her ears track you before she decides to look."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Just take the container. Stop looking at me like that, it's making this worse.",
+    "face": "annoyed",
+    "ears": "back",
+    "tail": "flick",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "She's holding the container out like it's a challenge.",
+    "options": [
+     {
+      "text": "Take it like it's a real deal.",
+      "trigger": "treat_bet_real",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Good. Someone who respects a contract. That's rare.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "sway",
+        "pose": "close",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail curls once, slow, like a question mark."
+       },
+       {
+        "who": "her",
+        "text": "Eat the food. It's not going to get warmer while you stare.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Tell her you lost count of the days.",
+      "trigger": "mock_the_bet",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "You lost count. You. The one person who- never mind.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "still",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "her",
+        "text": "I have it tracked. Day nine. I'm the one keeping the record here.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Ask why she keeps making extra.",
+      "trigger": "let_excuse_stand",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Because I cook for two anyway. It's math, not effort.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "none",
+        "blush": false,
+        "look_away": false
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears flick back, then up again, faster than a lie can land."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "line": {
+    "who": "you",
+    "text": "Sit down. You're hovering."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "I'm not hovering. I'm standing with purpose.",
+    "face": "smug",
+    "ears": "perk",
+    "tail": "flick",
+    "pose": "mid",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She sits anyway. On the arm of the couch, like it wasn't her idea."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Your fork's bent. How do you live like this. Genuinely, how.",
+    "face": "annoyed",
+    "ears": "swivel",
+    "tail": "sway",
+    "pose": "lean",
+    "gesture": "none",
+    "blush": false,
+    "look_away": false
+   }
+  },
+  {
+   "line": {
+    "who": "narrator",
+    "text": "She straightens the bent tine with her thumb, quick, without asking."
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "There. Fixed. That's not kind, that's standards.",
+    "face": "neutral",
+    "ears": "up",
+    "tail": "still",
+    "pose": "lean",
+    "gesture": "chain",
+    "blush": false,
+    "look_away": true
+   }
+  },
+  {
+   "line": {
+    "who": "her",
+    "text": "Why are you smiling. Stop that. Eat your food.",
+    "face": "flustered",
+    "ears": "back",
+    "tail": "curl",
+    "pose": "close",
+    "gesture": "none",
+    "blush": true,
+    "look_away": false
+   }
+  },
+  {
+   "choice": {
+    "prompt": "For once, she isn't performing.",
+    "options": [
+     {
+      "text": "Stay in the quiet with her.",
+      "trigger": "stay_after_slip",
+      "reaction": [
+       {
+        "who": "narrator",
+        "text": "Neither of you says anything for a while. It doesn't feel like losing."
+       },
+       {
+        "who": "her",
+        "text": "This is a normal amount of time to sit. For the record.",
+        "face": "neutral",
+        "ears": "up",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "her",
+        "text": "Okay. I'm going. Day ten is still on.",
+        "face": "smug",
+        "ears": "perk",
+        "tail": "wag",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     },
+     {
+      "text": "Tease her about being nice.",
+      "trigger": "laugh_at_her",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Nice. I fixed a fork. That's maintenance, not nice.",
+        "face": "annoyed",
+        "ears": "flat",
+        "tail": "puff",
+        "pose": "away",
+        "gesture": "none",
+        "blush": false,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her tail goes completely still. That's the tell that means it actually landed."
+       },
+       {
+        "who": "her",
+        "text": "I'm done being nice for today. The terms don't specify hours.",
+        "face": "sad",
+        "ears": "droop",
+        "tail": "low",
+        "pose": "away",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": true
+       }
+      ]
+     },
+     {
+      "text": "Thank her without making it a thing.",
+      "trigger": "ignore_the_slip",
+      "reaction": [
+       {
+        "who": "her",
+        "text": "Don't. It's just a fork.",
+        "face": "flustered",
+        "ears": "back",
+        "tail": "curl",
+        "pose": "close",
+        "gesture": "none",
+        "blush": true,
+        "look_away": true
+       },
+       {
+        "who": "narrator",
+        "text": "Her ears turn toward you and stay there. She doesn't fix it."
+       },
+       {
+        "who": "her",
+        "text": "Day ten. Same time. Bring your own fork.",
+        "face": "smug",
+        "ears": "up",
+        "tail": "sway",
+        "pose": "mid",
+        "gesture": "chain",
+        "blush": false,
+        "look_away": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "spk": "MAKO",
+ "beat": "m2",
+ "kind": "milestone",
+ "threshold": 22,
+ "outfit_unlock": 0,
+ "desc": "The Slip: for thirty seconds she is simply nice, with no performance. Neither of you mentions it."
+}
