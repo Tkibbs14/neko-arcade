@@ -32,9 +32,10 @@ def load_groups():
     content/rank/labels__*.jsonl), each candidate's label averaged over the labellers."""
     bank = json.load(open(os.path.join(ROOT, "build", "compose_bank.json")))
     by = {(p["spk"], p["sit"]): p for p in bank}
-    names = os.environ.get("LABELLERS")
-    paths = ([os.path.join(LABELS, f"labels__{n}.jsonl") for n in names.split(",")] if names
-             else sorted(glob.glob(os.path.join(LABELS, "labels__*.jsonl"))))
+    names, kind = os.environ.get("LABELLERS"), os.environ.get("LABEL_KIND", "labels")   # labels_v: sense + voice pass
+    paths = ([os.path.join(LABELS, f"{kind}__{n}.jsonl") for n in names.split(",")] if names
+             else sorted(glob.glob(os.path.join(LABELS, f"{kind}__*.jsonl"))))
+    target = os.environ.get("LABEL_TARGET", "sense")      # "both": rank by sense + voice, the bank's approval rule
     per = []
     for path in paths:
         per.append({g["id"]: g for g in map(json.loads, open(path))})
@@ -45,8 +46,10 @@ def load_groups():
         p = by[(g["spk"], g["sit"])]
         prefix = [NL, TAGS["speakers"][g["spk"]], TAGS["situations"][g["sit"]]] + p["op"][g["op"]][2]
         out.append({"id": gid, "np": len(prefix), "seqs": [prefix + p["rest"][r][2] + [NL] for r in g["rests"]],
-                    "y": [sum(lab[gid]["sense"][k] for lab in per) / len(per) for k in range(6)]})
-    print(f"labels from {', '.join(os.path.basename(p)[8:-6] for p in paths)}: {len(out)} groups")
+                    "y": [sum(lab[gid]["sense"][k] + (lab[gid]["voice"][k] if target == "both" else 0)
+                               for lab in per) / len(per) for k in range(6)]})
+    print(f"labels from {', '.join(os.path.basename(p).split('__')[1][:-6] for p in paths)} ({kind}, target {target}): "
+          f"{len(out)} groups")
     return out
 
 
@@ -74,7 +77,8 @@ def rank_loss(s, y, alpha):
 
 def metrics(model, gs):
     """best3: mean label of the pick among the first three candidates (the device draws three at random);
-    best6: among all six; top3: share of groups where that pick is rated 2; acc: pairwise order accuracy."""
+    best6: among all six; top3: share of groups where that pick is as good as the best of the three; acc: pairwise
+    order accuracy."""
     model.eval()
     with torch.no_grad():
         S = torch.cat([scores(model, gs[i:i + 48]) for i in range(0, len(gs), 48)])
@@ -82,7 +86,8 @@ def metrics(model, gs):
     p3 = Y[:, :3].gather(1, S[:, :3].argmax(1, keepdim=True)).squeeze(1)
     p6 = Y.gather(1, S.argmax(1, keepdim=True)).squeeze(1)
     d, w = S.unsqueeze(2) - S.unsqueeze(1), Y.unsqueeze(2) > Y.unsqueeze(1)
-    return {"best3": p3.mean().item(), "best6": p6.mean().item(), "top3": (p3 == 2).float().mean().item(),
+    return {"best3": p3.mean().item(), "best6": p6.mean().item(),
+            "top3": (p3 == Y[:, :3].max(1).values).float().mean().item(),
             "acc": (d[w] > 0).float().mean().item()}
 
 

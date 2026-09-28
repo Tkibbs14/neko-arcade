@@ -133,9 +133,15 @@ def main(mode, eval_tag, model, effort="off", max_groups=2400, voice=False):
           f"{len(todo)} to go); spend so far ${spent():.4f}", flush=True)
     lock = threading.Lock()
 
+    def name(spk):
+        return spk.replace('CUST_', 'customer ').title()
+
     def run(batch):
-        user = "\n\n".join(
-            f"id: {g['id']}\nspeaker: {g['spk'].replace('CUST_', 'customer ').title()}. {VOICES[g['spk']]}\n"
+        # each speaker's description once per batch (a carded speaker's description holds the whole card)
+        speakers = list(dict.fromkeys(g["spk"] for g in batch))
+        head = "\n\n".join(f"Speaker {name(spk)}: {VOICES[spk]}" for spk in speakers)
+        user = head + "\n\n" + "\n\n".join(
+            f"id: {g['id']}\nspeaker: {name(g['spk'])}\n"
             f"situation: {situation(g['spk'], g['sit'], g['value'])}\n" +
             "\n".join(f"{k + 1}. \"{line}\"" for k, line in enumerate(g["lines"])) for g in batch)
         want = {g["id"] for g in batch}
@@ -164,6 +170,7 @@ def main(mode, eval_tag, model, effort="off", max_groups=2400, voice=False):
                     f.write(json.dumps({"ids": sorted(want), "provider": provider, "reasoning": reasoning[:6000]}) + "\n")
         return len(got), len(batch)
 
+    todo.sort(key=lambda g: (g["spk"], g["sit"]))      # batches of one speaker: its description is sent once
     batches = [todo[i:i + 8] for i in range(0, len(todo), 8)]
     ok = tot = 0
     with cf.ThreadPoolExecutor(max_workers=8) as pool:

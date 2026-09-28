@@ -1,20 +1,19 @@
 # Build output, model checkpoints, logs and quality runs: regenerate them with tools/ (see README).
 /build/*
-# ...except the labels the bank's approvals are built from and the judging panel's reports
+# ...except the labels behind the first bank's approvals and the judging panel's reports
 !/build/quality/
 /build/quality/*
-!/build/quality/pool1/
-!/build/quality/pool2/
-/build/quality/pool1/*
-/build/quality/pool2/*
-!/build/quality/pool1/labels*.jsonl
-!/build/quality/pool2/labels*.jsonl
-!/build/quality/r1/
-!/build/quality/r2/
-!/build/quality/r3/
-!/build/quality/r4/
-!/build/quality/r5/
+!/build/quality/v1-pool1/
+!/build/quality/v1-pool2/
+/build/quality/v1-pool1/*
+/build/quality/v1-pool2/*
+!/build/quality/v1-pool1/labels*.jsonl
+!/build/quality/v1-pool2/labels*.jsonl
+!/build/quality/r*/
+!/build/quality/p1/
 /build/quality/r*/*
+/build/quality/p1/*
 !/build/quality/r*/report.md
+!/build/quality/p1/report.md
 __pycache__/
 *.pyc

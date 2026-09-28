@@ -53,7 +53,7 @@ extern const int16_t nlm_gf[];
 extern const uint16_t nlm_exp[4096];
 extern const uint16_t nlm_str_off[];
 extern const uint8_t nlm_str[];
-#define NLM_WORDS 8193
+#define NLM_WORDS 7355
 extern const uint32_t nlm_words[];
 #define SPK_CUST_DOG 0x80
 #define SPK_CUST_FOX 0x81

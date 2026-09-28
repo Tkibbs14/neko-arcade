@@ -59,6 +59,8 @@ def approvals():
     fully sensible and, where voice ratings exist, both voice labellers rated fully in character. A pair whose voice
     ratings are missing is not approved; with no voice ratings at all the rule is sense only (and says so)."""
     recs, voice = label_records("labels", LABELLERS), label_records("labels_v", VOICE)
+    if not all(recs[n] for n in LABELLERS):                # one pass with --voice rates sense and voice together
+        recs = label_records("labels_v", LABELLERS)
     use_voice = all(voice[n] for n in VOICE) and os.environ.get("MKCOMPOSE_SENSE_ONLY") != "1"
     if not use_voice:
         print("mkcompose: approving on sense alone (no voice ratings, or MKCOMPOSE_SENSE_ONLY=1)")
@@ -114,7 +116,8 @@ for spk, sit, desc in SITS:
     pairs = sorted(APPROVED.get((spk, sit), {}))
     for (o, r) in pairs:                                 # the text must be exactly what the labellers rated
         rec, k = APPROVED[(spk, sit)][(o, r)]
-        if c_fill(ops[o][1] + " " + rests[r][1], rec["value"], articles=False) != rec["lines"][k]:
+        joined = ops[o][1] + " " + rests[r][1]          # labels made before or after the a/an fix both match
+        if rec["lines"][k] not in (c_fill(joined, rec["value"]), c_fill(joined, rec["value"], articles=False)):
             raise SystemExit(f"mkcompose: approved pair {spk}/{sit} {o}+{r} no longer matches its label; relabel")
     if pairs:
         out.append(f"static const u16 {name}_ok[] = {{{','.join(str(o << 8 | r) for o, r in pairs)}}};\n")

@@ -39,7 +39,7 @@ the stick's own libraries under qemu). Card install: `tools/install-card.ps1`.
 frames, and what happened in each game); press **Select** for a live performance overlay. The browser version logs to
 the console. Checks: `tools/rivalsim.sh` (Rival! feel and balance), `tools/nlm_quality.py` (the dialogue judge panel).
 
-**Dialogue:** lines are composed on the device from the big model's sentences. Every opener + continuation pair in
+**Dialogue:** lines are composed on the device from the big model's sentences, written with `tools/distill_gen2.py` and the guide in `tools/distill_spec2.py` (Nia, Mako and Shio from their original character cards). Every opener + continuation pair in
 the bank was rated by three large models (DeepSeek, MiniMax, MiMo; `tools/rank_labels.py`), and only pairs all
 three called fully sensible, and MiniMax and MiMo both called fully in character (`--voice`), are baked in
 (`tools/mkcompose.py`); NekoLM, fine-tuned on those ratings (`tools/rank_train.py`), picks among an opener's

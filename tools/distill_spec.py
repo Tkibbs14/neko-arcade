@@ -51,6 +51,27 @@ in leaves, never in a hurry.""",
 thoughts, lowercase, sometimes "mrrp" or "nya", about food, play, naps, the red dot and curiosity.""",
 }
 
+# Tyler's rule (2026-09-27): a character's personality and voice come from its original source card. For the
+# cast taken from his published cards, the card's full definition follows the in-game role above, for the writer,
+# the labellers and the judges alike. The cards are read from the local dump of his published cards
+# (a local copy of what tools/user_cards.py writes; not in the repo); without it the in-game summaries above are used.
+import json as _json, os as _os
+_CARDS = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "build",
+                       "cards_published.json")
+CARD_NAMES = {"NIA": "Nia Takahashi", "MAKO": "Mako Shirase", "SHIO": "Shio Minase"}
+CARDS = {}
+_NL = chr(10)
+if _os.path.exists(_CARDS):
+    _by_name = {c["name"]: c for c in _json.load(open(_CARDS, encoding="utf-8"))}
+    for _spk, _name in CARD_NAMES.items():
+        _card = _by_name.get(_name)
+        if _card and not _card.get("is_nsfw"):
+            CARDS[_spk] = (_card.get("long_description") or _card.get("public_bio") or "").strip()
+            VOICES[_spk] = ("In this game: " + VOICES[_spk].strip() + _NL + _NL + "Source card (the authority for "
+                            "personality and voice; the game is all-ages and not a romance, so the card's relationship "
+                            "stages, romance notes, hidden stats and progression mechanics do not apply):" + _NL +
+                            CARDS[_spk])
+
 # (speaker, situation, what is happening). Placeholders must appear in every line of that situation.
 SITS = [
     ("NIA", "HUB_HELLO", "The player opens the arcade and finds Nia at her desk. She greets them to playtest her builds."),

@@ -59,13 +59,13 @@ def generate(model, outdir, n, rnd, spk, sit, desc):
               '\nReply with JSON only: {"lines": ["...", "..."]}')
     note = place_note(sit)
     user = (f"Speaker:\n{VOICES[spk]}\nHow they talk:\n{WRITER[spk]}\n\nSituation: {desc}\n" + (note + "\n" if note else "") +
-            f"\nWrite {n + 15} different lines this speaker says in this situation.")
+            f"\nWrite {n + 15} different lines this speaker says in this situation, each under 80 characters.")
     if earlier:
         user += ("\n\nThese lines already exist. Do not repeat or closely paraphrase them: use different wording, "
                  "sentence shapes, lengths and angles on the situation.\n" + "\n".join(earlier))
-    examples = {e.strip().lower() for e in re.findall(r'"([^"]{8,})"', WRITER[spk])}
+    examples = {e.strip().lower() for e in re.findall(r'"([^"]{8,})"', WRITER[spk] + VOICES[spk])}   # no verbatim copies
     lines, invalid, single = [], 0, 0
-    for attempt in range(2):
+    for attempt in range(3):
         try:
             raw = chat(system, user, json_mode=True, temperature=1.0, max_tokens=6000, model=model,
                        tag=f"v2/{spk}/{sit}/r{rnd}")
