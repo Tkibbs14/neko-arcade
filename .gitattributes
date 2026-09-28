@@ -1,0 +1,4 @@
+# Scripts run in WSL and the stick toolchain: keep LF line endings everywhere.
+* text=auto eol=lf
+*.png binary
+*.pt binary

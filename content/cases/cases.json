@@ -1,0 +1,322 @@
+[
+ {
+  "title": "Missing Midnight Pudding",
+  "intro": "Mako's victory pudding vanished from the fridge at 2 am. Everyone's a suspect, but only one left a trail.",
+  "culprit": "NIA",
+  "clues": [
+   {
+    "id": "energy_drink",
+    "name": "Energy Drink Can",
+    "desc": "An empty can of Nia's favorite brand, crushed, next to the fridge."
+   },
+   {
+    "id": "pudding_cup",
+    "name": "Pudding Cup",
+    "desc": "An empty pudding cup in the trash, spoon still inside, licked clean."
+   },
+   {
+    "id": "game_controller",
+    "name": "Game Controller",
+    "desc": "A controller on the couch, paused at 2:17 am, with sticky pudding residue."
+   },
+   {
+    "id": "coffee_grounds",
+    "name": "Coffee Grounds",
+    "desc": "Fresh coffee grounds in the sink, but Mocha's cafe is closed until 5 am."
+   }
+  ],
+  "statements": [
+   {
+    "who": "NIA",
+    "text": "I was coding all night with headphones on. I never even went to the kitchen.",
+    "contradicted_by": "game_controller"
+   },
+   {
+    "who": "NIA",
+    "text": "I don't even like sweets. Energy drinks are my fuel.",
+    "contradicted_by": null
+   },
+   {
+    "who": "NIA",
+    "text": "That pudding? Mako probably ate it herself to mess with us.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I baked that pudding for the contest. I went to bed at 11. I didn't touch it.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "If I wanted it, I'd have eaten it in front of everyone. I'm not sneaky.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I was asleep until 5. I only came up because I smelled coffee.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "That coffee in the sink? Not mine. I brew in the cafe, not upstairs.",
+    "contradicted_by": null
+   }
+  ],
+  "confession": "Okay, fine. I got hungry at 2 am. The pudding was right there. I'm weak.",
+  "wrapup": "The controller gave you away, Nia. Next time, eat before you game."
+ },
+ {
+  "title": "The Vanishing Muffins",
+  "intro": "A batch of Mocha's muffins vanished from the cafe kitchen overnight. Let's find the culprit.",
+  "culprit": "MAKO",
+  "clues": [
+   {
+    "id": "crumbs",
+    "name": "Scale",
+    "desc": "Chocolate crumbs on the scale, Mako's pink measuring cup still on top."
+   },
+   {
+    "id": "flour",
+    "name": "Flour Handprint",
+    "desc": "A small flour handprint on the counter, too tiny for Mako's hands."
+   },
+   {
+    "id": "timer",
+    "name": "Timer Setting",
+    "desc": "The oven timer is set to 12 minutes, but Mako's recipe says 18 minutes."
+   }
+  ],
+  "statements": [
+   {
+    "who": "NIA",
+    "text": "I was coding all night. Didn't leave my room until noon.",
+    "contradicted_by": null
+   },
+   {
+    "who": "NIA",
+    "text": "I don't even like muffins. Too crumbly.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I never touched the scale. I always eyeball ingredients.",
+    "contradicted_by": "crumbs"
+   },
+   {
+    "who": "MAKO",
+    "text": "I set the timer correctly. Someone must have changed it.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I was downstairs brewing coffee. Ask any customer.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "That flour handprint? Must be from a customer's kid earlier.",
+    "contradicted_by": null
+   }
+  ],
+  "confession": "Fine, I ate them! I was stress-baking and they smelled too good. I'll make more, okay?",
+  "wrapup": "Case closed. Mako's competitive nature extends to muffin quality control."
+ },
+ {
+  "title": "The Empty Cream Pitcher",
+  "intro": "Mocha's cafe cream pitcher was found empty at 7am. Someone used it after closing, but who?",
+  "culprit": "MOCHA",
+  "clues": [
+   {
+    "id": "cream_drop",
+    "name": "Cream Drop",
+    "desc": "A single drop of cream on the floor near the pitcher, still fresh."
+   },
+   {
+    "id": "espresso_grounds",
+    "name": "Espresso Grounds",
+    "desc": "Fresh espresso grounds in the trash, from a late-night shot."
+   },
+   {
+    "id": "mako_timer",
+    "name": "Mako's Timer",
+    "desc": "Mako's baking timer left on the counter, set for 3am."
+   },
+   {
+    "id": "mocha_apron",
+    "name": "Mocha's Apron",
+    "desc": "Mocha's apron, folded on a chair, with a fresh cream stain on the pocket."
+   }
+  ],
+  "statements": [
+   {
+    "who": "NIA",
+    "text": "I was coding until 2am with headphones on. I didn't leave my apartment.",
+    "contradicted_by": null
+   },
+   {
+    "who": "NIA",
+    "text": "I heard a faint clink around 3am, but I ignored it and kept working.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I set my timer for 3am to bake a victory cake. I was in my apartment then.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I never went to the cafe last night. I was too busy measuring flour.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "If I had gone down, I would have noticed the empty pitcher and fixed it.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I closed the cafe at 6pm and went straight to bed. I was exhausted.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I always wash my apron right after closing. It's spotless now.",
+    "contradicted_by": "mocha_apron"
+   },
+   {
+    "who": "MOCHA",
+    "text": "I don't drink espresso at night. It keeps me up, and I need my beauty sleep.",
+    "contradicted_by": null
+   }
+  ],
+  "confession": "Okay, I came back for a midnight espresso and used the cream. I didn't want to seem unprofessional.",
+  "wrapup": "The cream drop and apron stain don't lie. Case closed, with a shot of espresso."
+ },
+ {
+  "title": "The Missing Ramen Packet",
+  "intro": "Shio briefs: 'Someone took my last spicy ramen packet from the pantry. It was there last night. Let's find the culprit.'",
+  "culprit": "NIA",
+  "clues": [
+   {
+    "id": "energy_drink",
+    "name": "Energy Drink Can",
+    "desc": "An empty can of Nia's favorite energy drink sits next to the pantry, still cold."
+   },
+   {
+    "id": "ramen_wrapper",
+    "name": "Ramen Wrapper",
+    "desc": "A torn spicy ramen wrapper is in the trash, but the packet is missing."
+   },
+   {
+    "id": "mako_flour",
+    "name": "Floury Handprint",
+    "desc": "A floury handprint is on the pantry door, suggesting Mako was baking nearby."
+   }
+  ],
+  "statements": [
+   {
+    "who": "NIA",
+    "text": "I was coding all night with my headphones on. Didn't leave my room.",
+    "contradicted_by": "energy_drink"
+   },
+   {
+    "who": "NIA",
+    "text": "I don't even like spicy ramen. Mako's the one who bakes spicy stuff.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I was baking a cake to beat Mocha's record. I didn't touch the pantry.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "That floury handprint? I opened the pantry to grab sugar. That's all.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I got up for water around 2 am and saw Nia's door open.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "The hallway smelled like spicy ramen for an hour after.",
+    "contradicted_by": null
+   }
+  ],
+  "confession": "Okay, I took it. I was hungry and out of my own ramen. Please don't tell Mako I lost a bet.",
+  "wrapup": "Case closed. The energy drink can was still cold, proving Nia left her room. She fibbed."
+ },
+ {
+  "title": "The Great Egg Heist",
+  "intro": "Shio briefs: 'Mocha's dozen eggs for the morning rush vanished from the fridge. Let's crack this.'",
+  "culprit": "MAKO",
+  "clues": [
+   {
+    "id": "egg_carton",
+    "name": "Egg Carton",
+    "desc": "Empty egg carton in the trash, labeled MOCHA - CAFE, bought yesterday."
+   },
+   {
+    "id": "flour_trail",
+    "name": "Flour Trail",
+    "desc": "White powder footprints lead from kitchen to Mako's door."
+   },
+   {
+    "id": "energy_drink",
+    "name": "Energy Drink",
+    "desc": "Nia's empty energy drink can on counter, next to a bowl of ramen."
+   },
+   {
+    "id": "cafe_receipt",
+    "name": "Cafe Receipt",
+    "desc": "Mocha's receipt for 2 dozen eggs, timestamped 6 AM today."
+   }
+  ],
+  "statements": [
+   {
+    "who": "NIA",
+    "text": "I was coding all night. Didn't touch the eggs.",
+    "contradicted_by": null
+   },
+   {
+    "who": "NIA",
+    "text": "I only left my room to grab an energy drink.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I was in my room, didn't even go to the kitchen.",
+    "contradicted_by": "flour_trail"
+   },
+   {
+    "who": "MAKO",
+    "text": "Baking? No, I haven't baked since yesterday.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MAKO",
+    "text": "I use my own eggs. Mine are still in the fridge, you can count.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I was at the cafe since 5 AM. Bought eggs for the morning rush.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "I haven't been upstairs all morning.",
+    "contradicted_by": null
+   },
+   {
+    "who": "MOCHA",
+    "text": "Nia came by for coffee around 6, but went right back up.",
+    "contradicted_by": null
+   }
+  ],
+  "confession": "Okay, I took the eggs! I wanted to bake a souffle to beat Mocha's record. It was worth it.",
+  "wrapup": "Shio: 'The flour trail was a dead giveaway. Case closed.'"
+ }
+]

@@ -1,0 +1,89 @@
+# UI art: palette shared by icons and small interface sprites.
+palette ui
+  k = #2a1f33
+  w = #fff8f0
+  p = #ff7aa8
+  P = #d9467e
+  r = #ff5a6e
+  y = #ffd060
+  Y = #e0a030
+  m = #7ae0c0
+  M = #3fb898
+  b = #6aa8ff
+  B = #3f6fd8
+  g = #c8c0cc
+  G = #8a8294
+  o = #ffa04a
+  n = #5a4a3a
+end
+
+# 9x8 heart (friendship / hearts meters)
+sprite heart ui
+.kk...kk.
+kppk.kPpk
+kpwppppPk
+kppppppPk
+.kpppPPk.
+..kpPPk..
+...kPk...
+....k....
+end
+
+sprite heart_empty ui
+.kk...kk.
+kggk.kGgk
+kgwggggGk
+kggggggGk
+.kgggGGk.
+..kgGGk..
+...kGk...
+....k....
+end
+
+# 9x9 star (ratings)
+sprite star ui
+....k....
+...kyk...
+kkkkyykkk
+kyyyywyyk
+.kyyyyyk.
+..kyyYk..
+.kyYkYYk.
+.kYk.kYk.
+.kk...kk.
+end
+
+# 11x10 paw cursor
+sprite paw ui
+..kk...kk..
+.kppk.kppk.
+.kppk.kppk.
+kk.kkkkk.kk
+kpkwwwwwkpk
+kpkwwwwwwkk
+.kwwwwwwwk.
+.kwwwwwwwk.
+..kwwwwwk..
+...kkkkk...
+end
+
+# 7x7 button badges drawn with a letter over them by the text code
+sprite badge_a ui
+.kkkkk.
+kmmmmmk
+kmmmmmk
+kmmmmmk
+kmmmmmk
+kMMMMMk
+.kkkkk.
+end
+
+sprite badge_b ui
+.kkkkk.
+krrrrrk
+krrrrrk
+krrrrrk
+krrrrrk
+kPPPPPk
+.kkkkk.
+end
