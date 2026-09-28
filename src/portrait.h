@@ -34,3 +34,8 @@ void portrait_snap(Portrait *p);        /* jump straight to the target placement
 void portrait_update(Portrait *p);
 void portrait_draw(const Portrait *p);
 const char *portrait_outfit_name(int who, int outfit);
+/* The same character standing, head to toe, in her outfit (title and pick screens): 56x128 at X, Y (top left), scale s
+ * (256 = 1x); the portrait's blinks, ears and tail animate it. dim 0..256 darkens her into the shadow. */
+#define FIG_W 56
+#define FIG_H 128
+void figure_draw(const Portrait *p, int X, int Y, int s, int dim);

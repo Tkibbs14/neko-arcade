@@ -167,9 +167,6 @@ void portrait_update(Portrait *p)
 
 /* ---------------------------------------------------------------- drawing */
 
-static int SX(const Portrait *p, int bx_q8) { return (p->x >> 8) + (int)(((i64)bx_q8 * p->s) >> 16); }
-static int SY(const Portrait *p, int by_q8, int dy) { return (p->y >> 8) + dy + (int)(((i64)by_q8 * p->s) >> 16); }
-
 static void bezier(const int *cx, const int *cy, int t, int *x, int *y)   /* t 0..256, points q8 */
 {
     i64 u = 256 - t, a = u * u * u, b = 3 * u * u * t, c = 3 * u * t * t, d = (i64)t * t * t;
@@ -178,12 +175,49 @@ static void bezier(const int *cx, const int *cy, int t, int *x, int *y)   /* t 0
 }
 
 #define TAIL_N 44
+/* Samples a tail along its Bezier (cx, cy: source pixels, q8), the tip curling in on itself for TM_CURL, and draws it
+ * as one furry tube at X, Y and scale s. half: the full-body figure, whose tail is half the portrait's. fur: light,
+ * base, shadow, tip, outline. */
+static void tail_tube(const Portrait *p, const int *cx, const int *cy, int half, int X, int Y, int s, const u16 *fur)
+{
+    int n = TAIL_N + (p->tail_mode == TM_CURL ? 12 : 0);
+    int xs[TAIL_N + 12], ys[TAIL_N + 12], rs[TAIL_N + 12];
+    int puff = 256 + p->tail_puff * 3;                /* puffed up, then settling */
+    int curl = half ? 3 : 6;                          /* the curl's radius, in half pixels */
+    for (int i = 0; i < n; i++) {
+        int bx, by, t = i < TAIL_N ? i * 256 / (TAIL_N - 1) : 256;
+        if (i < TAIL_N) {
+            bezier(cx, cy, t, &bx, &by);
+        } else {                                      /* the tip curls in on itself */
+            int k = i - TAIL_N + 1, ang = 64 + k * 10;
+            bx = cx[3] - (curl << 7) + icos(ang) * curl / 2;
+            by = cy[3] - isin(ang) * curl / 2 + (1 << 8);
+        }
+        int r = (4 << 8) + 110 - (t * 7 >> 2) - (i >= TAIL_N ? (i - TAIL_N) * 14 : 0);
+        r = (r * puff >> 8) >> half;
+        xs[i] = X + (int)(((i64)bx * s) >> 16);
+        ys[i] = Y + (int)(((i64)by * s) >> 16);
+        rs[i] = imax(1, (int)(((i64)r * s) >> 16));
+    }
+    int tip_from = n * 4 / 5;
+    for (int i = 0; i < n; i++)
+        circle_fill(xs[i], ys[i], rs[i] + 1, fur[4]);
+    for (int i = 0; i < n; i++)
+        circle_fill(xs[i], ys[i], rs[i], i >= tip_from ? fur[3] : fur[1]);
+    for (int i = 0; i < n; i++)
+        if (rs[i] >= 3)
+            circle_fill(xs[i] + rs[i] / 3, ys[i] + rs[i] / 4, rs[i] / 2, i >= tip_from ? blend(fur[3], fur[4], 70) : fur[2]);
+    for (int i = 0; i < n; i++)
+        if (rs[i] >= 3)
+            circle_fill(xs[i] - rs[i] / 3, ys[i] - rs[i] / 4, rs[i] / 3, i >= tip_from ? blend(fur[3], C_WHITE, 90) : fur[0]);
+}
+
 static void draw_tail(const Portrait *p, int dy)
 {
     if (p->tail_mode == TM_TUCK && p->tip_y > (74 << 8))
         return;
-    u16 light, base, shadow, tip, outline;
-    cast_fur(p->who, &light, &base, &shadow, &tip, &outline);
+    u16 fur[5];
+    cast_fur(p->who, &fur[0], &fur[1], &fur[2], &fur[3], &fur[4]);
     int cx[4], cy[4];
     if (p->tail_mode == TM_WRAP) {                    /* around in front of her */
         cx[0] = 58 << 8; cx[1] = 50 << 8; cx[2] = 30 << 8; cx[3] = p->tip_x;
@@ -192,36 +226,7 @@ static void draw_tail(const Portrait *p, int dy)
         cx[0] = 58 << 8; cx[1] = 68 << 8; cx[2] = p->tip_x + (10 << 8); cx[3] = p->tip_x;
         cy[0] = 78 << 8; cy[1] = 58 << 8; cy[2] = p->tip_y + (17 << 8); cy[3] = p->tip_y;
     }
-    int n = TAIL_N + (p->tail_mode == TM_CURL ? 12 : 0);
-    int xs[TAIL_N + 12], ys[TAIL_N + 12], rs[TAIL_N + 12];
-    int puff = 256 + p->tail_puff * 3;                /* puffed up, then settling */
-    for (int i = 0; i < n; i++) {
-        int bx, by, t = i < TAIL_N ? i * 256 / (TAIL_N - 1) : 256;
-        if (i < TAIL_N) {
-            bezier(cx, cy, t, &bx, &by);
-        } else {                                      /* the tip curls in on itself */
-            int k = i - TAIL_N + 1, ang = 64 + k * 10;
-            bx = cx[3] - (3 << 8) + icos(ang) * 3;
-            by = cy[3] - isin(ang) * 3 + (1 << 8);
-        }
-        int r = (4 << 8) + 110 - (t * 7 >> 2) - (i >= TAIL_N ? (i - TAIL_N) * 14 : 0);
-        r = r * puff >> 8;
-        xs[i] = SX(p, bx);
-        ys[i] = SY(p, by, dy);
-        rs[i] = imax(1, (int)(((i64)r * p->s) >> 16));
-    }
-    /* one continuous furry tube: outline, body, a shadow stripe on the far side, a highlight on the near side */
-    int tip_from = n * 4 / 5;
-    for (int i = 0; i < n; i++)
-        circle_fill(xs[i], ys[i], rs[i] + 1, outline);
-    for (int i = 0; i < n; i++)
-        circle_fill(xs[i], ys[i], rs[i], i >= tip_from ? tip : base);
-    for (int i = 0; i < n; i++)
-        if (rs[i] >= 3)
-            circle_fill(xs[i] + rs[i] / 3, ys[i] + rs[i] / 4, rs[i] / 2, i >= tip_from ? blend(tip, outline, 70) : shadow);
-    for (int i = 0; i < n; i++)
-        if (rs[i] >= 3)
-            circle_fill(xs[i] - rs[i] / 3, ys[i] - rs[i] / 4, rs[i] / 3, i >= tip_from ? blend(tip, C_WHITE, 90) : light);
+    tail_tube(p, cx, cy, 0, p->x >> 8, (p->y >> 8) + dy, p->s, fur);
 }
 
 static int ear_pose(const Portrait *p, int side)
@@ -278,4 +283,78 @@ void portrait_draw(const Portrait *p)
         int slide = (8 - p->gest_t) * 3;
         spr_scaled_q8(SPR_BUST_HAND_GLASSES + p->gest_draw - 1, X, Y, 0, slide, s, 0, body);
     }
+}
+
+/* ---------------------------------------------------------------- full-body figures (title and pick screens) */
+
+static const int fig_body[3][OUTFITS] = {
+    [CH_NIA] = { SPR_FIG_BODY_NIA_HOODIE, SPR_FIG_BODY_NIA_SWEATER, SPR_FIG_BODY_NIA_TANK },
+    [CH_MAKO] = { SPR_FIG_BODY_MAKO_JACKET, SPR_FIG_BODY_MAKO_SPORT, SPR_FIG_BODY_MAKO_DRESS },
+    [CH_SHIO] = { SPR_FIG_BODY_SHIO_CARDIGAN, SPR_FIG_BODY_SHIO_BLOUSE, SPR_FIG_BODY_SHIO_SUNDRESS },
+};
+static const int fig_hair[3] = { SPR_FIG_HAIR_NIA, SPR_FIG_HAIR_MAKO, SPR_FIG_HAIR_SHIO };
+static const int fig_acc[3] = { SPR_FIG_ACC_CLIP, SPR_FIG_ACC_HEADBAND, SPR_FIG_ACC_GLASSES };
+
+static void darken(u16 *c, int n, int dim)
+{
+    for (int i = 0; i < n; i++)
+        c[i] = blend(c[i], RGB(16, 12, 30), dim);
+}
+
+/* the portrait's tail tip (its own coordinates) carried over to the figure: the tail leaves her hip and rises beside
+ * her, and every tail mode and flick keeps its meaning */
+static void figure_tail(const Portrait *p, int X, int Y, int s, const u16 *fur)
+{
+    if (p->tail_mode == TM_TUCK && p->tip_y > (74 << 8))
+        return;
+    int tx = (48 << 8) + (p->tip_x - (51 << 8)) * 3 / 5, ty = (34 << 8) + (p->tip_y - (19 << 8)) * 3 / 5;
+    int cx[4], cy[4];
+    if (p->tail_mode == TM_WRAP) {                    /* around in front of her hips */
+        cx[0] = 35 << 8; cx[1] = 43 << 8; cx[2] = 24 << 8; cx[3] = tx;
+        cy[0] = 60 << 8; cy[1] = 70 << 8; cy[2] = 70 << 8; cy[3] = ty;
+    } else {
+        cx[0] = 35 << 8; cx[1] = 47 << 8; cx[2] = tx + (6 << 8); cx[3] = tx;
+        cy[0] = 60 << 8; cy[1] = 64 << 8; cy[2] = ty + (14 << 8); cy[3] = ty;
+    }
+    tail_tube(p, cx, cy, 1, X, Y, s, fur);
+}
+
+void figure_draw(const Portrait *p, int X, int Y, int s, int dim)
+{
+    const Outfit *O = &outfits[p->who][p->outfit];
+    u16 body[16], hair[16], ear[16], acc[16], fur[5];
+    cast_ramp(p->who, CL_BODY, body);
+    cast_ramp(p->who, CL_HAIR, hair);
+    cast_ramp(p->who, CL_EAR, ear);
+    cast_ramp(p->who, CL_ACC, acc);
+    body[10] = O->o; body[11] = O->O; body[12] = O->q;
+    cast_fur(p->who, &fur[0], &fur[1], &fur[2], &fur[3], &fur[4]);
+    if (dim > 0) {                                    /* standing back in the shadow */
+        darken(body, 16, dim); darken(hair, 16, dim); darken(ear, 16, dim); darken(acc, 16, dim);
+        darken(fur, 5, dim);
+    }
+    int still = p->tail_mode == TM_STILL && p->ear_mode == EM_STILL;
+    int dy = still ? 0 : isin(p->t * 2) / 200;        /* breathing: her head rises and falls a pixel */
+    int hy = Y + (dy * s >> 8);
+    if (p->tail_mode != TM_WRAP)
+        figure_tail(p, X, Y, s, fur);
+    spr_scaled_q8(fig_body[p->who][p->outfit], X, Y, 0, 0, s, 0, body);
+    spr_scaled_q8(SPR_FIG_FACE, X, hy, 12, 0, s, 0, body);
+    int eyes = p->aside || p->pose == PO_AWAY ? EY_ASIDE : ex_eyes[p->expr];
+    if (p->blink > 0 && eyes != EY_HAPPY && eyes != EY_CLOSED)
+        eyes = EY_CLOSED;
+    spr_scaled_q8(SPR_FIG_EYES_NEUTRAL + eyes, X, hy, 12, 0, s, 0, body);
+    int mouth = ex_mouth[p->expr];
+    if (p->talking && (p->t / 5) % 2)
+        mouth = mouth == MO_OPEN ? MO_SMILE : MO_OPEN;
+    spr_scaled_q8(SPR_FIG_MOUTH_CAT + mouth, X, hy, 12, 0, s, 0, body);
+    if (p->blush || ex_blush[p->expr])
+        spr_scaled_q8(SPR_FIG_BLUSH, X, hy, 12, 0, s, 0, body);
+    spr_scaled_q8(fig_hair[p->who], X, hy, 12, 0, s, 0, hair);
+    int pop = p->ear_pop > 0 ? -1 : 0;
+    spr_scaled_q8(SPR_FIG_EAR_UP + ear_pose(p, 0), X, hy, 12, pop, s, 0, ear);
+    spr_scaled_q8(SPR_FIG_EAR_UP + ear_pose(p, 1), X, hy, 12, pop, s, FLIP_X, ear);
+    spr_scaled_q8(fig_acc[p->who], X, hy, 12, 0, s, 0, acc);
+    if (p->tail_mode == TM_WRAP)
+        figure_tail(p, X, Y, s, fur);
 }

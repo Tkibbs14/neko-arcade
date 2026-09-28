@@ -56,8 +56,10 @@ regression triggers, with the card's numbers (`tools/date_spec.py`). DeepSeek V4
 card (`tools/date_gen.py`, validated and retried), and `tools/mkdate.py` bakes them into `src/gen/date_data.c`,
 reading each narrated line for the tells it names ("her tail goes completely still") so the portrait acts them out.
 `src/portrait.c` animates the portraits: each ear on its own, a Bezier tail, hands for the cards' gestures, where she
-stands. Suggestive at most; a moment that would go further fades to black. Checks: `tools/datelab.sh` (every screen,
-rendered by the game's own code) and `tools/date_judge.py` (three judges: sense, voice against the card, content).
+stands. The title and pick screens show them head to toe (`tools/paint_figure.py`: the portrait's head at half size
+on a body painted per outfit, in a stance from each card). Suggestive at most; a moment that would go further fades
+to black. Checks: `tools/datelab.sh` (every screen, rendered by the game's own code), `tools/figurelab.sh` (the
+figures) and `tools/date_judge.py` (three judges: sense, voice against the card, content).
 
 **Model speed:** the dot product has three exact kernels (plain, MIPS `madd`, split sums); the game times them at
 start-up and logs the pick (`kernel ...` in the log). `tools/nlmtest-mips.sh` checks every kernel as MIPS code.

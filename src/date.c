@@ -579,20 +579,20 @@ static void draw_choices(void)
     }
 }
 
-/* ---------------------------------------------------------------- the three of them, on the title and pick screens */
+/* ---------------------------------------------------------------- the three of them, head to toe (title and pick) */
 
-static const int trio_x[3] = { 24, 128, 232 };
+static const int title_x[3] = { 128, 190, 252 }, pick_x[3] = { 36, 132, 228 };
+#define FIG_Y 46
+static int picked_now = -1, hop[3], dimmed[3];        /* who stands in the light; her little hop; the others' shadow */
 
 static void trio_place(int picked)
 {
-    for (int w = 0; w < 3; w++) {
-        Portrait *p = &trio[w];
-        if (w == picked) {                            /* she steps forward */
-            p->tx = (trio_x[w] + 32 - 44) << 8; p->ty = 26 << 8; p->ts = 352;
-        } else {
-            p->tx = trio_x[w] << 8; p->ty = 50 << 8; p->ts = 256;
-        }
-    }
+    if (picked >= 0 && picked != picked_now)
+        hop[picked] = 14;
+    if (picked < 0 && picked_now >= 0)                /* back to standing together */
+        for (int w = 0; w < 3; w++)
+            portrait_cue(&trio[w], EX_NEUTRAL, EM_UP, TM_SWAY, -1, GE_NONE, -1, 0);
+    picked_now = picked;
 }
 
 static void trio_update(void)
@@ -601,19 +601,36 @@ static void trio_update(void)
         portrait_update(&trio[w]);
         if (rnd() % 420 == 0)
             portrait_flick_tail(&trio[w]);
+        if (hop[w] > 0)
+            hop[w]--;
+        int target = picked_now >= 0 && w != picked_now ? 130 : 0, d = target - dimmed[w];
+        dimmed[w] += d / 4 + (d > 0) - (d < 0);       /* ease into and out of the shadow */
     }
 }
 
-static void trio_draw(int picked)
+static void floor_blend(int cx, int cy, int rx, int ry, u16 c, int alpha)   /* a flat ellipse of light or shadow */
 {
-    for (int w = 0; w < 3; w++)
-        if (w != picked) {
-            portrait_draw(&trio[w]);
-            if (picked >= 0)                          /* back in the shadows, tail and all */
-                rect_blend(trio_x[w] - 6, 40, 84, 94, RGB(16, 12, 30), 120);
-        }
-    if (picked >= 0)
-        portrait_draw(&trio[picked]);
+    for (int y = -ry; y <= ry; y++) {
+        int yy = cy + y;
+        if (yy < 0 || yy >= SCREEN_H)
+            continue;
+        int w = rx * (int)isqrt((u32)(ry * ry - y * y) << 8) / (ry << 4);
+        u16 *px = fb + yy * SCREEN_W;
+        for (int x = imax(0, cx - w); x <= imin(SCREEN_W - 1, cx + w); x++)
+            px[x] = blend(px[x], c, alpha);
+    }
+}
+
+static void trio_draw(const int *xs)                  /* left to right, so each tail tucks behind the next of them */
+{
+    for (int w = 0; w < 3; w++) {
+        int x = xs[w];
+        if (picked_now == w)                          /* a warm pool of light at her feet */
+            floor_blend(x + 28, FIG_Y + 121, 27, 6, RGB(255, 214, 150), 60 + isin((int)frame_count * 2) / 16);
+        floor_blend(x + 28, FIG_Y + 122, 15, 3, RGB(12, 8, 20), 120);
+        int h = hop[w] ? -(hop[w] * (14 - hop[w])) / 12 : 0;
+        figure_draw(&trio[w], x, FIG_Y + h, 256, dimmed[w]);
+    }
 }
 
 static void trio_pick(int w)
@@ -845,23 +862,25 @@ static void date_draw(void)
 {
     char b[64];
     switch (state) {
-    case ST_TITLE: {
+    case ST_TITLE: {                                 /* the three of them in the hallway; the menu to one side */
         weather = 0; dim = 60;
         draw_bg(DL_HALLWAY, 0);
         dim = 0;
-        trio_draw(-1);
-        text_big(12, 6, "Thin Walls", 2, C_PINK, C_INK);
-        text_sh(12, 26, "Nia, Mako and Shio. Fourteen evenings.", C_GREY, C_INK);
+        trio_draw(title_x);
+        rect_blend(4, 4, 126, 46, RGB(20, 16, 36), 150);
+        text_big(10, 8, "Thin Walls", 2, C_PINK, C_INK);
+        text_sh(10, 28, "Nia, Mako and Shio.", C_GREY, C_INK);
+        text_sh(10, 38, "Fourteen evenings.", C_GREY, C_INK);
         static const char *const items[5] = { "Continue", "New story", "Wardrobe", "Album", "Back to Nia's desk" };
-        round_box(104, 122, 112, 56, C_PINK, RGB(36, 30, 58));
+        round_box(6, 104, 116, 56, C_PINK, RGB(36, 30, 58));
         for (int i = 0; i < 5; i++) {
             u16 c = (i == 0 && !save.date.active) ? C_DIM : i == sel ? C_WHITE : C_GREY;
-            if (i == sel) spr(SPR_PAW, 108, 127 + i * 10, 0);
-            text(120, 126 + i * 10, items[i], c);
+            if (i == sel) spr(SPR_PAW, 10, 109 + i * 10, 0);
+            text(22, 108 + i * 10, items[i], c);
         }
         if (save.date.active) {
             str_cpy(str_int(str_cpy(b, "Evening "), save.date.evening), " of 14");
-            text(236, 166, b, C_DIM);
+            text(10, 166, b, C_DIM);
         }
         break;
     }
@@ -878,24 +897,24 @@ static void date_draw(void)
             circle_fill(160 - 13 * 6 + i * 12, 118, 3, i < save.date.evening ? C_PINK : RGB(60, 50, 84));
         break;
     }
-    case ST_PICK: {
+    case ST_PICK: {                                  /* whose door tonight: head to toe, the words above them */
         weather = 0; dim = 60;
         draw_bg(DL_HALLWAY, 0);
         dim = 0;
-        trio_draw(sel);
-        str_cpy(str_int(str_cpy(b, "Evening "), save.date.evening), save.date.evening >= date_evenings ?
-                " - the last one" : " of 14");
-        text_sh(8, 6, b, C_GOLD, C_INK);
+        trio_draw(pick_x);
         static const char *const hooks[3][2] = {
             { "The kitchen light is on. So is her laptop.", "Nia's door is cracked open. Laptop glow." },
             { "Three sharp knocks. One softer.", "Three sharp knocks. One softer. You know the rhythm." },
             { "One knock. Then nothing.", "One knock. Exactly one." },
         };
-        round_box(4, 134, 312, 44, cast[sel].name_color, RGB(36, 30, 58));
-        text_sh(12, 139, names[sel], cast[sel].name_color, C_INK);
-        draw_hearts(12 + text_w(names[sel]) + 8, 139, sel);
-        text(12, 151, hooks[sel][save.date.milestones[sel] & 1], C_WHITE);
-        text(12, 165, "\x05 left/right to choose   A: answer   B: back", C_DIM);
+        round_box(4, 4, 312, 40, cast[sel].name_color, RGB(36, 30, 58));
+        text_sh(12, 9, names[sel], cast[sel].name_color, C_INK);
+        draw_hearts(12 + text_w(names[sel]) + 8, 9, sel);
+        str_cpy(str_int(str_cpy(b, "Evening "), save.date.evening), save.date.evening >= date_evenings ?
+                " - the last one" : " of 14");
+        text(308 - text_w(b), 9, b, C_GOLD);
+        text(12, 21, hooks[sel][save.date.milestones[sel] & 1], C_WHITE);
+        text(12, 32, "\x05 left/right to choose   A: answer   B: back", C_DIM);
         break;
     }
     case ST_SCENE:

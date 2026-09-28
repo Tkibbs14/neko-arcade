@@ -654,5 +654,12 @@ bandana.poly([(47, 21), (54, 17), (53, 23)], "a")
 bandana.outline("k")
 blocks.append(sprite("bust_acc_bandana", bandana))
 
+# ---------------------------------------------------------------- full-body figures (Thin Walls title and pick screens)
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import paint_figure  # noqa: E402
+blocks += paint_figure.blocks(Canvas, sprite, face, {"nia": hair_nia, "mako": hair_mako, "shio": hair_shio}, one_ear,
+                              EAR_POSES, band, clip)
+
 open(OUT, "w", encoding="utf-8").write("\n".join(blocks))
 print(f"paint_bust: {OUT}")
