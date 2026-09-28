@@ -72,6 +72,39 @@
   button:focus-visible, .dpad:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; }
   .foot { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: center; }
   @media (pointer: coarse) { .help { display: none; } }
+  /* Playtester notes: what people enjoyed and what Nia should build next. */
+  .jump { font: 11px/1 var(--pixel); letter-spacing: .1em; text-transform: uppercase; color: var(--pink);
+    border: 1px solid var(--bezel-edge); border-radius: 999px; padding: 8px 10px; text-decoration: none; }
+  .jump:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; }
+  .notes { box-sizing: border-box; width: min(100%, 760px); background: var(--bezel); border: 1px solid var(--bezel-edge);
+    border-radius: 18px; padding: 18px 18px 16px; display: grid; gap: 16px; margin-block: 10px 28px; scroll-margin-top: 16px; }
+  .notes h2 { margin: 0; font: 20px/1.2 var(--pixel); color: var(--pink); letter-spacing: .08em; }
+  .notes .sub { margin: -8px 0 0; color: var(--dim); }
+  .rates { display: grid; gap: 6px; }
+  .rate { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px;
+    padding: 7px 10px; border-radius: 10px; background: #ffffff08; }
+  .rate .name { font: 14px/1.3 var(--pixel); letter-spacing: .04em; }
+  .rate .name small { color: var(--mint); font: 12px var(--round); margin-left: 8px; letter-spacing: 0; }
+  .choice, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .choice button, .chips button { font: 12px/1 var(--round); color: var(--dim); background: var(--cap);
+    border: 1px solid var(--bezel-edge); border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+  .choice button[aria-pressed="true"], .chips button[aria-pressed="true"] { color: var(--ground); background: var(--mint);
+    border-color: var(--mint); }
+  .choice button.not[aria-pressed="true"] { background: var(--pink); border-color: var(--pink); }
+  .notes fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .notes legend, .notes label { font-weight: 700; }
+  .notes legend { padding: 0; margin-bottom: 8px; }
+  .notes label { display: grid; gap: 8px; }
+  .notes textarea { box-sizing: border-box; width: 100%; min-height: 70px; resize: vertical; font: 14px/1.45 var(--round);
+    color: var(--ink); background: #0007; border: 1px solid var(--bezel-edge); border-radius: 10px; padding: 9px 11px; }
+  .notes textarea:focus-visible { outline: 2px solid var(--mint); outline-offset: 1px; }
+  .send { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .send button { font: 13px/1 var(--pixel); letter-spacing: .1em; color: var(--ground); background: var(--pink); border: 0;
+    border-radius: 999px; padding: 12px 20px; cursor: pointer; }
+  .send button:disabled { opacity: .5; cursor: default; }
+  #fbStatus { color: var(--mint); }
+  #fbStatus.err { color: var(--pink); }
+  .fine { margin: 0; color: var(--dim); font-size: 12px; }
 </style>
 
 <main>
@@ -95,7 +128,32 @@
   <div class="foot">
     <div id="pads">No controller detected yet. Press a button on it.</div>
     <button type="button" class="toggle" id="padToggle">Hide buttons</button>
+    <a class="jump" href="#notes">Leave feedback</a>
   </div>
+  <section class="notes" id="notes" aria-labelledby="notesTitle">
+    <h2 id="notesTitle">Playtester notes</h2>
+    <p class="sub">Nia reads every one. Which builds did you enjoy, and what should she make next?</p>
+    <form id="fb">
+      <div class="rates">
+        <div class="rate" data-k="rival"><span class="name">01 Rival!<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+        <div class="rate" data-k="detective"><span class="name">02 Whisker Detective<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+        <div class="rate" data-k="cafe"><span class="name">03 Nyan Cafe<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+        <div class="rate" data-k="kittens"><span class="name">04 Foster Kittens<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+        <div class="rate" data-k="village"><span class="name">05 Nekomura<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+        <div class="rate" data-k="date"><span class="name">06 Thin Walls<small></small></span><span class="choice"><button type="button" data-v="2" aria-pressed="false">Loved it</button><button type="button" data-v="1" aria-pressed="false">It was OK</button><button type="button" class="not" data-v="0" aria-pressed="false">Not for me</button></span></div>
+      </div>
+      <fieldset>
+        <legend>Favourite character</legend>
+        <div class="chips" id="fav"><button type="button" data-v="nia" aria-pressed="false">Nia</button><button type="button" data-v="mako" aria-pressed="false">Mako</button><button type="button" data-v="shio" aria-pressed="false">Shio</button><button type="button" data-v="mocha" aria-pressed="false">Mocha</button><button type="button" data-v="other" aria-pressed="false">Someone else</button></div>
+      </fieldset>
+      <label>What should Nia build next?
+        <textarea name="wish" maxlength="1000" placeholder="A game, a character, a feature, more of something you liked"></textarea></label>
+      <label>Anything else?
+        <textarea name="comment" maxlength="1000" placeholder="Bugs, what felt off, what made you smile"></textarea></label>
+      <div class="send"><button type="submit">Send to Nia</button><span id="fbStatus" role="status"></span></div>
+      <p class="fine">Anonymous: no account, no email. The page also counts which builds you open and for how long, so Tyler can see what people actually play.</p>
+    </form>
+  </section>
 </main>
 
 <script>
@@ -117,13 +175,52 @@ const latch = [new Uint8Array(16), new Uint8Array(16)];
 function tapped(p, mask) { for (let b = 0; b < 16; b++) if (mask >> b & 1) latch[p][b] = 2; }
 function latched(p) { let m = 0; for (let b = 0; b < 16; b++) if (latch[p][b]) { m |= 1 << b; latch[p][b]--; } return m; }
 
+// Playtest stats: seconds in each build (from the game's own "scene ..." log lines) and a few dating-sim events,
+// sent anonymously so Tyler can see what people actually play. Counted only after the game starts and while the
+// tab is visible. The id is random and stays in this browser, so a returning player counts once.
+const rid = () => [...crypto.getRandomValues(new Uint8Array(8))].map(b => b.toString(16).padStart(2, "0")).join("");
+let anon = rid();
+try { anon = localStorage.getItem("neko-arcade-anon") || anon; localStorage.setItem("neko-arcade-anon", anon); } catch (e) { /* ignore */ }
+const visit = rid(), BUILD = "__BUILD__", played = {}, events = {};
+let scene = null, since = 0, started = false;
+function tick() {
+  const now = performance.now();
+  if (started && scene && since && !document.hidden) played[scene] = (played[scene] || 0) + (now - since) / 1000;
+  since = now;
+}
+function track(line) {
+  const m = /^scene ([a-z]+)$/.exec(line);
+  if (m) { tick(); scene = m[1]; return; }
+  let k = null;
+  const words = line.split(" ");
+  if (line.startsWith("date: evening")) k = "date_" + (line.split(", ")[1] || "").split(" ")[0].toLowerCase();
+  else if (line.startsWith("date: chose")) k = "date_choices";
+  else if (line.startsWith("date: new story")) k = "date_new_story";
+  else if (line.startsWith("date: ending ")) k = "ending_" + words[2].toLowerCase() + "_" + words[3];
+  if (k) events[k] = (events[k] || 0) + 1;
+}
+function sendPlay() {
+  tick();
+  const secs = {};
+  let total = 0;
+  for (const k in played) { secs[k] = Math.round(played[k]); total += secs[k]; }
+  if (total < 5) return;
+  try {
+    navigator.sendBeacon("/api/arcade/play",
+      new Blob([JSON.stringify({ anon, visit, build: BUILD, seconds: secs, events })], { type: "application/json" }));
+  } catch (e) { /* ignore */ }
+}
+setInterval(sendPlay, 60000);
+addEventListener("pagehide", sendPlay);
+document.addEventListener("visibilitychange", () => { if (document.hidden) sendPlay(); else since = performance.now(); });
+
 (async () => {
   const bytes = Uint8Array.from(atob(WASM_B64), c => c.charCodeAt(0));
   let memRef = null;
   const cstr = p => { const b = new Uint8Array(memRef.buffer, p); let s = ""; for (let i = 0; b[i]; i++) s += String.fromCharCode(b[i]); return s; };
   const { instance } = await WebAssembly.instantiate(bytes, { env: {
     na_time_us: () => Math.floor(performance.now() * 1000) >>> 0,
-    na_log: p => console.log("[neko-arcade] " + cstr(p)),
+    na_log: p => { const s = cstr(p); console.log("[neko-arcade] " + s); track(s); },
   } });
   const ex = instance.exports, mem = ex.memory;
   memRef = mem;
@@ -174,11 +271,17 @@ function latched(p) { let m = 0; for (let b = 0; b < 16; b++) if (latch[p][b]) {
     } catch (e) { actx = null; }
   }
   const startEl = document.getElementById("start");
-  function begin() { startAudio(); startEl.hidden = true; }
+  function begin() {
+    startAudio();
+    startEl.hidden = true;
+    if (!started) { started = true; since = performance.now(); }
+  }
   startEl.addEventListener("click", begin);
   startEl.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") begin(); });
 
+  const typing = e => e.target && e.target.closest && e.target.closest("textarea, input");
   addEventListener("keydown", e => {
+    if (typing(e)) return;                         // writing feedback: the keys belong to the text box
     begin();
     for (let p = 0; p < 2; p++) if (e.code in KEYS[p]) {
       if (!e.repeat) tapped(p, 1 << KEYS[p][e.code]);
@@ -188,6 +291,61 @@ function latched(p) { let m = 0; for (let b = 0; b < 16; b++) if (latch[p][b]) {
   });
   addEventListener("keyup", e => {
     for (let p = 0; p < 2; p++) if (e.code in KEYS[p]) keyState[p] &= ~(1 << KEYS[p][e.code]);
+  });
+
+  // Playtester notes: a rating per build, a favourite, what to build next. Clicking a chosen answer again clears it.
+  const ratings = {};
+  let favorite = null;
+  document.querySelectorAll(".rate").forEach(row => {
+    const k = row.dataset.k, btns = row.querySelectorAll("button");
+    btns.forEach(btn => btn.addEventListener("click", () => {
+      const v = +btn.dataset.v, clear = ratings[k] === v;
+      if (clear) delete ratings[k]; else ratings[k] = v;
+      btns.forEach(b => b.setAttribute("aria-pressed", String(!clear && +b.dataset.v === v)));
+    }));
+  });
+  const favBtns = document.querySelectorAll("#fav button");
+  favBtns.forEach(btn => btn.addEventListener("click", () => {
+    favorite = favorite === btn.dataset.v ? null : btn.dataset.v;
+    favBtns.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === favorite)));
+  }));
+  setInterval(() => {                              // "you played 12 min" beside the builds they have tried
+    tick();
+    document.querySelectorAll(".rate").forEach(row => {
+      const s = played[row.dataset.k] || 0, el = row.querySelector("small");
+      const t = s >= 60 ? "you played " + Math.round(s / 60) + " min" : s >= 10 ? "you tried it" : "";
+      if (el.textContent !== t) el.textContent = t;
+    });
+  }, 5000);
+  const form = document.getElementById("fb"), status = document.getElementById("fbStatus");
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const wish = form.elements.wish.value.trim(), comment = form.elements.comment.value.trim();
+    if (!Object.keys(ratings).length && !favorite && !wish && !comment) {
+      status.className = "err";
+      status.textContent = "Pick a rating or write a note first.";
+      return;
+    }
+    tick();
+    const secs = {};
+    for (const k in played) secs[k] = Math.round(played[k]);
+    const btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+    status.className = "";
+    status.textContent = "Sending...";
+    try {
+      const r = await fetch("/api/arcade/feedback", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ anon, visit, build: BUILD, ratings, favorite, wish, comment, played: secs }) });
+      if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || "HTTP " + r.status);
+      status.textContent = "Thank you! Nia has your notes.";
+      form.elements.wish.value = "";
+      form.elements.comment.value = "";
+    } catch (err) {
+      status.className = "err";
+      status.textContent = "Could not send: " + err.message;
+    } finally {
+      btn.disabled = false;
+    }
   });
 
   // Touch: an 8-way D-pad read from the finger's position, and face buttons that hold while pressed.

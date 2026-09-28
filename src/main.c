@@ -164,5 +164,11 @@ void game_frame(u16 p1, u16 p2)
             log_perf();
     }
     frame_count++;
-    save.play_frames++;
+    /* Play time reaches the save every five minutes, not every frame: the frontend writes the save to the SD card
+     * whenever it changes, and a change every frame meant a card write every 10 s (a stall on the stick). */
+    static u32 unsaved_frames;
+    if (++unsaved_frames >= 60 * 60 * 5) {
+        save.play_frames += unsaved_frames;
+        unsaved_frames = 0;
+    }
 }
